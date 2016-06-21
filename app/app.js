@@ -2,9 +2,6 @@ var app = angular.module('aamf', ['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider){
     
-    //Remove o # da url
-    //$locationProvider.html5Mode(true);
-    
     $routeProvider
         //Homepage
         .when('/', {
@@ -17,4 +14,6 @@ app.config(function($routeProvider, $locationProvider){
             controller: 'ContatoCtrl'
         })
         .otherwise({redirectTo: '/'});
+    
+    $locationProvider.html5Mode(true);
 });
