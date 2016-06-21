@@ -3,7 +3,7 @@ var app = angular.module('aamf', ['ngRoute']);
 app.config(function($routeProvider, $locationProvider){
     
     //Remove o # da url
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
     
     $routeProvider
         //Homepage
