@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="aamf">
+    <head>
+        <title>Associação Riograndense de Artes Marciais Filipinas</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Eduardo Montanha">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/angular/angular-route.min.js"></script>
+        
+        <base href="/">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li ng-class="{active: activetab == '/'}"><a href="#/home">Home</a></li>
+                    <li ng-class="{active: activetab == '/contato'}"><a href="#/contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main ng-view>
+            
+        </main>
+        
+        <footer>
+            
+            
+            <!-- Aplication -->
+            <script src="app/app.js"></script>
+            <script src="app/controllers/home.js"></script>
+            <script src="app/controllers/contato.js"></script>
+        </footer>
+    </body>
+</html>
