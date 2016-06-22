@@ -27,10 +27,12 @@ header, main, footer {
 #social-bar > div,
 #masthead > div {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 /* =========================== */
 /* Social Bar */
@@ -64,6 +66,10 @@ header, main, footer {
     float: left;
 }
 
+#social-bar .contact a {
+    font-weight: bold;
+}
+
 #social-bar .phone {
     margin-right: 20px;
 }
@@ -86,7 +92,7 @@ header, main, footer {
 }
 
 #social-bar .youtube:before {
-    content: "\f167";
+    content: "\f16a";
 }
 
 #social-bar .instagram:before {
