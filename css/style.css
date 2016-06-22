@@ -7,6 +7,10 @@ white: #F2F1EF;
 blue: #1F3A93;
 */
 
+body {
+    font-family: "Open sans", Arial, Helvetica, sans-serif;
+}
+
 header, main, footer {
     width: 100%;
 }
@@ -32,6 +36,7 @@ header, main, footer {
 #social-bar {
     height: 17px;
     padding: 3px 0;
+    line-height: 17px;
     font-size: 12px;
     background-color: #CC0000;
 }
@@ -43,6 +48,15 @@ header, main, footer {
 
 #social-bar .contact a:hover {
     text-decoration: underline;
+}
+
+#social-bar .social-media .facebook:before {
+    content: "\f09a";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #FFF;
 }
 
 /* Masthead */
