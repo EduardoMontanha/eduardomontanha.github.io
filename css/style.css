@@ -32,7 +32,9 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* =========================== */
 /* Social Bar */
+/* =========================== */
 #social-bar {
     height: 17px;
     padding: 3px 0;
@@ -50,21 +52,38 @@ header, main, footer {
     text-decoration: underline;
 }
 
-/* Social Media */
-#social-bar .social-media a {
+#social-bar a:before {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-}
-
-#social-bar .social-media .facebook:before {
-    content: "\f09a";
+    /* Adjust as necessary */
     font-size: 12px;
     color: #F2F1EF;
 }
 
+/* Contact */
+#social-bar .phone:before {
+    content: "\f095";
+}
+
+#social-bar .mail:before {
+    content: "\f0e0";
+}
+
+/* Social Media */
+#social-bar .facebook:before {
+    content: "\f09a";
+}
+
+#social-bar .youtube:before {
+    content: "\f167";
+}
+
+
+/* =========================== */
 /* Masthead */
+/* =========================== */
 #masthead {
     height: 62px;
 }
