@@ -54,7 +54,7 @@ header, main, footer {
     font-weight: normal;
     text-decoration: inherit;
     /* Adjust as necessary */
-    padding-right: 0.5em;
+    padding-right: 0.6em;
     font-size: 12px;
 }
 
@@ -68,12 +68,8 @@ header, main, footer {
     float: left;
 }
 
-#social-bar .contact a:hover {
-    text-decoration: underline;
-}
-
 #social-bar .phone {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #social-bar .phone:before {
@@ -95,6 +91,10 @@ header, main, footer {
 
 #social-bar .youtube:before {
     content: "\f167";
+}
+
+#social-bar .instagram:before {
+    content: "\f16d";
 }
 
 
