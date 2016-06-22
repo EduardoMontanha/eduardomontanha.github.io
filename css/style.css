@@ -58,13 +58,9 @@ header, main, footer {
     font-size: 12px;
 }
 
-#social-bar .contact,
-#social-bar .social-media {
-    width: 30%;
-}
-
 /* Contact */
 #social-bar .contact {
+    width: 30%;
     float: left;
 }
 
