@@ -1,3 +1,7 @@
+# This is for Hostinger. Can remove when upload to Kinghost
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
 RewriteEngine On
 
 #If an existing asset or directory is requested go to it as it is
