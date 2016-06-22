@@ -1,3 +1,44 @@
 header, main, footer {
     width: 100%;
 }
+
+
+/* =========================== */
+/* Header */
+/* =========================== */
+#navbar-top,
+#masthead {
+    width: 100%;
+}
+
+#navbar-top > div,
+#masthead > div {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Navbar Top */
+#navbar-top {
+    height: 17px;
+    padding: 3px 0;
+    font-size: 12px;
+}
+
+/* Masthead */
+#masthead {
+    height: 62px;
+}
+
+#masthead #logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+}

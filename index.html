@@ -4,6 +4,7 @@
         <title>Associação Riograndense de Artes Marciais Filipinas</title>
         
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="Eduardo Montanha">
@@ -18,24 +19,32 @@
     </head>
     <body>
         <header>
-            <section>
+            <section id="navbar-top">
                 <div>
-                    <a href="tel:+555193871076" title="Clique para ligar">+55 51 9387-1076</a>
-                    <a href="mailto:associacaoamf@gmail.com" title="Clique para nos enviar um e-mail">associacaoamf@gmail.com</a>
-                </div>
-                <div>
-                    <a href="" class="" target="_blank" title="Facebook"></a>
-                    <a href="" class="" target="_blank" title="Youtube"></a>
-                    <a href="" class="" target="_blank" title="Instagram"></a>
+                    <div class="contact">
+                        <a href="tel:+555193871076" title="Clique para ligar">+55 51 9387 1076</a>
+                        <a href="mailto:associacaoamf@gmail.com" title="Clique para nos enviar um e-mail">associacaoamf@gmail.com</a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/cursosobrevivenciaurbana/" class="" target="_blank" title="Facebook"></a>
+                        <a href="https://www.youtube.com/user/AssociacaoAMF" class="" target="_blank" title="Youtube"></a>
+                        <a href="https://www.instagram.com/sobrevivenciaurbana/" class="" target="_blank" title="Instagram"></a>
+                    </div>
                 </div>
             </section>
             
-            <nav>
-                <ul>
-                    <li ng-class="{active: activetab == '/'}"><a href="/home">Home</a></li>
-                    <li ng-class="{active: activetab == '/contato'}"><a href="/contato">Contato</a></li>
-                </ul>
-            </nav>
+            <section id="masthead">
+                <div>
+                    <img src="#" alt="AAMF Logo" id="logo">
+                    
+                    <nav>
+                        <ul>
+                            <li ng-class="{active: activetab == '/'}"><a href="/home">Home</a></li>
+                            <li ng-class="{active: activetab == '/contato'}"><a href="/contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
         </header>
         
         <main ng-view></main>
