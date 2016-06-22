@@ -1,3 +1,12 @@
+/*
+Color pallete:
+red: #CC0000;
+dark-gray: #4D4D4D;
+light-gray: #BFBFBF;
+white: #F2F1EF;
+blue: #1F3A93;
+*/
+
 header, main, footer {
     width: 100%;
 }
@@ -6,12 +15,12 @@ header, main, footer {
 /* =========================== */
 /* Header */
 /* =========================== */
-#navbar-top,
+#social-top,
 #masthead {
     width: 100%;
 }
 
-#navbar-top > div,
+#social-top > div,
 #masthead > div {
     width: 100%;
     max-width: 1140px;
@@ -19,11 +28,21 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* Navbar Top */
-#navbar-top {
+/* Social Top */
+#social-top {
     height: 17px;
     padding: 3px 0;
     font-size: 12px;
+    background-color: #CC0000;
+}
+
+#social-bar a {
+    text-decoration: none;
+    color: #F2F1EF;
+}
+
+#social-bar .contact a:hover {
+    text-decoration: underline;
 }
 
 /* Masthead */
