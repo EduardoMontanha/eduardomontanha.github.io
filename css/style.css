@@ -50,13 +50,18 @@ header, main, footer {
     text-decoration: underline;
 }
 
-#social-bar .social-media .facebook:before {
-    content: "\f09a";
+/* Social Media */
+#social-bar .social-media a {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #FFF;
+}
+
+#social-bar .social-media .facebook:before {
+    content: "\f09a";
+    font-size: 12px;
+    color: #F2F1EF;
 }
 
 /* Masthead */
