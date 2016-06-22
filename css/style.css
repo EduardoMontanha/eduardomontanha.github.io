@@ -15,12 +15,12 @@ header, main, footer {
 /* =========================== */
 /* Header */
 /* =========================== */
-#social-top,
+#social-bar,
 #masthead {
     width: 100%;
 }
 
-#social-top > div,
+#social-bar > div,
 #masthead > div {
     width: 100%;
     max-width: 1140px;
@@ -28,8 +28,8 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* Social Top */
-#social-top {
+/* Social Bar */
+#social-bar {
     height: 17px;
     padding: 3px 0;
     font-size: 12px;
