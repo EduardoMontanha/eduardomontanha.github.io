@@ -72,6 +72,10 @@ header, main, footer {
     text-decoration: underline;
 }
 
+#social-bar .phone {
+    margin-right: 15px;
+}
+
 #social-bar .phone:before {
     content: "\f095";
 }
