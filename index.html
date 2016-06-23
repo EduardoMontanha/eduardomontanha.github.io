@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="aamf">
-    <head>
+	<head>
         <title>Associação Riograndense de Artes Marciais Filipinas</title>
         
         <meta charset="utf-8">
@@ -43,6 +43,7 @@
                         <ul>
                             <li ng-class="{active: activetab == '/'}"><a href="/">Home</a></li>
                             <li ng-class="{active: activetab == '/sobre'}"><a href="sobre">Sobre</a></li>
+                            <li ng-class="{active: activetab == '/galeria'}"><a href="galeria">Galeria</a></li>
                             <li ng-class="{active: activetab == '/contato'}"><a href="contato">Contato</a></li>
                         </ul>
                     </nav>
@@ -53,13 +54,27 @@
         <main ng-view></main>
         
         <footer>
-            
+            <div>
+				<section class="about">
+					
+				</section>
+				<section class="news">
+					
+				</section>
+				<section class="contact">
+					
+				</section>
+			</div>
+			<section class="copy">
+				<p>AAMF @ copyright 2016 - by <a href="https://br.linkedin.com/in/eduardomontanha" target="_blank" title="">Eduardo Montanha</a></p>
+			</section>
         </footer>
         
         <!-- Aplication -->
         <script src="app/app.js"></script>
         <script src="app/controllers/home.js"></script>
         <script src="app/controllers/sobre.js"></script>
+        <script src="app/controllers/galeria.js"></script>
         <script src="app/controllers/contato.js"></script>
     </body>
 </html>

@@ -13,6 +13,11 @@ app.config(function($routeProvider, $locationProvider){
             templateUrl: 'app/views/sobre.html',
             controller: 'SobreCtrl'
         })
+		//Galeria
+        .when('/galeria', {
+            templateUrl: 'app/views/galeria.html',
+            controller: 'GaleriaCtrl'
+        })
         //Contact
         .when('/contato', {
             templateUrl: 'app/views/contato.html',
