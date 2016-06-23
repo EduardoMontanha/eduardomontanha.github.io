@@ -6,9 +6,29 @@ light-gray: #BFBFBF;
 white: #F2F1EF;
 blue: #1F3A93;
 */
+/* =========================== */
+/* Fonts */
+/* =========================== */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
 
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url(../fonts/Dosis-Regular.ttf);
+}
+
+/* =========================== */
+/* General */
+/* =========================== */
 body {
-    font-family: "Open sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 header, main, footer {
@@ -62,12 +82,13 @@ header, main, footer {
 
 /* Contact */
 #social-bar .contact {
-    width: 30%;
+    width: 50%;
     float: left;
 }
 
 #social-bar .contact a {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-family: "Open Sans Bold";
 }
 
 #social-bar .phone {
@@ -105,16 +126,32 @@ header, main, footer {
 /* =========================== */
 #masthead {
     height: 62px;
+    background-color: #4D4D4D;
 }
 
 #masthead #logo {
+    height: 60px;
     float: left;
 }
 
 nav {
     float: right;
+    line-height: 62px;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
 }
 
 nav li {
-    display: inline-block;
+    float: left;
+}
+
+nav li > a {
+    padding: 20px 16px 17px;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: #F2F1EF;
+}
+
+nav li a:hover {
+    border-bottom-color: #F2F1EF;
 }
