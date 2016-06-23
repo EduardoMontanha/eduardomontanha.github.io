@@ -35,6 +35,10 @@ header, main, footer {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #F2F1EF;
+}
 
 /* =========================== */
 /* Header */
@@ -65,11 +69,6 @@ header, main, footer {
     background-color: #CC0000;
 }
 
-#social-bar a {
-    text-decoration: none;
-    color: #F2F1EF;
-}
-
 #social-bar a:before {
     font-family: FontAwesome;
     font-style: normal;
@@ -87,8 +86,7 @@ header, main, footer {
 }
 
 #social-bar .contact a {
-    /*font-weight: bold;*/
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Arial, Helvetica, sans-serif;
 }
 
 #social-bar .phone {
@@ -129,7 +127,7 @@ header, main, footer {
     background-color: #4D4D4D;
 }
 
-#masthead #logo {
+#logo {
     height: 60px;
     float: left;
 }
@@ -146,10 +144,9 @@ nav li {
 
 nav li > a {
     padding: 20px 16px 17px;
-    font-size: 18px;
-    text-decoration: none;
     border-bottom: 3px solid transparent;
-    color: #F2F1EF;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 nav li a:hover {
