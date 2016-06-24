@@ -150,19 +150,18 @@ nav li a:hover {
 /* Footer */
 /* =========================== */
 footer {
+	border-top: 40px solid #4D4D4D;
+	background-color: #BFBFBF;
 	color: #F2F1EF;
 }
 
 footer div {
-	height: 300px;
-	background-color: #BFBFBF;
-	border-top: 40px solid #4D4D4D;
+	
 }
 
 footer .about, footer .news,
 footer .contact {
-	width: 33.3%;
-	height: 240;
+	width: 30%;
 	padding: 30px 15px;
 	float: left;
 }
@@ -181,6 +180,7 @@ footer .copy p {
     max-width: 1170px;
 	padding: 0 15px;
     margin: 0 auto;
+	box-sizing: border-box;
 	text-align: right;
 }
 
