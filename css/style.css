@@ -120,8 +120,8 @@ a {
 }
 
 #logo {
-    height: 60px;
-    float: left;
+    width: 62px;
+    margin: 0 auto;
 }
 
 nav {
