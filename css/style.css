@@ -187,3 +187,40 @@ footer .copy p {
 footer .copy a:hover {
 	text-decoration: underline;
 }
+
+/* Contact */
+#footContact input,
+#footContact textarea {
+	width: 100%;
+	padding: 9px 10px;
+	margin-bottom: 4px;
+	box-sizing: border-box;
+	display: block;
+	background-color: #4D4D4D;
+	border: 1px solid #F2F1EF;
+	color: #F2F1EF;
+}
+
+#footContact #fSubmit {
+	width: auto;
+	margin: 0;
+	float: right;
+	text-transform: uppercase;
+	color: #F2F1EF;
+}
+
+#footContact ::-webkit-input-placeholder {
+   color: #F2F1EF;
+}
+
+#footContact :-moz-placeholder { /* Firefox 18- */
+   color: #F2F1EF;  
+}
+
+#footContact ::-moz-placeholder {  /* Firefox 19+ */
+   color: #F2F1EF;  
+}
+
+#footContact :-ms-input-placeholder {  
+   color: #F2F1EF;  
+}
