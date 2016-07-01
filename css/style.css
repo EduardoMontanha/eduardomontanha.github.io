@@ -32,6 +32,14 @@ header, main, footer {
     width: 100%;
 }
 
+#social-bar > div,
+#masthead > div,
+footer > div {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 /* =========================== */
 /* Header */
 /* =========================== */
@@ -42,10 +50,7 @@ header, main, footer {
 
 #social-bar > div,
 #masthead > div {
-    width: 100%;
-    max-width: 1170px;
     padding: 0 15px;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -154,10 +159,6 @@ nav li a:hover {
 footer {
 	border-top: 40px solid #2980B9;
 	background-color: #3498DB;
-}
-
-footer div {
-	
 }
 
 footer .about, footer .news,
