@@ -19,17 +19,17 @@
 /* =========================== */
 /* General */
 /* =========================== */
+* {
+    text-decoration: none;
+    color: #ECF0F1;
+}
+
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 header, main, footer {
     width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #F2F1EF;
 }
 
 /* =========================== */
@@ -58,7 +58,7 @@ a {
     padding: 3px 0;
     line-height: 17px;
     font-size: 12px;
-    background-color: #CC0000;
+    background-color: #2980B9;
 }
 
 #social-bar a:before {
@@ -116,12 +116,12 @@ a {
 /* =========================== */
 #masthead {
     height: 62px;
-    background-color: #4D4D4D;
+    background-color: #3498DB;
 }
 
 #logo {
-    width: 62px;
-    margin: 0 auto;
+    height: 40px;
+    margin: 12px auto;
 }
 
 nav {
@@ -139,10 +139,12 @@ nav li > a {
     border-bottom: 3px solid transparent;
     font-size: 18px;
     text-transform: uppercase;
+    transition: all 200ms ease-in;
 }
 
 nav li a:hover {
-    border-bottom-color: #F2F1EF;
+    background-color: #2980B9;
+    border-bottom-color: #ECF0F1;
 }
 
 
@@ -150,9 +152,8 @@ nav li a:hover {
 /* Footer */
 /* =========================== */
 footer {
-	border-top: 40px solid #4D4D4D;
-	background-color: #BFBFBF;
-	color: #F2F1EF;
+	border-top: 40px solid #2980B9;
+	background-color: #3498DB;
 }
 
 footer div {
@@ -172,7 +173,7 @@ footer .copy {
 	clear: both;
 	line-height: 26px;
 	font-size: 14px;
-	background-color: #4D4D4D;
+	background-color: #2980B9;
 }
 
 footer .copy p {
@@ -193,12 +194,11 @@ footer .copy a:hover {
 #footContact textarea {
 	width: 100%;
 	padding: 9px 10px;
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 	box-sizing: border-box;
 	display: block;
-	background-color: #4D4D4D;
-	border: 1px solid #F2F1EF;
-	color: #F2F1EF;
+	background-color: #2980B9;
+	border: 1px solid #ECF0F1;
 }
 
 #footContact #fSubmit {
@@ -206,21 +206,21 @@ footer .copy a:hover {
 	margin: 0;
 	float: right;
 	text-transform: uppercase;
-	color: #F2F1EF;
+    cursor: pointer;
 }
 
 #footContact ::-webkit-input-placeholder {
-   color: #F2F1EF;
+   color: #ECF0F1;
 }
 
 #footContact :-moz-placeholder { /* Firefox 18- */
-   color: #F2F1EF;  
+   color: #ECF0F1;  
 }
 
 #footContact ::-moz-placeholder {  /* Firefox 19+ */
-   color: #F2F1EF;  
+   color: #ECF0F1;  
 }
 
 #footContact :-ms-input-placeholder {  
-   color: #F2F1EF;  
+   color: #ECF0F1;  
 }
