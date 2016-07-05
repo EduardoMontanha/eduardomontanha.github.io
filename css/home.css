@@ -1,51 +1,28 @@
 /* =========================== */
 /* Slider */
 /* =========================== */
-.container{
-	width:800px;
-	height:400px;
-	padding:20px;
-	border:1px solid gray;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	background: black;	
+#slider {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
 }
-.slider_wrapper{
-	overflow: hidden;
-	position:relative;
-	height:280px;
-	top:auto;
+
+#image-displayer,
+#left-arrow, #right-arrow {
+    position: absolute;
 }
-#image_slider{
-	position: relative;
-	height: auto;
-	list-style: none;
-	overflow: hidden;
-	float: left;
-	/*Chrom default padding for ul is 40px */
-	padding:0px;
-	margin:0px;
+
+#image-displayer {
+    width: inherit;
 }
-#image_slider li{
-	position: relative;
-	float: left;
+
+#left-arrow, #right-arrow {
+    width: 60px;
+    height: inherit;
+    cursor: pointer;
 }
-.nvgt{
-	position:absolute;
-	top: 120px;
-	height: 50px;
-	width: 30px;
-	opacity: 0.6;
-}
-.nvgt:hover{
-	opacity: 0.9;
-}
-#prev{
-	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
-	left: 0px;
-}
-#next{
-	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
-	right: 0px;
+
+#right-arrow {
+    right: 0;
 }
