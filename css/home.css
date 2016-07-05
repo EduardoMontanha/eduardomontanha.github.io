@@ -8,6 +8,12 @@
     overflow: hidden;
 }
 
+#slider:hover #left-arrow,
+#slider:hover #right-arrow {
+    background: #000;
+    opacity: 0.5;
+}
+
 #image-displayer,
 #left-arrow, #right-arrow {
     position: absolute;
@@ -18,11 +24,23 @@
 }
 
 #left-arrow, #right-arrow {
-    width: 60px;
+    width: 100px;
     height: inherit;
     cursor: pointer;
 }
 
 #right-arrow {
     right: 0;
+}
+
+#slider:hover #left-arrow img,
+#slider:hover #right-arrow img {
+    display: block;
+}
+
+#left-arrow img,
+#right-arrow img {
+    width: 50px;
+    margin: 240px auto 0;
+    display: none;
 }
