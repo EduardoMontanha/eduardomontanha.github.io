@@ -168,6 +168,10 @@ footer .contact {
 	float: left;
 }
 
+footer hr {
+    width: 50%;
+}
+
 footer .copy {
 	width: 100%;
 	height: 26px;
