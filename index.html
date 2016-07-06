@@ -43,10 +43,10 @@
                     
                     <nav>
                         <ul>
-                            <li ng-class="{active: activetab == '/'}"><a href="/">Home</a></li>
-                            <li ng-class="{active: activetab == '/sobre'}"><a href="sobre">Sobre</a></li>
-                            <li ng-class="{active: activetab == '/galeria'}"><a href="galeria">Galeria</a></li>
-                            <li ng-class="{active: activetab == '/contato'}"><a href="contato">Contato</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="sobre">Sobre</a></li>
+                            <li><a href="galeria">Galeria</a></li>
+                            <li><a href="contato">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -55,13 +55,13 @@
         
         <main ng-view></main>
         
-        <section>
+        <section id="map-section">
             <div id="map"></div>
             <script>
                 function initMap() {
                     var centerGyms = {lat: -30.0526265, lng: -51.2109056},
-                        gym1 = {lat: -30.0131786, lng: -51.2034865},
-                        gym2 = {lat: -30.1011286, lng: -51.2358598};
+                        gym1 = {lat: -30.0131786, lng: -51.2034865},//Felix da Cunha
+                        gym2 = {lat: -30.1011286, lng: -51.2358598};//Dr Barcelos
                     
                     var mapDiv = document.getElementById('map');
                     var map = new google.maps.Map(mapDiv, {
@@ -69,18 +69,18 @@
                         zoom:12
                     });
                     
-                    //Felix da Cunha
+                    //C.E.I.T.
                     var marker1 = new google.maps.Marker({
                         position: gym1,
                         map: map,
-                        title: 'Hello World!'
+                        title: 'C.E.I.T.'
                     });
                     
-                    //Dr Barcelos
+                    //Power Fitnnes
                     var marker2 = new google.maps.Marker({
                         position: gym2,
                         map: map,
-                        title: 'Hello World! 2'
+                        title: 'Power Fitnnes'
                     });
                 }
             </script>
