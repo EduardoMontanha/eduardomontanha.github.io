@@ -169,7 +169,9 @@ footer .contact {
 }
 
 footer hr {
-    width: 50%;
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #ECF0F1;
 }
 
 footer .copy {
@@ -206,7 +208,7 @@ footer .copy a:hover {
 	border: 1px solid #ECF0F1;
 }
 
-#footContact #fSubmit {
+#footContact #fBtnSend {
 	width: auto;
 	margin: 0;
 	float: right;
