@@ -3,3 +3,32 @@
     height: 400px;
     background-color: grey;
 }
+
+
+/* =========================== */
+/* Media Queries */
+/* =========================== */
+/* Mobile */
+@media all and (max-width: 767px){
+    
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    
+}
+
+/* Laptop */
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    
+}
+
+/* Laptop L */
+@media all and (min-width: 1440px) and (max-width: 2559px){
+    
+}
+
+/* 4K */
+@media all and (min-width: 2560px){
+    
+}

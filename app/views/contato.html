@@ -1,4 +1,3 @@
-<h1>Contact Page</h1>
 <header>
     <h1>Fale Conosco</h1>
     <hr>
@@ -27,3 +26,34 @@
     </ul>
 </section>
 
+<section id="map-section">
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var centerGyms = {lat: -30.0526265, lng: -51.2109056},
+                gym1 = {lat: -30.0131786, lng: -51.2034865},//Felix da Cunha
+                gym2 = {lat: -30.1011286, lng: -51.2358598};//Dr Barcelos
+
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+                center: centerGyms,
+                zoom:12
+            });
+
+            //C.E.I.T.
+            var marker1 = new google.maps.Marker({
+                position: gym1,
+                map: map,
+                title: 'C.E.I.T.'
+            });
+
+            //Power Fitnnes
+            var marker2 = new google.maps.Marker({
+                position: gym2,
+                map: map,
+                title: 'Power Fitnnes'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqThR3PNM0qYdzYheZ3JK_xxpjrBKgo40&callback=initMap" async defer></script>
+</section>
