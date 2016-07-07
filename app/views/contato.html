@@ -1,29 +1,35 @@
 <header>
     <h1>Fale Conosco</h1>
     <hr>
-    <h3></h3>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit Necessitatibus.</h3>
 </header>
 
-<section>
-    <h2>Formulário de Contato</h2>
-    <hr align="left">
-    <form method="post" action="#">
-        <input id="name" name="name" type="text" placeholder="Nome*" required>
-        <input id="email" name="email" type="email" placeholder="E-mail*" required>
-        <textarea id="msg" name="msg" placeholder="Mensagem*" required></textarea>
-        <input id="btnSend" type="submit" value="Enviar mensagem">
-    </form>
-</section>
+<section id="contact-section">
+    <div class="form-area">
+        <h2>Formulário de Contato</h2>
+        <hr align="left">
+        <form id="form-contact" method="post" action="#">
+            <input id="name" name="name" type="text" placeholder="Nome*" required>
+            <input id="email" name="email" type="email" placeholder="E-mail*" required>
+            <textarea id="msg" name="msg" placeholder="Mensagem*" required></textarea>
+            <input id="btnSend" type="submit" value="Enviar mensagem">
+        </form>
+    </div>
 
-<section>
-    <h2>Contatos AAMF</h2>
-    <hr align="left">
-    <p></p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <div class="address-area">
+        <h2>Contatos AAMF</h2>
+        <hr align="left">
+        <p>
+            Sadaka ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis
+            viverra elementum semper quis ex. Donec lorem nulla .
+        </p>
+        <ul>
+            <li><span><i class="address"></i></span>Rua Félix da Cunha, 30 - Floresta</li>
+            <li><span><i class="address"></i></span>Rua Dr. Barcelos, 2355 - Camaquã</li>
+            <li><span><i class="phone"></i></span>+55 51 9387 1076</li>
+            <li><span><i class="email"></i></span>contato@associacaoamf.com</li>
+        </ul>
+    </div>
 </section>
 
 <section id="map-section">
@@ -48,11 +54,11 @@
                 title: 'C.E.I.T.'
             });
 
-            //Power Fitnnes
+            //Power Fitness
             var marker2 = new google.maps.Marker({
                 position: gym2,
                 map: map,
-                title: 'Power Fitnnes'
+                title: 'Power Fitness'
             });
         }
     </script>
