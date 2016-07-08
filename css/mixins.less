@@ -1,0 +1,50 @@
+/* =========================== */
+/* Color Pallete */
+/* =========================== */
+@c1: #2980B9;
+@c2: #3498DB;
+@c3: #ECF0F1;
+
+
+/* =========================== */
+/* Element Format */
+/* =========================== */
+.size(@w, @h){
+    width: @w;
+    height: @h;
+}
+
+
+/* =========================== */
+/* Position */
+/* =========================== */
+.left() {
+    float: left;
+}
+
+.right(){
+    float: right;
+}
+
+
+/* =========================== */
+/* Text */
+/* =========================== */
+.uppercase() {
+    text-transform: uppercase;
+}
+
+.lowercase() {
+    text-transform: lowercase;
+}
+
+.captilize() {
+    text-transform: capitalize;
+}
+
+/* =========================== */
+/* Effects */
+/* =========================== */
+.transition(@type: all, @time: 200ms, @effect: ease-in) {
+    transition: @type @time @effect;
+}

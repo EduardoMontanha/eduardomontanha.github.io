@@ -1,0 +1,322 @@
+/* =========================== */
+/* Fonts */
+/* =========================== */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url(../fonts/Dosis-Regular.ttf);
+}
+
+/* =========================== */
+/* General */
+/* =========================== */
+* {
+    text-decoration: none;
+    color: @c3;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid @c3;
+}
+
+#social-bar > div,
+#masthead > div,
+footer > div {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* =========================== */
+/* Header */
+/* =========================== */
+#social-bar,
+#masthead {
+    width: 100%;
+}
+
+#social-bar > div,
+#masthead > div {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+/* =========================== */
+/* Social Bar */
+/* =========================== */
+#social-bar {
+    height: 17px;
+    padding: 3px 0;
+    line-height: 17px;
+    font-size: 12px;
+    background-color: @c1;
+    
+    a:before {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        /* Adjust as necessary */
+        padding-right: 1.0em;
+        font-size: 12px;
+    }
+    
+    /* Contact */
+    .contact {
+        width: 50%;
+        .left;
+        
+        a {
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            /* Icons */
+            &.phone {
+                margin-right: 20px;
+                &:before {
+                    content: "\f095";
+                }
+            }
+            &.mail:before {
+                content: "\f0e0";
+            }
+        }
+    }
+    
+    /* Social Media */
+    .social-media {
+        float: right;
+        /* Icons */
+        .facebook:before {
+            content: "\f09a";
+        }
+        .youtube:before {
+            content: "\f16a";
+        }
+        .instagram:before {
+            content: "\f16d";
+        }
+    }
+}
+
+
+/* =========================== */
+/* Masthead */
+/* =========================== */
+#masthead {
+    height: 62px;
+    background-color: @c2;
+}
+
+#logo {
+    height: 40px;
+    margin: 12px auto;
+}
+
+nav {
+    .right;
+    line-height: 62px;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    
+    li {
+        .left;
+        
+        & > a {
+            padding: 20px 16px 17px;
+            border-bottom: 3px solid transparent;
+            font-size: 18px;
+            text-transform: uppercase;
+            .transition;
+            
+            &:hover {
+                background-color: @c1;
+                border-bottom-color: @c3;
+            }
+        }
+    }
+}
+
+/* =========================== */
+/* Main */
+/* =========================== */
+main header {
+    width: inherit;
+    height: 190px;
+    padding: 25px 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    background: url(../img/template/background_header.jpg) no-repeat center;
+}
+
+main header h1,
+main header h3 {
+    margin: 15px 0;
+}
+
+main header h1 {
+    font-size: 36px;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+main header h3 {
+    font-size: 18px;
+}
+
+main header hr {
+    width: 350px;
+}
+
+/* =========================== */
+/* Footer */
+/* =========================== */
+footer {
+	border-top: 40px solid @c1;
+	background-color: @c2;
+    
+    .about, .news, .contact {
+        width: 30%;
+        padding: 30px 15px;
+        .left;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-family: "Dosis", Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    
+    hr {
+        width: 70%;
+    }
+    
+    /* About */
+    .about p {
+        margin: 15px 0;
+        font-size: 13px;
+    }
+    
+    /* News */
+    .news {
+        opacity: 0.4;
+        
+        img {
+            width: 100px;
+            margin: 30px auto 5px;
+            display: block;
+        }
+        
+        p {
+            text-align: center;
+        }
+    }
+    
+    #footContact {
+        input, textarea {
+            width: 100%;
+            padding: 9px 10px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            display: block;
+            background-color: @c1;
+            border: 1px solid @c3;
+        }
+        
+        #fBtnSend {
+            width: auto;
+            margin: 0;
+            float: right;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        /* Placeholder style */
+        & ::-webkit-input-placeholder {
+            color: @c3;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        }
+        & :-moz-placeholder { /* Firefox 18- */
+            color: @c3;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        }
+        & ::-moz-placeholder {  /* Firefox 19+ */
+            color: @c3;  
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        }
+        &:-ms-input-placeholder {  
+            color: @c3;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        }
+    }
+    
+    /* Copyright */
+    .copy {
+        width: 100%;
+        height: 26px;
+        clear: both;
+        line-height: 26px;
+        font-size: 14px;
+        background-color: @c1;
+        
+        p {
+            width: 100%;
+            max-width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* =========================== */
+/* Media Queries */
+/* =========================== */
+/* Mobile */
+@media all and (max-width: 767px){
+    
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    
+}
+
+/* Laptop */
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    
+}
+
+/* Laptop L */
+@media all and (min-width: 1440px) and (max-width: 2559px){
+    
+}
+
+/* 4K */
+@media all and (min-width: 2560px){
+    
+}
