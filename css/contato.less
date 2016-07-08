@@ -30,7 +30,7 @@
 /* Form Area */
 /* =========================== */
 #contact-section .form-area {
-    width: 62%;
+    width: 58%;
     margin-right: 8%;
 }
 
@@ -91,7 +91,7 @@
 /* Address Area */
 /* =========================== */
 #contact-section .address-area {
-    width: 30%;
+    width: 34%;
     
     p, li {
         color: @c1;
@@ -114,6 +114,26 @@
         display: inline-block;
         vertical-align: middle;
         background-color: @c1;
+        
+        a:before {
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            /* Adjust as necessary */
+            padding-right: 1.0em;
+            font-size: 12px;
+            
+            &.address {
+                content: "\f041";
+            }
+            &.phone {
+                content: "\f095";
+            }
+            &.email {
+                content: "\f0e0";
+            }
+        }
     }
 }
 
