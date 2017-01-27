@@ -1,0 +1,111 @@
+/* ===================================== */
+/* Header */
+/* ===================================== */
+header {
+    height: 10vh;
+    position: relative;
+    background: #200122; /* fallback for old browsers */
+    background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFFFFF;
+}
+    
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    
+    /* Header Logo */
+    #logo {
+        height: 10vh;
+        padding: 1.5vh 4vw;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    
+    
+    /* Responsive Menu Button */
+    #btnMenu {
+        height: 10vh;
+        padding: 0 5vw;
+        float: right;
+        line-height: 10vh;
+        font-size: 2em;
+    }
+    
+    
+    /* Navigation */
+    header nav {
+        width: 100vw;
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+        
+        header ul li {
+            font-size: 2em;
+        }
+            
+            header ul li a {
+                width: 100vw;
+                padding: 2vh 6vw;
+                display: block;
+                box-sizing: border-box;
+                border-bottom: 1px solid #FFFFFF;
+            }
+    
+    /*header ul li {
+        display: inline-block;
+        box-sizing: border-box;
+        line-height: 10vh;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    
+    header ul li.icon {
+        font-size: 1em;
+    }
+
+
+    header ul.responsive li {
+        display: inline-block;
+    }
+
+    header ul li a {
+        height: 10vh;
+        display: block;
+        color: #FFFFFF;
+        font-size: 2em;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+    header ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }*/
+
+
+main {
+    height: 90vh;
+    background: #666;
+}
+
+/* ===================================== */
+/* Tablet */
+/* ===================================== */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        height: 90vh;
+        background: #CCC;
+    }
+}
+
+/* ===================================== */
+/* Desktop */
+/* ===================================== */
+@media all and (min-width: 1025px) {
+    main {
+        height: 90vh;
+        background: #00FF00;
+    }
+}

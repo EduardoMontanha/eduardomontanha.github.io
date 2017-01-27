@@ -1,106 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="aamf">
-	<head>
-        <title>AAMF - Associação Riograndense de Artes Marciais Filipinas</title>
-        
+<html>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
         <meta name="author" content="Eduardo Montanha">
         
-        <link rel="icon" href="img/template/favicon.ico">
-        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet/less" href="css/main.less">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
         
-        <!-- Need jQuery to load scripts inside views -->
-        <script src="lib/less/less.js"></script>
-        <script src="lib/jquery/jquery-3.0.0.min.js"></script>
-        <script src="lib/angular/angular.min.js"></script>
-        <script src="lib/angular/angular-route.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
         
-        <base href="/">
+        <title>Eduardo Montanha</title>
     </head>
     <body>
         <header>
-            <section id="social-bar">
-                <div>
-                    <div class="contact">
-                        <a href="tel:+555193871076" class="phone" title="Entre em contato por telefone">+55 51 9387 1076</a>
-                        <a href="mailto:associacaoamf@gmail.com" class="mail" title="Entre em contato por e-mail">associacaoamf@gmail.com</a>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/cursosobrevivenciaurbana/" class="facebook" target="_blank" title="Facebook"></a>
-                        <a href="https://www.youtube.com/user/AssociacaoAMF" class="youtube" target="_blank" title="Youtube"></a>
-                        <a href="https://www.instagram.com/sobrevivenciaurbana/" class="instagram" target="_blank" title="Instagram"></a>
-                    </div>
-                </div>
-            </section>
+            <img id="logo" src="img/logo/mountain-logo.svg" alt="Mountain Logo">
             
-            <section id="masthead">
-                <div>
-                    <div id="logo">
-                        <a href="/" title="Associação Riograndense de Artes Marciais Filipinas"><img src="img/template/aamf_logo.svg" alt="AAMF Logo"></a>
-                        <h2>Associação Riograndense de Artes Marciais Filipinas</h2>
-                    </div>
-                    
-                    <nav>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="sobre">Sobre</a></li>
-                            <li><a href="galeria">Galeria</a></li>
-                            <li><a href="contato">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
+            <a id="btnMenu" title="Menu" href="javascript:void(0);">&#9776;</a>
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href="" title="Home">Home</a></li>
+                    <li><a href="" title="Martial Arts">Developer</a></li>
+                    <li><a href="" title="Martial Arts">Martial Artist</a></li>
+                </ul>
+            </nav>
         </header>
         
-        <main ng-view></main>
-        
-        <footer>
-            <div>
-				<section class="about">
-					<h3>Sobre nós</h3>
-                    <hr>
-					<p>
-						Sadaka ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra
-						elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
-					</p>
-					<p>
-						ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra
-						elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
-					</p>
-				</section>
-					
-				<section class="news">
-					<h3>Notícias</h3>
-                    <hr>
-                    <img src="img/template/under_construction.png" alt="Sessão em construção">
-                    <p>Em construção!</p>
-				</section>
-					
-				<section class="contact">
-					<h3>Fale Conosco</h3>
-                    <hr>
-					<form id="footContact" method="post" action="#">
-						<input id="fName" name="fName" type="text" placeholder="Nome" required>
-						<input id="fEmail" name="fEmail" type="email" placeholder="E-mail" required>
-						<textarea id="fMsg" name="fMsg" placeholder="Mensagem" required></textarea>
-						<input id="fBtnSend" type="submit" value="Enviar Mensagem">
-					</form>
-				</section>
-			</div>
-			<section class="copy">
-				<h4>AAMF @ copyright 2016 - by <a href="https://br.linkedin.com/in/eduardomontanha" target="_blank" title="">Eduardo Montanha</a></h4>
-			</section>
-        </footer>
-        
-		<!-- Aplication -->
-        <script src="app/app.js"></script>
-        <script src="app/controllers/home.js"></script>
-        <script src="app/controllers/sobre.js"></script>
-        <script src="app/controllers/galeria.js"></script>
-        <script src="app/controllers/contato.js"></script>
+        <main>
+            <!--section>
+                <img src="img/profile.jpg" alt="Eduardo's photo">
+                <h1>Eduardo Montanha</h1>
+            </section-->
+        </main>
     </body>
 </html>
