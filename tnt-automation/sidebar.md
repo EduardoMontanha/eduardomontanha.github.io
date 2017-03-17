@@ -1,8 +1,0 @@
-- [Usage](/usage)
-- [Changelog](/changelog)
-- **Reference**
-  - [Data](/data)
-  - [Metrics](/metrics)
-  - [Conditions](/conditions)
-  - [Cookie](/cookie)
-  - [Utils](/utils)
