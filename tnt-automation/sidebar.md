@@ -1,11 +1,12 @@
 - [Usage](/usage)
 - [Changelog](/changelog)
-- **Installation**
-    - [Installation](/installation)
-    - [Configuration](/configuration)
-- **Reference**
-  - [Data](/data)
-  - [Metrics](/metrics)
-  - [Conditions](/conditions)
-  - [Cookie](/cookie)
-  - [Utils](/utils)
+- **Install and Config**
+    - [Installation](/install_config/installation)
+    - [Configuration](/install_config/configuration)
+- **Development**
+    - [Data](/data)
+    - [Metrics](/metrics)
+    - [Conditions](/conditions)
+    - [Cookie](/cookie)
+    - [Utils](/utils)
+- **Usage**
