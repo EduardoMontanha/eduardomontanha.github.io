@@ -1,7 +1,8 @@
 - [Usage](/usage)
-- **Installation**
-    - [Installation](/instalattion)
 - [Changelog](/changelog)
+- **Installation**
+    - [Installation](/installation)
+    - [Configuration](/configuration)
 - **Reference**
   - [Data](/data)
   - [Metrics](/metrics)
