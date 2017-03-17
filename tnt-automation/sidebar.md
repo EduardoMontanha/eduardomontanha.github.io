@@ -5,9 +5,4 @@
     - [Configuration](/install_config/configuration)
 - **Development**
     - [Tests](/development/test)
-    - [Data](/data)
-    - [Metrics](/metrics)
-    - [Conditions](/conditions)
-    - [Cookie](/cookie)
-    - [Utils](/utils)
 - **Usage**
