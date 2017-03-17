@@ -6,6 +6,7 @@ header {
     position: relative;
     background: #200122; /* fallback for old browsers */
     background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 0.5vh solid #FFF;
     color: #FFFFFF;
 }
     
@@ -14,15 +15,21 @@ header {
         text-decoration: none;
     }
     
-    
     /* Header Logo */
     #logo {
         height: 10vh;
         padding: 1.5vh 4vw;
-        display: inline-block;
+        float: left;
         box-sizing: border-box;
     }
     
+    /* Header Title */
+    h1 {
+        display: inline-block;
+        line-height: 10vh;
+        font-size: 1.2em;
+        font-family: 'Courgette', cursive;
+    }
     
     /* Responsive Menu Button */
     #btnMenu {
@@ -32,7 +39,6 @@ header {
         line-height: 10vh;
         font-size: 2em;
     }
-    
     
     /* Navigation */
     header nav {
@@ -87,7 +93,7 @@ header {
 
 main {
     height: 90vh;
-    background: #666;
+    background: #ecf0f1;
 }
 
 /* ===================================== */
