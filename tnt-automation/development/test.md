@@ -1,6 +1,8 @@
 ## Basic Structure
 
-Here is the basic structure of an *automation test*.
+Here is the basic structure of a *test*.
+
+All the *recipes* of a test are a different step in the automation test.
 
 ```javascript
 module.exports = {
