@@ -6,7 +6,6 @@ header {
     position: relative;
     background: #200122; /* fallback for old browsers */
     background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-top: 0.5vh solid #FFF;
     color: #FFFFFF;
 }
     
@@ -59,36 +58,6 @@ header {
                 box-sizing: border-box;
                 border-bottom: 1px solid #FFFFFF;
             }
-    
-    /*header ul li {
-        display: inline-block;
-        box-sizing: border-box;
-        line-height: 10vh;
-        text-align: center;
-        font-size: 0.8em;
-    }
-    
-    header ul li.icon {
-        font-size: 1em;
-    }
-
-
-    header ul.responsive li {
-        display: inline-block;
-    }
-
-    header ul li a {
-        height: 10vh;
-        display: block;
-        color: #FFFFFF;
-        font-size: 2em;
-        text-decoration: none;
-        transition: background-color 0.2s ease;
-    }
-
-    header ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }*/
 
 
 main {
@@ -99,7 +68,7 @@ main {
 /* ===================================== */
 /* Tablet */
 /* ===================================== */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
     main {
         height: 90vh;
         background: #CCC;
@@ -109,9 +78,55 @@ main {
 /* ===================================== */
 /* Desktop */
 /* ===================================== */
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
+    
+    /* ===================================== */
+    /* Header */
+    /* ===================================== */
+    
+    /* Responsive Menu Button */
+    #btnMenu {
+        display: none;
+    }
+    
+    /* Navigation */
+    header nav {
+        width: inherit;
+        display: inline-block;
+    }
+    
+    header ul li {
+        display: inline-block;
+        box-sizing: border-box;
+        line-height: 10vh;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    
+    header ul li.icon {
+        font-size: 1em;
+    }
+    
+    header ul.responsive li {
+        display: inline-block;
+    }
+    
+    header ul li a {
+        width: inherit;
+        height: 10vh;
+        padding: 0 4vw;
+        border: 0;
+        font-size: 2em;
+        transition: background-color 0.2s ease;
+    }
+
+    header ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    
     main {
         height: 90vh;
-        background: #00FF00;
+        /*background: #00FF00;*/
     }
 }
