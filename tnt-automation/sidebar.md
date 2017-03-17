@@ -4,6 +4,7 @@
     - [Installation](/install_config/installation)
     - [Configuration](/install_config/configuration)
 - **Development**
+    - [Tests](/development/test)
     - [Data](/data)
     - [Metrics](/metrics)
     - [Conditions](/conditions)
