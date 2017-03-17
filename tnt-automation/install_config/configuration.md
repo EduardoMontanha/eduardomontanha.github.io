@@ -7,6 +7,11 @@
 
 # Folders Structure
 
-## custom Folder
+Here you will see some of the main folders for the development of automation tests, like `/custom`, `/tests` and `/reports`.
 
-The *custom* folder is where will be our extended *commands*, *assertions* and *page objects*.
+
+## Custom Folder
+
+The `/custom` folder is where will be our extended *commands*, *assertions* and *page objects*.
+
+### Assertions
