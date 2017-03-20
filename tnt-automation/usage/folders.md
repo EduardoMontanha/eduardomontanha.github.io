@@ -11,7 +11,7 @@ We have to add the new folder path in two differnt files: `local.conf.js` and `p
 In those files, we have 3 different properties. I fwe want to add a new folder foa new behavior,
 we must put its path inside the `custom_command_path`. Since the behaviors are *commands*.
 
-!> It's very important that if you have created a folder for a test, due his size or complexity, to remove the
+!> If you have created a folder for a test, due his size or complexity, you have to remove the
 path from `src_folders` property in the settings files after move the test folder to `/old_tets`. If you
 don't remove you will get an error everytime you try to run a test.<br>
 The same serves for the folders inside `/custom`.
@@ -50,6 +50,5 @@ If the test returns an error, *Nightwatch.js* will take a screenshot and save at
 *PS: you can also request inside the test to take screenshot of and specific page or step.*
 
 ## /tests
-Every file inside this folder will be executed. So, every current test should be here.
-
+Every file inside this folder will be executed. So, every current test should be here.<br>
 We will have one file for each test, and the name of this file must be the test id number like `1234.js`.
