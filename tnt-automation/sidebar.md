@@ -4,8 +4,8 @@
     - [Configuration](/install-config/configuration)
 - **Developer Guide**
     - [Custom Assertions](/developer-guide/custom-assertion)
-    - [Custom Commands](/developer-guide/custom-commands-behavior)
-    - [Custom Commands](/developer-guide/custom-commands-util)
+    - [Behavior Commands](/developer-guide/custom-commands-behavior)
+    - [Util Commands](/developer-guide/custom-commands-util)
 - **Development**
     - [Custom Assertions](/development/custom-assertions)
     - [Custom Commands](/development/custom-commands)
