@@ -3,6 +3,13 @@ Inside the project's folder, we will have some folders that we will use to creat
 
 ![Folders structure](images/folders-structure.png "Folders structure")
 
+## Adding a new folder
+When we create a new folder, we need to associate it into the *Nightwatch.js* settings files.<br>
+We have to add the new folder path in two differnt files: `local.conf.js` and `parallel.conf.js`.<br>
+*You can find these files in the root folder of the project*
+
+## Removing a folder
+
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and *page objects*.
 
@@ -19,7 +26,7 @@ Its content is separate by page. Contains commands that will check each page beh
 Contains commands that can be used everywhere. If you use the same commands with a high frequence, you can think in create a new command here.
 
 ### /custom/pages
-This folder contains *Page Objects* files. You can see more details about *page objects* further in this documentation.
+This folder contains *Page Objects* files. You can see more details about *page objects* in the development section of this documentation.
 
 ## /old_tests
 As the name suggests, this folder contains the old tests. The tests inside are separated in Fiscal Year and Quarter.
@@ -29,7 +36,7 @@ As the name suggests, this folder contains the old tests. The tests inside are s
 ![Old-test folder](images/old_tests-folder.png "Old-test folder")
 
 ## /reports
-Everytime you run a test it will generate a report inside the `/reports` folder with the id of the test, like `157.xml` as the name of the file.
+Everytime you run a test it will generate a report inside the `/reports` folder with the id of the test, like `1234.xml` as the name of the file.
 
 ## /screenshots
 If the test returns an error, *Nightwatch.js* will take a screenshot and save at `/screenshots` folder.
