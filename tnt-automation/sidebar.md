@@ -1,8 +1,12 @@
 - [Changelog](/changelog)
 - **Install and Config**
-    - [Installation](/install_config/installation)
-    - [Configuration](/install_config/configuration)
+    - [Installation](/install-config/installation)
+    - [Configuration](/install-config/configuration)
+- **Developer Guide**
+    - [Custom Assertions](/developer-guide/custom-assertion)
+    - [Custom Commands](/developer-guide/custom-commands)
 - **Development**
+    - [Custom Assertions](/development/custom-assertions)
     - [Custom Commands](/development/custom-commands)
     - [Page Objects](/development/page-objects)
 - **Usage**
