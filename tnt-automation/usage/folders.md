@@ -17,8 +17,9 @@ folder foa new behavior, we must put its path inside the
 
 !> If you have created a folder for a test, due his size or complexity,
 you have to remove the path from `src_folders` property in the settings
-files after move the test folder to `/old_tets`. If you don't remove
-you will get an error everytime you try to run a test.<br>
+files after move the test folder to `/old_tests`.<br>
+If you don't remove you will get an error everytime you try to run a
+test.<br>
 The same serves for the folders inside `/custom`.
 
 ![Settings files folders](images/settings-files-folders.png "Settings files folders")
