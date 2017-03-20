@@ -6,9 +6,18 @@ Inside the project's folder, we will have some folders that we will use to creat
 ## Adding a new folder
 When we create a new folder, we need to associate it into the *Nightwatch.js* settings files.<br>
 We have to add the new folder path in two differnt files: `local.conf.js` and `parallel.conf.js`.<br>
-*You can find these files in the root folder of the project*
+*You can find these files in the root folder of the project*<br>
+<br>
+In those files, we have 3 different properties. I fwe want to add a new folder foa new behavior,
+we must put its path inside the `custom_command_path`. Since the behaviors are *commands*.
+
+![Adding a folder](images/adding-folder.png "Adding folder")
 
 ## Removing a folder
+!> It's very important that if you have created a folder for a test, due his size or complexity, to remove the
+path from `src_folders` property in the settings files after move the test folder to `/old_tets`. If you
+don't remove you will get an error everytime you try to run a test.<br>
+The same serves for the folders inside `/custom`.
 
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and *page objects*.
@@ -29,8 +38,7 @@ Contains commands that can be used everywhere. If you use the same commands with
 This folder contains *Page Objects* files. You can see more details about *page objects* in the development section of this documentation.
 
 ## /old_tests
-As the name suggests, this folder contains the old tests. The tests inside are separated in Fiscal Year and Quarter.
-
+As the name suggests, this folder contains the old tests. The tests inside are separated in Fiscal Year and Quarter.<br>
 *PS: A test is considered old not by the date we create them, but when we don't need to run it anymore.*
 
 ![Old-test folder](images/old_tests-folder.png "Old-test folder")
@@ -39,8 +47,7 @@ As the name suggests, this folder contains the old tests. The tests inside are s
 Everytime you run a test it will generate a report inside the `/reports` folder with the id of the test, like `1234.xml` as the name of the file.
 
 ## /screenshots
-If the test returns an error, *Nightwatch.js* will take a screenshot and save at `/screenshots` folder.
-
+If the test returns an error, *Nightwatch.js* will take a screenshot and save at `/screenshots` folder.<br>
 *PS: you can also request inside the test to take screenshot of and specific page or step.*
 
 ## /tests
