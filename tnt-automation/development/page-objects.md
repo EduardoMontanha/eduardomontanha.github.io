@@ -41,7 +41,7 @@ If you want more details about *page objects*
 web page. In other words, they can only be used on the page they were
 made for.
 
-Let's declare an object that will keep all this *behaviors*:
+Let's declare an object that will keep all *behaviors* of the page:
 
 ```javascript
 var homepageCommands = {};
@@ -60,8 +60,8 @@ var homepageCommands = {
 ```
 
 From now on, we can call the *custom command* called
-`homeLegacyInterstitialBanner` as `checkInterstitialBanner` inside the
-*page object* that it is assigned.
+`homeLegacyInterstitialBanner` as a method called
+`checkInterstitialBanner` inside the *page object* we just created.
 
 After you place all your *behaviors* inside this new *object* we need
 to pass them to the *page object*.
