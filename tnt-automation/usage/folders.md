@@ -4,6 +4,8 @@ to create our *tests*, *assertions* and custom *commands*.
 
 ![Folders structure](images/folders-structure.png "Folders structure")
 
+---
+
 ## Add/Remove a folder
 When we create a new folder, we need to associate it into the
 *Nightwatch.js* settings files.<br>
@@ -23,6 +25,8 @@ test.<br>
 The same serves for the folders inside `/custom`.
 
 ![Settings files folders](images/settings-files-folders.png "Settings files folders")
+
+---
 
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and
@@ -48,6 +52,8 @@ here.
 This folder contains *Page Objects* files. You can see more details
 about *page objects* in the development section of this documentation.
 
+---
+
 ## /old_tests
 As the name suggests, this folder contains the old tests. The tests
 inside are separated in Fiscal Year and Quarter.<br>
@@ -56,16 +62,22 @@ we don't need to run it anymore.*
 
 ![Old-test folder](images/old_tests-folder.png "Old-test folder")
 
+---
+
 ## /reports
 Everytime you run a test it will generate a report inside the
 `/reports` folder with the id of the test, like `1234.xml` as the name
 of the file.
+
+---
 
 ## /screenshots
 If the test returns an error, *Nightwatch.js* will take a screenshot
 and save at `/screenshots` folder.<br>
 *PS: You can also request inside the test to take screenshot of and
 specific page or step.*
+
+---
 
 ## /tests
 Every file inside this folder will be executed. So, every current test
