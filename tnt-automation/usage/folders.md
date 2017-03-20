@@ -1,6 +1,8 @@
 # Folders Structure
 Inside the project's folder, we will have some folders that we will use to create our tests, assertions and custom commands.
 
+![Folders structure](_images/folders_structure.png "Folders structure")
+
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and *page objects*.
 
@@ -34,3 +36,5 @@ If the test returns an error, *Nightwatch.js* will take a screenshot and save at
 
 ## /tests
 Every file inside this folder will be executed. So, every current test should be here.
+
+We will have one file for each test, and the name of this file must be the test id number like `1234.js`.
