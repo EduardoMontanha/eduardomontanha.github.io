@@ -3,7 +3,7 @@ Inside the project's folder, we will have some folders that we will use to creat
 
 ![Folders structure](images/folders-structure.png "Folders structure")
 
-## Adding a new folder
+## Add/Remove a new folder
 When we create a new folder, we need to associate it into the *Nightwatch.js* settings files.<br>
 We have to add the new folder path in two differnt files: `local.conf.js` and `parallel.conf.js`.<br>
 *You can find these files in the root folder of the project*<br>
@@ -11,13 +11,12 @@ We have to add the new folder path in two differnt files: `local.conf.js` and `p
 In those files, we have 3 different properties. I fwe want to add a new folder foa new behavior,
 we must put its path inside the `custom_command_path`. Since the behaviors are *commands*.
 
-![Adding a folder](images/adding-folder.png "Adding folder")
-
-## Removing a folder
 !> It's very important that if you have created a folder for a test, due his size or complexity, to remove the
 path from `src_folders` property in the settings files after move the test folder to `/old_tets`. If you
 don't remove you will get an error everytime you try to run a test.<br>
 The same serves for the folders inside `/custom`.
+
+![Adding a folder](images/adding-folder.png "Adding folder")
 
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and *page objects*.
