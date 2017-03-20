@@ -1,7 +1,7 @@
 # Folders Structure
 Inside the project's folder, we will have some folders that we will use to create our tests, assertions and custom commands.
 
-![Folders structure](../_images/folders_structure.png "Folders structure")
+![Folders structure](images/folders-structure.png "Folders structure")
 
 ## /custom
 The `/custom` folder will contain our *assertions*, *commands* and *page objects*.
