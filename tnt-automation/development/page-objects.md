@@ -44,6 +44,8 @@ made for.
 Let's declare an object that will keep all *behaviors* of the page:
 
 ```javascript
+/* homepage.js */
+
 var homepageCommands = {};
 ```
 
@@ -51,6 +53,8 @@ Okay, now that we have where to put the *behaviors* let's assign a new
 name for each one.
 
 ```javascript
+/* homepage.js */
+
 var homepageCommands = {
         checkInterstitialBanner: function () {
             'use strict';
@@ -67,6 +71,8 @@ After you place all your *behaviors* inside this new *object* we need
 to pass them to the *page object*.
 
 ```javascript
+/* homepage.js */
+
 var homepageCommands = {
         checkInterstitialBanner: function () {
             'use strict';

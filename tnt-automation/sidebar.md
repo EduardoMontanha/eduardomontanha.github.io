@@ -8,3 +8,4 @@
 - **Usage**
     - [Folders Structure](usage/folders)
     - [Tests](/usage/tests)
+    - [Page Objects](/usage/page-objects)

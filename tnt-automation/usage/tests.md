@@ -1,4 +1,4 @@
-## Basic Structure
+# Test Structure
 
 Here is the basic structure of a *test*.
 

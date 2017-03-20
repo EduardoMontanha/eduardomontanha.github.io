@@ -22,7 +22,7 @@ exports.command = function () {
 will test an entire feature or page behavior.
 
 !> *Behaviors* must be independents! In other words, they doesn't have
-to take parameters to do something. You just need to call them.
+to take parameters to do something.
 
 ---
 
