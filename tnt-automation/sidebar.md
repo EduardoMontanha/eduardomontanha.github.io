@@ -4,6 +4,8 @@
     - [Installation](/install_config/installation)
     - [Configuration](/install_config/configuration)
 - **Development**
-    - [Tests](/development/test)
+    - [Custom Commands](/development/custom-commands)
+    - [Page Objects](/development/page-objects)
 - **Usage**
     - [Folders Structure](usage/folders)
+    - [Tests](/usage/tests)
