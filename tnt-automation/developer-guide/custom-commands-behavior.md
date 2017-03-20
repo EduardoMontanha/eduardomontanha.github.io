@@ -1,7 +1,5 @@
 ## Homepage Legacy
 
----
-
 ### checkInterstitialBanner
 Test interstitial banner on homepage legacy pages.
 - Check if there is text in the banner
