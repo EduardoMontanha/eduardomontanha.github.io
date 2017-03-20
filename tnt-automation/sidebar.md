@@ -1,4 +1,3 @@
-- [Usage](/usage)
 - [Changelog](/changelog)
 - **Install and Config**
     - [Installation](/install_config/installation)
