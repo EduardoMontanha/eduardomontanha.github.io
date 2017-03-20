@@ -1,5 +1,5 @@
 # Folders Structure
-Inside the project's folder, we will have some folders that we will use to create our tests, assertions and custom commands.
+Inside the project's folder, we will have some folders that we will use to create our *tests*, *assertions* and custom *commands*.
 
 ![Folders structure](images/folders-structure.png "Folders structure")
 
@@ -25,6 +25,8 @@ This folder contains *Page Objects* files. You can see more details about *page 
 As the name suggests, this folder contains the old tests. The tests inside are separated in Fiscal Year and Quarter.
 
 *PS: A test is considered old not by the date we create them, but when we don't need to run it anymore.*
+
+![Old-test folder](images/old_tests-folder.png "Old-test folder")
 
 ## /reports
 Everytime you run a test it will generate a report inside the `/reports` folder with the id of the test, like `157.xml` as the name of the file.

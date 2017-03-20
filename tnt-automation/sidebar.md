@@ -6,4 +6,4 @@
 - **Development**
     - [Tests](/development/test)
 - **Usage**
-    - [Folders](usage/folders)
+    - [Folders Structure](usage/folders)
