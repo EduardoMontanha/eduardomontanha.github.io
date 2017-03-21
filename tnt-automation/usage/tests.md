@@ -34,14 +34,25 @@ section for more details.
 
 ---
 
-## Testing things
+## Testing stuff in the page
 Let's see how you can test things in a page.
 
-You may have notice that in all steps we have a *browser* parameter.<br>
+You may have noticed that all steps have a parameter called *browser*,
+and it's because *browser* is a reference of the client.
 
-Parameter | Description
---- | ---
-*browser* | Is a reference for the client.
+Let's do a simple test considering the following *HTML*:
+
+```html
+<body>
+    <main>
+        <p id="hello">Hello World!</p>
+        <p>Are you sure?</p>
+    </main>
+</body>
+```
+
+To check the test of the first paragraph we will have to do something
+like this:
 
 ```javascript
 /* 1234.js */
@@ -50,6 +61,18 @@ module.exports = {
     
     '#1234 - Recipe B': function (browser) {
         'use strict';
+        browser
+            .waitForElementPresent("#hello")
+            .expect.element("#hello").text.to.contain("Hello")
+            .end();
     }
 };
 ```
+
+The test above will be *true* because the paragraph with id *hello*
+contais the word *Hello*.
+
+So, you can see now that there is no magic in here. You'll just have
+to explore the native commands to check what you want. And if you don't
+find a command or assertion that fits your necessities you can create
+your own custom commands and assertions.
