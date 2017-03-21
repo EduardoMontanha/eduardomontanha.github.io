@@ -4,7 +4,7 @@
     - [Configuration](/install-config/configuration)
 - **Developer Guide**
     - [Custom Assertions](/developer-guide/custom-assertion)
-    - [Behavior Commands](/developer-guide/custom-commands-behavior)
+    - **Behavior Commands**
         - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
     - [Util Commands](/developer-guide/custom-commands-util)
 - **Development**
