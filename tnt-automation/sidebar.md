@@ -5,6 +5,7 @@
 - **Developer Guide**
     - [Custom Assertions](/developer-guide/custom-assertion)
     - [Behavior Commands](/developer-guide/custom-commands-behavior)
+        - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
     - [Util Commands](/developer-guide/custom-commands-util)
 - **Development**
     - [Custom Assertions](/development/custom-assertions)
