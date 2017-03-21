@@ -65,7 +65,7 @@ module.exports = {
 };
 ```
 
-In the code above you we are testing 4 different behaviors for a
+In the code above we are testing 4 different behaviors for a
 Homepage Legacy page. Also, you may have noticed that in the end of
 the step we have a `browser.end()`. After we check everything we want
-we need to end the test. That line of code is finishing the test.
+we need to end the test, and that line is doing this.

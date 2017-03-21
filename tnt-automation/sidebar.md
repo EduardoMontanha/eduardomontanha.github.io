@@ -3,11 +3,11 @@
     - [Installation](/install-config/installation)
     - [Configuration](/install-config/configuration)
 - **Developer Guide**
+    - [Custom Assertions](/developer-guide/custom-assertion)
+    - [Util Commands](/developer-guide/custom-commands-util)
     - **Behavior Commands**
         - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
         - [Masthead](/developer-guide/behavior/masthead)
-    - [Custom Assertions](/developer-guide/custom-assertion)
-    - [Util Commands](/developer-guide/custom-commands-util)
 - **Development**
     - [Custom Assertions](/development/custom-assertions)
     - [Custom Commands](/development/custom-commands)
