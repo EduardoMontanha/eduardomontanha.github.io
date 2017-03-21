@@ -3,7 +3,7 @@
     - [Installation](/install-config/installation)
     - [Configuration](/install-config/configuration)
 - **Developer Guide**
-    - [Custom Assertions](/developer-guide/custom-assertion)
+    - [Custom Assertions](/developer-guide/custom-assertions)
     - [Util Commands](/developer-guide/custom-commands-util)
     - **Behavior Commands**
         - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
