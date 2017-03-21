@@ -34,4 +34,22 @@ section for more details.
 
 ---
 
-## How to test things on the page
+## Testing things
+Let's see how you can test things in a page.
+
+You may have notice that in all steps we have a *browser* parameter.<br>
+
+Parameter | Description
+--- | ---
+*browser* | Is a reference for the client.
+
+```javascript
+/* 1234.js */
+
+module.exports = {
+    
+    '#1234 - Recipe B': function (browser) {
+        'use strict';
+    }
+};
+```
