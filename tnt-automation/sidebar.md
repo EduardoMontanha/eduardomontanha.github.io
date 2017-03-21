@@ -5,6 +5,7 @@
 - **Developer Guide**
     - **Behavior Commands**
         - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
+        - [Masthead](/developer-guide/behavior/masthead)
     - [Custom Assertions](/developer-guide/custom-assertion)
     - [Util Commands](/developer-guide/custom-commands-util)
 - **Development**
