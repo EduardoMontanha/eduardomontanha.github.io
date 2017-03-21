@@ -129,3 +129,56 @@ exports.command = function (element) {
         .expect.element(element).text.to.match(/\w+/g);
 };
 ```
+
+---
+
+## Metrics
+### checkForClicktrack
+Check if an element has clickTrack.
+
+Parameter | Type | Description
+--- | --- | ---
+*element* | String | The element (CSS / Xpath) used to locate the element.
+*metric* | String | The metric to be checked.
+
+```javascript
+exports.command = function(element, metric) {
+	var self = this;
+    
+	return self
+        .waitForElementVisible(element)
+        .click(element)
+        .pause(250)
+        .getLog('browser', function(result) {
+            if (result && result.length) {
+                var log = result.filter(function (item) { return /*item.level == "INFO" &&*/ item.message.indexOf('clicked=') > -1 || item.message.indexOf('Clicktrack') > -1; });
+                self.assert.ok(log.pop().message.indexOf(metric) > -1, "Clicktrack " + metric + " was triggered successfully.");
+            }
+        });
+
+};
+```
+
+---
+
+### checkForRef
+Check if an element has ref metric.
+
+Parameter | Type | Description
+--- | --- | ---
+*element* | String | The element (CSS / Xpath) used to locate the element.
+*metric* | String | The metric to be checked.
+
+```javascript
+exports.command = function(element, metric) {
+	var self = this;
+    
+	return self
+        .waitForElementPresent(element)
+        .elements('css selector', element, function (result) {
+            self.elementIdAttribute(result.value[0].ELEMENT, "href", function(links) {
+                self.assert.ok(links.value.indexOf(metric) > -1, "Ref " + metric + " was located successfully.");
+            });
+        });
+};
+```
