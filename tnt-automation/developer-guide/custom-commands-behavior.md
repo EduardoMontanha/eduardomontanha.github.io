@@ -1,4 +1,4 @@
-## Homepage Legacy
+## Commands behavior
 
 ### checkInterstitialBanner
 Test interstitial banner on homepage legacy pages.
