@@ -19,7 +19,7 @@ exports.command = function () {
 !> Commands always return something.
 
 !> Different from *tests* files, these custom commands files will not
-have the `.end()` command at the end. We will only end a test in its
+have the `.end()` command at the end. We will only end a test on its
 own file.
 
 ---
@@ -56,7 +56,7 @@ it will act the same way.<br>
 If you want, you can store `this` inside a variable to make it easier
 to understand.
 
-So, `hasText()` is receiving an element path from *element* parametter,
+So, `hasText()` is receiving an element path from *element* parameter,
 and is checking if the element contains words/characters.<br>
 We are using the native commands of *Nightwatch.js* for this, but you
 can use your owns.
