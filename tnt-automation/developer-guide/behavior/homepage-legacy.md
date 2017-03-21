@@ -1,6 +1,6 @@
 # Homepage Legacy
 
-## checkInterstitialBanner
+## checkInterstitialBanner()
 Test interstitial banner on homepage legacy pages.
 - Check if there is text in the banner
 - Check if there are links present
@@ -37,7 +37,7 @@ exports.command = function () {
 
 ---
 
-## checkLegacyBanner
+## checkLegacyBanner()
 Test if the Flash Banner exists and if it's clickable.
 - Check if banner exists
 - Check if it's clickable
@@ -66,7 +66,7 @@ exports.command = function () {
 
 ---
 
-## checkLegacyContent
+## checkLegacyContent()
 Test section below the tiles/carousel on homepage legacy pages
 - Check if there are 3 images / sections
 - Check if images source link is valid
@@ -129,7 +129,7 @@ exports.command = function () {
 
 ---
 
-## checkLegacyTiles
+## checkLegacyTiles()
 Test tiles images and if they are clickable
 - Check if images source link is valid
 - Check if it's clickable
