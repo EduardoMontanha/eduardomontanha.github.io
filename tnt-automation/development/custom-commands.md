@@ -1,8 +1,8 @@
 # Custom Commands
 When we don't find a native command for what we need, or when we don't
-want to repeat the same sequel of commands many times in the same code
-we can create a *custom command*, that could do what we want and/or
-a sequel of commands.<br>
+want to repeat the same sequel of commands many times we can create a
+*custom command*, that could do what we want and/or a sequel of
+commands.<br>
 <br>
 Both *behavior* and *util* commands use the same basic structure:
 
@@ -14,6 +14,10 @@ exports.command = function () {
 ```
 
 !> Commands always return something.
+
+!> Different from *tests* files, these custom commands files will not
+have the `.end()` command at the end. We will only end a test in its
+own file.
 
 ---
 
@@ -28,4 +32,29 @@ to take parameters to do something.
 
 ## Util
 *Util* commands are here to facilitate our work. And they're usually
-easier to develop.
+less complex than a *behavior* command.
+
+Let's take a look at `hasText()`:
+
+```javascript
+exports.command = function (element) {
+    'use strict';
+    return this
+        .waitForElementPresent(element)
+        .expect.element(element).text.to.match(/\w+/g);
+};
+```
+
+!> As you may know, we call all the commands and assertions from
+`browser` variable/param. `this` will be a reference for `browser`, so
+it will act the same way.<br>
+If you want, you can store `this` inside a variable to make it easier
+to understand.
+
+So, `hasText()` is receiving a path from *element* parametter, and is
+checking if the element contains words/characters.<br>
+We are using the native commands of *Nightwatch.js* for this, but you
+can use your owns.
+
+This is the essential for you to start doing your own *custom*
+commands. Of course, there is a lot more that you can explore about.
