@@ -17,7 +17,7 @@
     <li>Install [Node.js](https://nodejs.org/en/).</li>
 </ol>
 
-## Environmental Variables
+## Environment Variables
 <ol>
     <li>
         Search for *Environment variables* on Windows and click on it<br>
