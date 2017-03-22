@@ -1,15 +1,4 @@
 ## CNTLM
-1 - Download the [CNTLM](http://cntlm.sourceforge.net/).<br>
-2 - Run the file and install on your computer.<br>
-3 - Open the *cntlm.ini* file.<br>
-4 - Replace the *Username* and *Domain* for your Dell username and server (*americas* for example).<br>
-5 - Remove the password.<br>
-6 - Save the file.<br>
-7 - Open the *Command Prompt* and go to the cntlm folder.<br>
-8 - Type `cntlm -H` and then put your Dell password.<br>
-9 - Copy all the response below *Password:* and replace in the *cntlm.ini* file.<br>
-10 - Save and close the file.
-
 <ol>
     <li>Download the [CNTLM](http://cntlm.sourceforge.net/).</li>
     <li>Run the file and install on your computer.</li>
@@ -24,4 +13,47 @@
 </ol>
 
 ## Node.js
-1 - Install [Node.js](https://nodejs.org/en/).
+<ol>
+    <li>Install [Node.js](https://nodejs.org/en/).</li>
+</ol>
+
+## Environmental Variables
+<ol>
+    <li>
+        Search for *Environment variables* on Windows and click on it<br>
+        ![Step 1](/images/install-config/step1.png "Step 1")
+    </li>
+    <li>
+        A window called *System Properties* will open.<br>
+        Click in the button *Environment Variables...*
+        ![Step 2](/images/install-config/step2.png "Step 2")
+    </li>
+    <li>
+        A new window called *Environment Variables* will open.<br>
+        Double click on the *Path* variable inside *System variables* section.
+        ![Step 3](/images/install-config/step3.png "Step 3")
+    </li>
+    <li>
+        Another window called *Edit environment variable* will open. (Yes, it's a lot of windows).<br>
+        Click on *New* button.
+        ![Step 4](/images/install-config/step4.png "Step 4")
+    </li>
+    <li>
+        You will add the *npm* location. You might just have to change the user name.<br>
+        And click *OK*.
+        ![Step 5](/images/install-config/step5.png "Step 5")
+    </li>
+    <li>
+        Click *OK* again.
+        ![Step 6](/images/install-config/step6.png "Step 6")
+    </li>
+    <li>
+        And again.
+        ![Step 7](/images/install-config/step7.png "Step 7")
+    </li>
+    <li>
+        And it's done!
+    </li>
+</ol>
+
+C:\Users\eduardo_montanha\AppData\Roaming\npm
