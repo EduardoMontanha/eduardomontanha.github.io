@@ -40,6 +40,7 @@
     </li>
     <li>
         You will add the *npm* location. You might just have to change the user name.<br>
+        `C:\Users\eduardo_montanha\AppData\Roaming\npm`<br>
         And click *OK*.<br>
         ![Step 5](/images/install-config/step5.png "Step 5")
     </li>
@@ -55,5 +56,3 @@
         And it's done!
     </li>
 </ol>
-
-C:\Users\eduardo_montanha\AppData\Roaming\npm
