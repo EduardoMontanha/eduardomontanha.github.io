@@ -1,3 +1,8 @@
+## Java
+<ol>
+    <li>Install [Java](https://www.java.com).</li>
+</ol>
+
 ## CNTLM
 <ol>
     <li>Download the [CNTLM](http://cntlm.sourceforge.net/).</li>
