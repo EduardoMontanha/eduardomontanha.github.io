@@ -69,6 +69,10 @@ module.exports = {
 };
 ```
 
+To run the test we will open the *Command Prompt* and go to the project
+folder. Then we will type `npm run local`.<br>
+*Nightwatch.js* will open the browser and execute the test.
+
 The test above will be *true* because the paragraph with id *hello*
 contais the word *Hello*.
 
