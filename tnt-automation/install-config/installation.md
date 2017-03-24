@@ -12,11 +12,16 @@
     <li>Remove the password.</li>
     <li>
         Change the proxy to:
-        `Proxy		proxy:80
-        Proxy		proxy.us.dell.com:80`
+        ```
+        Proxy		proxy:80
+        Proxy		proxy.us.dell.com:80
+        ```
     </li>
     <li>
-        Verify if the *Listen* is `Listen		53128`.
+        Verify if the *Listen* is like:
+        ```
+        Listen		53128
+        ```
     </li>
     <li>Save the file.</li>
     <li>Open the *Command Prompt* and go to the cntlm folder.</li>
