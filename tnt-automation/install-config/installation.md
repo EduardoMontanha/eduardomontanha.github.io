@@ -11,15 +11,15 @@
     <li>Replace the *Username* and *Domain* for your Dell username and server (*americas* for example).</li>
     <li>Remove the password.</li>
     <li>
-        Change the proxy to:
-        ```
+        Change the proxy to:<br>
+        ```text
         Proxy		proxy:80
         Proxy		proxy.us.dell.com:80
         ```
     </li>
     <li>
-        Verify if the *Listen* is like:
-        ```
+        Verify if the *Listen* is like:<br>
+        ```text
         Listen		53128
         ```
     </li>
