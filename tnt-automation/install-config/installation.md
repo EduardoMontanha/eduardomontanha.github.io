@@ -4,11 +4,11 @@
 </ol>
 
 ## CNTLM
- 1. Download the [CNTLM](http://cntlm.sourceforge.net/).<br>
- 2. Run the file and install on your computer.<br>
- 3. Open the *cntlm.ini* file.<br>
- 4. Replace the *Username* and *Domain* for your Dell username and server (*americas* for example).<br>
- 5. Remove the password.
+1 Download the [CNTLM](http://cntlm.sourceforge.net/).<br>
+2 Run the file and install on your computer.<br>
+3 Open the *cntlm.ini* file.<br>
+4 Replace the *Username* and *Domain* for your Dell username and server (*americas* for example).<br>
+5 Remove the password.
 
 ```txt
 Username	username
@@ -16,23 +16,23 @@ Domain		americas
 Password	
 ```
 
- 6. Change the proxy
+6 Change the proxy
 
 ```txt
 Proxy		proxy:80
 Proxy		proxy.us.dell.com:80
 ```
 
- 7. Change the *Listen*
+7 Change the *Listen*
 
 ```txt
 Listen		53128
 ```
 
- 8. Save the file.<br>
- 9. Open the *Command Prompt* and go to the cntlm folder.<br>
-10. Type `cntlm -H` and then put your Dell password.<br>
-11. Copy all the response below *Password:* and replace in the *cntlm.ini* file.
+8 Save the file.<br>
+9 Open the *Command Prompt* and go to the cntlm folder.<br>
+10 Type `cntlm -H` and then put your Dell password.<br>
+11 Copy all the response below *Password:* and replace in the *cntlm.ini* file.
 
 ```txt
 PassLM          7488525EA80B9BAS93JFEA30F80D7E5D
