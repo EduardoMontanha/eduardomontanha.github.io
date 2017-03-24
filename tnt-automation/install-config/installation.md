@@ -39,7 +39,7 @@
 5 Remove the password.
 
 ```txt
-Username	eduardo_montanha
+Username	username
 Domain		americas
 Password	
 ```
@@ -65,7 +65,7 @@ Listen		53128
 ```txt
 PassLM          7488525EA80B9BAS93JFEA30F80D7E5D
 PassNT          5CF77CC7B88CFB015S8E6FD2D2F2EB51
-PassNTLMv2      A1FCA81S532WA4GE50912FB8A2E860CB    # Only for user 'eduardo_montanha', domain 'americas'
+PassNTLMv2      A1FCA81S532WA4GE50912FB8A2E860CB    # Only for user 'username', domain 'americas'
 ```
 
 12 Save and close the file.
