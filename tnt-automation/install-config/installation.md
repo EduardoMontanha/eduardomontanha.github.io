@@ -13,7 +13,7 @@
     <li>
         Change the proxy to:
         
-        ```text
+        ```txt
         Proxy		proxy:80
         Proxy		proxy.us.dell.com:80
         ```
@@ -21,7 +21,7 @@
     <li>
         Verify if the *Listen* is like:
         
-        ```text
+        ```txt
         Listen		53128
         ```
     </li>
