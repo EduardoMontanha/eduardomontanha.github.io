@@ -32,6 +32,16 @@
     <li>Save and close the file.</li>
 </ol>
 
+```txt
+Proxy		proxy:80
+Proxy		proxy.us.dell.com:80
+```
+
+```text
+Proxy		proxy:80
+Proxy		proxy.us.dell.com:80
+```
+
 ## Node.js
 <ol>
     <li>Install [Node.js](https://nodejs.org/en/).</li>
