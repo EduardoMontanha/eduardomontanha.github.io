@@ -8,7 +8,7 @@
 2 - Run the file and install on your computer.<br>
 3 - Open the *cntlm.ini* file.<br>
 4 - Replace the *Username* and *Domain* for your Dell username and server (*americas* for example).<br>
-5 - Remove the password.
+5 - Password must be blank.
 
 ```txt
 Username	username
