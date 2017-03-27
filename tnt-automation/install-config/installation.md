@@ -46,3 +46,9 @@ PassNTLMv2      A1FCA81S532WA4GE50912FB8A2E860CB    # Only for user 'username', 
 <ol>
     <li>Install [Node.js](https://nodejs.org/en/).</li>
 </ol>
+
+## Adobe Flash Player
+*This step is necessary to see some banners and content on Nightwatch.js*
+<ol>
+    <li>On Fiferox you will download the [Adobe Flash Player](https://get.adobe.com/br/flashplayer/)</li>
+</ol>
