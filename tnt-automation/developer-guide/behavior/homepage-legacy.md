@@ -9,29 +9,24 @@ Test interstitial banner on homepage legacy pages.
 exports.command = function () {
     'use strict';
     var self = this,
-        time = 3000,
         banner = "#revidHeader .custHelp";
     
     return self
         .hasText(banner + " .help")
         .elements("css selector", banner + " a", function (result) {
             result.value.map(function (link) {
-                
-                self.elementIdAttribute(link.ELEMENT, "href", function (href) {
+                self
+                    .elementIdAttribute(link.ELEMENT, "href", function (href) {
                         if (href.value !== null) {
                             var pattern = /(https?:\/\/)?(www\.)?[\-a-zA-Z0-9:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9:%_\+.~#?&\/\/=]*)/g;
-                            
                             self.assert.ok(pattern.test(href.value), "Link has a valid URL");
                         }
+                    })
+                    .elementIdDisplayed(link.ELEMENT, function (result) {
+                        self.assert.ok(result.value, "Link is visible");
                     });
             });
-        })
-        //Manage Cookies
-        /*.waitForElementPresent(".custHelp .premier a[href^='#']")
-        .click(".custHelp .premier a[href^='#']")
-        .pause(time)
-        .waitForElementPresent("#ens_pr_dialog")
-        .assert.visible("#ens_pr_dialog")*/;
+        });
 };
 ```
 
