@@ -35,6 +35,8 @@ Listen		53128
 11 - Copy all the response below *Password:* and replace in the *cntlm.ini* file.
 
 ```txt
+/* Example */
+
 PassLM          7488525EA80B9BAS93JFEA30F80D7E5D
 PassNT          5CF77CC7B88CFB015S8E6FD2D2F2EB51
 PassNTLMv2      A1FCA81S532WA4GE50912FB8A2E860CB    # Only for user 'username', domain 'americas'
@@ -50,5 +52,5 @@ PassNTLMv2      A1FCA81S532WA4GE50912FB8A2E860CB    # Only for user 'username', 
 ## Adobe Flash Player
 *This step is necessary to see some banners and content on Nightwatch.js*
 <ol>
-    <li>On Fiferox you will download the [Adobe Flash Player](https://get.adobe.com/br/flashplayer/)</li>
+    <li>Download and install [Adobe Flash Player](https://get.adobe.com/br/flashplayer/)</li>
 </ol>
