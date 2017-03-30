@@ -51,7 +51,7 @@ Let's do a simple test considering the following *HTML*:
 </body>
 ```
 
-To check the test of the first paragraph we will have to do something
+To check the text of the first paragraph we will have to do something
 like this:
 
 ```javascript
