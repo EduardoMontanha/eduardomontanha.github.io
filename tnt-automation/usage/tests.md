@@ -62,7 +62,7 @@ module.exports = {
     '#1234 - Recipe B': function (browser) {
         'use strict';
         browser
-            .url("some url...")
+            .url("url of the page we want to test")
             .waitForElementPresent("#hello")
             .expect.element("#hello").text.to.contain("Hello")
             .end();
