@@ -74,6 +74,9 @@ To run the test we will open the *Command Prompt* and go to the project
 folder. Then we will type `npm run local`.<br>
 *Nightwatch.js* will open the browser and execute the test.
 
+If you want to eun just one test file, instead of run all of them, you
+can use `npm run local --tests tests\1234.js`.
+
 The test above will be *true* because the paragraph with id *hello*
 contais the word *Hello*.
 
