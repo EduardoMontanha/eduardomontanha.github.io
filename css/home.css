@@ -85,32 +85,23 @@ main h2 {
 
 /* IT */
 #dev {
-    background-color: #BDC3C7;
+    background-color: #2980B9;
     font-family: monospace;
     font-size: 1.4rem;
-}
-#dev:hover {
-    background-color: #2980B9;
 }
 
 /* Martial Arts */
 #ma {
-    background-color: #BDC3C7;
+    background-color: #C0392B;
     font-family: "displayMartial", serif;
     font-size: 1.2rem;
-}
-#ma:hover {
-    background: #C0392B;
 }
 
 /* Music */
 #mu {
-    background-color: #BDC3C7;
+    background-color: #F39C12;
     font-family: "handMusic", cursive;
     font-size: 2rem;
-}
-#mu:hover {
-    background: #F39C12;
 }
 
 /* ########################## */
@@ -147,5 +138,22 @@ footer {
     
     main section {
         height: 80vh;
+    }
+    
+    /* Dev | Martial Arts | Music */
+    #dev,#ma, #mu {
+        background-color: #BDC3C7;
+    }
+    
+    #dev:hover {
+        background-color: #2980B9;
+    }
+    
+    #ma:hover {
+        background: #C0392B;
+    }
+    
+    #mu:hover {
+        background: #F39C12;
     }
 }
