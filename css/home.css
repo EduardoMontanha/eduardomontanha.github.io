@@ -49,6 +49,7 @@ main {
 }
 
 main section {
+    min-height: 220px;
     height: 30vh;
     flex: 1;
     transition: all 200ms ease-in;
