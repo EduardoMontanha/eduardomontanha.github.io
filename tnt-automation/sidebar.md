@@ -1,4 +1,3 @@
-- [Changelog](/changelog)
 - **Install and Config**
     - [Installation](/install-config/installation)
     - [Configuration](/install-config/configuration)
