@@ -77,10 +77,10 @@ Then *Nightwatch.js* will open the browser and execute the test.
 ```txt
 /* Command Prompt */
 
-npm run local //Run all the tests on your computer inside "tests" folder
-npm run local --tests tests\1234.js //Run just one test file
-npm run local --tests tests\1234.js --testcase "1234 - Recipa A" //Run just one step of one test file
-npm run remote //Run all the tests inside "tests" folder on BrowserStack Automate. Only works in the VM
+npm run local //Run all tests
+npm run local --tests tests\1234.js //Run just one test
+npm run local --tests tests\1234.js --testcase "1234 - Recipe A" //Run just one step
+npm run remote //Run all tests inside on BrowserStack Automate. Only works in VM
 ```
 
 The test above will be *true* because the paragraph with id *hello*
