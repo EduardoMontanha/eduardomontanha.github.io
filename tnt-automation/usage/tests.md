@@ -34,7 +34,7 @@ section for more details.
 
 ---
 
-## Testing stuff in the page
+## Testing pages
 Let's see how you can test things in a page.
 
 You may have noticed that all steps have a parameter called *browser*,
@@ -71,11 +71,17 @@ module.exports = {
 ```
 
 To run the test we will open the *Command Prompt* and go to the project
-folder. Then we will type `npm run local`.<br>
-*Nightwatch.js* will open the browser and execute the test.
+folder. Now we will type one of the commands below.<br>
+Then *Nightwatch.js* will open the browser and execute the test.
 
-If you want to eun just one test file, instead of run all of them, you
-can use `npm run local --tests tests\1234.js`.
+```txt
+/* Command Prompt */
+
+npm run local //Run all the tests on your computer inside "tests" folder
+npm run local --tests tests\1234.js //Run just one test file
+npm run local --tests tests\1234.js --testcase "1234 - Recipa A" //Run just one step of one test file
+npm run remote //Run all the tests inside "tests" folder on BrowserStack Automate. Only works in the VM
+```
 
 The test above will be *true* because the paragraph with id *hello*
 contais the word *Hello*.
