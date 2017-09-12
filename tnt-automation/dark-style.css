@@ -728,7 +728,7 @@ body {
 }
 .markdown-section code,
 .markdown-section pre {
-    background-color: #282828;
+    background-color: #1D1F21;
     font-family: Roboto Mono, Monaco, courier, monospace
 }
 .markdown-section pre {
@@ -747,7 +747,7 @@ body {
 .token.comment,
 .token.doctype,
 .token.prolog {
-    color: #8e908c
+    color: #767676;
 }
 .token.namespace {
     opacity: .7
@@ -756,8 +756,9 @@ body {
 .token.number {
     color: #c76b29
 }
-.token.punctuation {
-    color: #525252
+.token.punctuation,
+.token.operator {
+    color: #DDDDDD;
 }
 .token.property {
     color: #c08b30
@@ -789,7 +790,7 @@ body {
     color: var(--theme-color, #ea6f5a)
 }
 .token.keyword {
-    color: #e96900
+    color: #6C9EF8 
 }
 .token.atrule,
 .token.regex,
