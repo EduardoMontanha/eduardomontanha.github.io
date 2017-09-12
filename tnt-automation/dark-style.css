@@ -359,7 +359,7 @@ body.sticky .sidebar-toggle {
 .markdown-section p.tip:before {
     background-color: #f66;
     border-radius: 100%;
-    color: #3f3f3f;
+    color: #DDDDDD;
     content: "!";
     font-family: Dosis, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
     font-size: 14px;
@@ -779,7 +779,7 @@ body {
     color: #6679cc
 }
 .token.attr-name {
-    color: #2973b7
+    color: #85A300;
 }
 .language-css .token.string,
 .style .token.string,
@@ -791,8 +791,8 @@ body {
 .token.control,
 .token.directive,
 .token.unit {
-    color: #ea6f5a;
-    color: var(--theme-color, #ea6f5a)
+    color: #D89333;
+    color: var(--theme-color, #D89333);
 }
 .token.keyword {
     color: #6C9EF8 
@@ -870,7 +870,7 @@ pre:after {
 }
 .markdown-section p.tip {
     background-color: #282828;
-    color: #657b83
+    color: #DDDDDD;
 }
 input[type=search] {
     background: #4f4f4f;
