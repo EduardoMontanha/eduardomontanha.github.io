@@ -20,12 +20,11 @@ a {
     color: #FFF;
 }
 
-header {
+header, footer {
     height: 10vh;
     display: flex;
     align-items: center;
-    background: #200122;
-    background: linear-gradient(to left, #6f0000, #200122);
+    background: #F39C12;
     color: #FFF;
 }
 
@@ -109,13 +108,7 @@ main h2 {
 /* Footer Content */
 /* ########################## */
 footer {
-    height: 10vh;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-    background: #200122;
-    background: linear-gradient(to left, #6f0000, #200122);
-    color: #FFF;
 }
 
 #tnt {
@@ -141,9 +134,20 @@ footer {
         height: 80vh;
     }
     
+    main h2 {
+        color: #999;
+        transition: all 200ms ease-in;
+    }
+    
     /* Dev | Martial Arts | Music */
     #dev,#ma, #mu {
-        background-color: #BDC3C7;
+        background-color: #E8E8E8;
+    }
+    
+    #dev:hover h2,
+    #ma:hover h2,
+    #mu:hover h2 {
+        color: #FFF;
     }
     
     #dev:hover {
