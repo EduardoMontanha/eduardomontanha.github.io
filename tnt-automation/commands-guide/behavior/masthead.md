@@ -17,54 +17,65 @@ Test masthead behavior on Homepage Legacy pages
 ```javascript
 exports.command = function () {
     'use strict';
-    var self = this,
-        time = 5000,
-        logo = "#revidHeader span.mhLogo img",
-        tier1Links = "#tr1 .t1Nav > li",
-        search = "#searchinput",
-        searchBtn = ".mhSearch button",
-        searchText = "inspiron";
-    
-    return self
-        //Check Logo
-        .waitForElementPresent(logo)
-        .assert.validUrl(logo, "src", "http://i.dell.com/images/global/brand/ui/logo-wt-bl.png")
-        .assert.visible(logo)
+    var self = this;
         
+    //Check Logo
+    var logo = "#revidHeader span.mhLogo img";
+    self
+        .waitForElementPresent(logo)
+        .verify.validUrl(logo, "src", "http://i.dell.com/images/global/brand/ui/logo-wt-bl.png")
+        .verify.visible(logo);
+    
+    
+    //Test search bar
+    var search = "#searchinput",
+        searchBtn = ".mhSearch button",
+        searchText = "inspiron",
+        time = 5000;
+    self
         //Testing search clicking on Search button
         .waitForElementPresent(search)
-        .assert.visible(search)
+        .verify.visible(search)
         .click(search)
         .keys(searchText)
-        .assert.visible(searchBtn)
+        .verify.visible(searchBtn)
         .click(searchBtn)
         .pause(time)
-        .assert.value("#search-next-search-box", searchText)
+        .verify.value("#search-next-search-box", searchText)
         .back()
         //Testing search pressing ENTER button
         .waitForElementPresent(search)
-        .assert.visible(search)
+        .verify.visible(search)
         .click(search)
         .keys(searchText)
         .keys(self.Keys.ENTER)
         .pause(time)
-        .assert.value("#search-next-search-box", searchText)
-        .back()
-        
-        //Check Tiers Links
+        .verify.value("#search-next-search-box", searchText)
+        .back();
+    
+    
+    //Check Tiers Links
+    var tier1Links = "#tr1 .t1Nav > li";
+    self
         .waitForElementPresent(tier1Links)
-        .elements("css selector", tier1Links + " > .tierLink a", function (result) {
+        .elements("css selector", tier1Links + " > .tierLink a", function (links) {
             
-            result.value.map(function (v, index) {
+            links.value.map(function (link) {
                 self
-                    .elementIdAttribute(v.ELEMENT, 'href', function (res) {
-                        // true
-                        console.log(res.value);
+                    .elementIdAttribute(link.ELEMENT, 'href', function (href) {
+                        self.verify.validUrl("#for_homeMenu > .tierLink a", "href");
+                        //self.verify.validUrl(href);
+                        //self.verify.validUrl(href.value, 'href');
                     })
-                    .elementIdText(v.ELEMENT, function (res) {
-                        self.assert.ok(/\w+/g.test(res.value) === true, "Element contains text.");
+                    .elementIdText(link.ELEMENT, function (res) {
+                        self.verify.ok(/\w+/g.test(res.value) === true, "Element contains text.");
                     });
             });
         });
+    
+    //Check My Account Link
+    
+    
+    return self;
 };
 ```
