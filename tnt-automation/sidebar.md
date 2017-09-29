@@ -8,6 +8,7 @@
         - [Category](commands-guide/behavior/category)
         - [Homepage Legacy](/commands-guide/behavior/homepage-legacy)
         - [Masthead](/commands-guide/behavior/masthead)
+        - [SSB](/commands-guide/behavior/ssb)
 - **Development**
     - [Custom Assertions](/development/custom-assertions)
     - [Custom Commands](/development/custom-commands)
