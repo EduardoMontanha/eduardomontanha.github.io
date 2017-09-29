@@ -14,36 +14,24 @@ Parameter | Type | Description
 var util = require('util');
 exports.assertion = function (selector, attr, url) {
     'use strict';
-    
+
     /**
      * The message which will be used in the test output and
      * inside the XML reports
      * @type {string}
      */
     var MSG_ELEMENT_NOT_FOUND = 'Testing if element <%s> "%s" attribute contains a valid url. ' +
-        'Element could not be located.',
-        msgFragments = "";
-    
-    if (Array.isArray(url)) {
-        for (var i = 0; i < url.length; i++) {
-            msgFragments += url[i];
-            if (i !== url.length - 1) {
-                msgFragments += ", ";
-            }
-        }
-    } else {
-        msgFragments = url;
-    }
-    
+        'Element could not be located.';
+
     this.message = util.format('Testing if element <%s> "%s" attribute contains a valid url.', selector, attr);
-    
+
     /**
      * A value to perform the assertion on. If a function is
      * defined, its result will be used.
      * @type {function|*}
      */
     this.expected = true;
-    
+
     /**
      * The method which performs the actual assertion. It is
      * called with the result of the value method as the argument.
@@ -66,7 +54,7 @@ exports.assertion = function (selector, attr, url) {
             return pattern.test(value);
         }
     };
-    
+
     this.failure = function (result) {
         var failed = result === false || (result && result.status === -1);
         if (failed) {
@@ -74,7 +62,7 @@ exports.assertion = function (selector, attr, url) {
         }
         return failed;
     };
-    
+
     /**
      * The method which returns the value to be used on the
      * assertion. It is called with the result of the command's
@@ -84,14 +72,13 @@ exports.assertion = function (selector, attr, url) {
     this.value = function (result) {
         return result.value;
     };
-    
+
     /**
      * Performs a protocol command/action and its result is
      * passed to the value method via the callback argument.
      * @type {function}
      */
     this.command = function (callback) {
-        
         return this.api.getAttribute(selector, attr, callback);
     };
 };
