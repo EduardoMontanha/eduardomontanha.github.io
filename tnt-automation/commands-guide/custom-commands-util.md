@@ -22,40 +22,40 @@ exports.command = function (val1, val2) {
         
         if (pricePattern.test(val1) && pricePattern.test(val2)) {
             
-            return self.assert.ok(val1 === val2, message);
+            return self.verify.ok(val1 === val2, message);
             
         } else if (pricePattern.test(val1)) {
             
             return self
                 .getPrice(val2, function (result) {
-                    return self.assert.ok(val1 === result, message);
+                    return self.verify.ok(val1 === result, message);
                 }, true);
             
         } else {
             
             return self
                 .getPrice(val1, function (result) {
-                    return self.assert.ok(val2 === result, message);
+                    return self.verify.ok(val2 === result, message);
                 }, true);
             
         }
         
     } else if (typeOfVal1 === 'number' && typeOfVal2 === 'number') {
         
-        return self.assert.ok(val1 === val2, message);
+        return self.verify.ok(val1 === val2, message);
         
     } else if (typeOfVal1 === 'string' && typeOfVal2 === 'number') {
         
         if (pricePattern.test(val1)) {
             
             price = parseFloat(val1.replace("$", ""));
-            return self.assert.ok(price === val2, message);
+            return self.verify.ok(price === val2, message);
             
         } else {
             
             return self
                 .getPrice(val1, function (result) {
-                    return self.assert.ok(val2 === result, message);
+                    return self.verify.ok(val2 === result, message);
                 });
             
         }
@@ -65,13 +65,13 @@ exports.command = function (val1, val2) {
         if (pricePattern.test(val2)) {
             
             price = parseFloat(val2.replace("$", ""));
-            return self.assert.ok(price === val1, message);
+            return self.verify.ok(price === val1, message);
             
         } else {
             
             return self
                 .getPrice(val2, function (result) {
-                    return self.assert.ok(val1 === result, message);
+                    return self.verify.ok(val1 === result, message);
                 });
             
         }
@@ -152,10 +152,9 @@ exports.command = function(element, metric) {
         .getLog('browser', function(result) {
             if (result && result.length) {
                 var log = result.filter(function (item) { return /*item.level == "INFO" &&*/ item.message.indexOf('clicked=') > -1 || item.message.indexOf('Clicktrack') > -1; });
-                self.assert.ok(log.pop().message.indexOf(metric) > -1, "Clicktrack " + metric + " was triggered successfully.");
+                self.verify.ok(log.pop().message.indexOf(metric) > -1, "Clicktrack " + metric + " was triggered successfully.");
             }
         });
-
 };
 ```
 
@@ -177,7 +176,7 @@ exports.command = function(element, metric) {
         .waitForElementPresent(element)
         .elements('css selector', element, function (result) {
             self.elementIdAttribute(result.value[0].ELEMENT, "href", function(links) {
-                self.assert.ok(links.value.indexOf(metric) > -1, "Ref " + metric + " was located successfully.");
+                self.verify.ok(links.value.indexOf(metric) > -1, "Ref " + metric + " was located successfully.");
             });
         });
 };
