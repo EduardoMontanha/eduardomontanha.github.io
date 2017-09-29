@@ -19,11 +19,11 @@ exports.command = function () {
                     .elementIdAttribute(link.ELEMENT, "href", function (href) {
                         if (href.value !== null) {
                             var pattern = /(https?:\/\/)?(www\.)?[\-a-zA-Z0-9:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9:%_\+.~#?&\/\/=]*)/g;
-                            self.assert.ok(pattern.test(href.value), "Link has a valid URL");
+                            self.verify.ok(pattern.test(href.value), "Link has a valid URL");
                         }
                     })
                     .elementIdDisplayed(link.ELEMENT, function (result) {
-                        self.assert.ok(result.value, "Link is visible");
+                        self.verify.ok(result.value, "Link is visible");
                     });
             });
         });
@@ -43,17 +43,17 @@ exports.command = function () {
     var self = this,
         banner = ".flashContentDiv",
         currentUrl;
-    
+        
     return self
         .waitForElementPresent(banner)
         .url(function (result) {
             currentUrl = result.value;
         })
-        .assert.visible(banner)
+        .verify.visible(banner)
         .click(banner)
         .pause(2000)
         .url(function (result) {
-            self.assert.ok(result.value !== currentUrl, "Banner is clickable");
+            self.verify.ok(result.value !== currentUrl, "Banner is clickable");
         })
         .back();
 };
@@ -74,12 +74,12 @@ exports.command = function () {
         sections = "#column3 .fragCntBrdFull",
         
         hasText = function (text, msg) {
-            self.assert.ok(/\w+/g.test(text), msg);
+            self.verify.ok(/\w+/g.test(text), msg);
         },
         
         validUrl = function (url, msg) {
             var pattern = /(https?:\/\/)?(www\.)?[\-a-zA-Z0-9:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9:%_\+.~#?&\/\/=]*)/g;
-            self.assert.ok(pattern.test(url), msg);
+            self.verify.ok(pattern.test(url), msg);
         };
     
     return self
@@ -96,7 +96,7 @@ exports.command = function () {
                             })
                             //Check if image is visible
                             .elementIdDisplayed(img.value.ELEMENT, function (isDisplayed) {
-                                self.assert.ok(isDisplayed.value, "Image is visible.");
+                                self.verify.ok(isDisplayed.value, "Image is visible.");
                             });
                     })
                     //Check section links
@@ -113,7 +113,7 @@ exports.command = function () {
                                 })
                                 //Check if link is visible
                                 .elementIdDisplayed(link.ELEMENT, function (isDisplayed) {
-                                    self.assert.ok(isDisplayed.value, "Link is visible.");
+                                    self.verify.ok(isDisplayed.value, "Link is visible.");
                                 });
                         });
                     });
@@ -135,14 +135,15 @@ exports.command = function () {
     var self = this,
         time = 5000,
         tilesArea = "#uk-genhomepage-banners_ph",
-        currentUrl,
         
         validUrl = function (url, msg) {
             var pattern = /(https?:\/\/)?(www\.)?[\-a-zA-Z0-9:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9:%_\+.~#?&\/\/=]*)/g;
-            self.assert.ok(pattern.test(url), msg);
+            self.verify.ok(pattern.test(url), msg);
         },
         
-        checkTiles = function (result) {
+        verifyTiles = function (result, checkForWork) {
+            var isForWork = false;
+            
             result.value.map(function (tile) {
                 
                 self
@@ -151,6 +152,10 @@ exports.command = function () {
                             //Check tile url
                             .elementIdAttribute(tileLink.value.ELEMENT, "href", function (url) {
                                 validUrl(url.value, "Tile link is valid");
+                                
+                                if (!isForWork) {
+                                    isForWork = /(s=bsd|business|bsd)/g.test(url.value);
+                                }
                             });
                     })
                     .elementIdElement(tile.ELEMENT, "css selector", "img", function (tileLink) {
@@ -161,30 +166,61 @@ exports.command = function () {
                             })
                             //Check if image is being displayed
                             .elementIdDisplayed(tileLink.value.ELEMENT, function (isDisplayed) {
-                                self.assert.ok(isDisplayed.value, "Tile image are been displayed");
+                                self.verify.ok(isDisplayed.value, "Tile image are been displayed");
                             });
                     });
             });
+            
+            if (checkForWork) {
+                self.perform(function () {
+                    self.verify.ok(isForWork, "Tiles are from For Work segment");
+                });
+            } else {
+                self.perform(function () {
+                    if (isForWork) {
+                        self.verify.ok(isForWork, "Tiles are from For Work segment");
+                    } else {
+                        self.verify.ok(!isForWork, "Tiles are from For Home segment");
+                    }
+                });
+            }
+        },
+        
+        checkTiles = function (checkForWork) {
+            self
+                //Tiles first row
+                .elements("css selector", tilesArea + " .gridCell", function (result) {
+                    verifyTiles(result, checkForWork);
+                })
+                //Tiles second row
+                .elements("css selector", tilesArea + " .gridCellAlt", function (result) {
+                    verifyTiles(result, checkForWork);
+                });
         };
     
-    return self
+    self
+        //Click on For Home product and then come back to Homepage
         .waitForElementPresent("#for_homeMenu > .subNav .tier2 #for_homeMenu0")
         .click("#for_homeMenu")
-        .click("#for_homeMenu0")
+        .click("#for_homeMenu0 .mNav")
         .pause(time)
         .back()
         .pause(time)
         .waitForElementPresent(tilesArea)
-        .url(function (result) {
-            currentUrl = result.value;
+        .perform(function () {
+            checkTiles();
         })
-        //Tiles first row
-        .elements("css selector", tilesArea + " .gridCell", function (result) {
-            checkTiles(result);
-        })
-        //Tiles second row
-        .elements("css selector", tilesArea + " .gridCellAlt", function (result) {
-            checkTiles(result);
+        //Click on For Work product and then come back to Homepage
+        .click("#for_smbMenu")
+        .click("#for_smbMenu1 .mNav")
+        .pause(time)
+        .back()
+        .pause(time)
+        .waitForElementPresent(tilesArea)
+        .perform(function () {
+            checkTiles(true); //If true, it will check for For Work segment tiles
         });
+    
+    return self;
 };
 ```

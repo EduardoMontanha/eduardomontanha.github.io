@@ -1,6 +1,6 @@
 # Category
 
-## categoryTabs
+## checkTabs
 Test tiles for Desktops and Laptops category pages
 - Click on each tab
 - Test if the right element is being displayed
