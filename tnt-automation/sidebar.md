@@ -1,9 +1,9 @@
 - **Install and Config**
     - [Installation](/install-config/installation)
     - [Configuration](/install-config/configuration)
-- **Developer Guide**
-    - [Custom Assertions](/developer-guide/custom-assertions)
-    - [Util Commands](/developer-guide/custom-commands-util)
+- **Commands Guide**
+    - [Custom Assertions](/commands-guide/custom-assertions)
+    - [Util Commands](/commands-guide/custom-commands-util)
     - **Behavior Commands**
         - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
         - [Masthead](/developer-guide/behavior/masthead)
