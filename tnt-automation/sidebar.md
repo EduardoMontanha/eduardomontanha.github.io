@@ -5,8 +5,9 @@
     - [Custom Assertions](/commands-guide/custom-assertions)
     - [Util Commands](/commands-guide/custom-commands-util)
     - **Behavior Commands**
-        - [Homepage Legacy](/developer-guide/behavior/homepage-legacy)
-        - [Masthead](/developer-guide/behavior/masthead)
+        - [Category](commands-guide/behavior/category)
+        - [Homepage Legacy](/commands-guide/behavior/homepage-legacy)
+        - [Masthead](/commands-guide/behavior/masthead)
 - **Development**
     - [Custom Assertions](/development/custom-assertions)
     - [Custom Commands](/development/custom-commands)
