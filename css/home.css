@@ -51,7 +51,7 @@ header, footer {
 
 header img {
     max-height: 60%;
-    margin: 0 13vw 0 5vw;
+    margin: 0 30px 0 5vw;
     box-sizing: border-box;
 }
 
@@ -145,10 +145,6 @@ footer {
 
 /* Large Screens */
 @media all and (min-width: 768px) {
-    header img {
-        margin: 0 2vw 0 5vw; 
-    }
-    
     main {
         flex-direction: row;
     }
