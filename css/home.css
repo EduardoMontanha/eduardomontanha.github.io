@@ -6,6 +6,8 @@
          url('../fonts/Marck_Script/MarckScript-Regular.ttf') format('truetype'),
          url('../fonts/Marck_Script/MarckScript-Regular.svg#MarckScript-Regular') format('svg'),
          url('../fonts/Marck_Script/MarckScript-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: "displayMartial";
@@ -15,6 +17,8 @@
          url('../fonts/Underdog/Underdog-Regular.ttf') format('truetype'),
          url('../fonts/Underdog/Underdog-Regular.svg#Underdog-Regular') format('svg'),
          url('../fonts/Underdog/Underdog-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: "handMusic";
@@ -24,6 +28,8 @@
          url('../fonts/Pinyon_Script/PinyonScript.ttf') format('truetype'),
          url('../fonts/Pinyon_Script/PinyonScript.svg#PinyonScript') format('svg'),
          url('../fonts/Pinyon_Script/PinyonScript-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
