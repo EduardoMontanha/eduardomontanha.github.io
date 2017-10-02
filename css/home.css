@@ -51,7 +51,7 @@ header, footer {
 
 header img {
     max-height: 60%;
-    margin: 0 6vw 0 5vw;
+    margin: 0 13vw 0 5vw;
     box-sizing: border-box;
 }
 
@@ -72,7 +72,6 @@ main section {
     min-height: 220px;
     height: 30vh;
     flex: 1;
-    transition: all 200ms ease-in;
 }
 
 main a {
@@ -136,7 +135,6 @@ footer {
     padding: 0.5vh 0.8vw;
     border: 1px solid #FFF;
     border-radius: 3px;
-    transition: all 200ms ease-in;
 }
 
 #tnt:hover {
@@ -147,6 +145,10 @@ footer {
 
 /* Large Screens */
 @media all and (min-width: 768px) {
+    header img {
+        margin: 0 2vw 0 5vw; 
+    }
+    
     main {
         flex-direction: row;
     }
@@ -157,7 +159,6 @@ footer {
     
     main h2 {
         color: #999;
-        transition: all 200ms ease-in;
     }
     
     /* Dev | Martial Arts | Music */
