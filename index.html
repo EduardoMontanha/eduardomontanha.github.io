@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/home.css">
         
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/home.js"></script>
     </head>
     <body>
         <header>
@@ -21,27 +22,33 @@
         <main>
             <section id="dev">
                 <a href="developer.html">
-                    <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/home/dev-icon.png">
+                        <source media="(min-width: 768px)" srcset="img/home/dev-icon-grey.png">
                         <img src="img/home/dev-icon.png" alt="Developer Icon">
-                    </div>
+                    </picture>
                     <h2>Developer<br>Portfolio</h2>
                 </a>
             </section>
             
             <section id="ma">
                 <a href="martial-arts.html">
-                    <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/home/ma-icon.png">
+                        <source media="(min-width: 768px)" srcset="img/home/ma-icon-grey.png">
                         <img src="img/home/ma-icon.png" alt="Martial Arts Icon">
-                    </div>
+                    </picture>
                     <h2>Martial Arts<br>Portifolio</h2>
                 </a>
             </section>
             
             <section id="mu">
                 <a href="music.html">
-                    <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/home/mu-icon.png">
+                        <source media="(min-width: 768px)" srcset="img/home/mu-icon-grey.png">
                         <img src="img/home/mu-icon.png" alt="Music Icon">
-                    </div>
+                    </picture>
                     <h2>Music<br>Portifolio</h2>
                 </a>
             </section>
