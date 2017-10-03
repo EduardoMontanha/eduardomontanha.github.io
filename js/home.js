@@ -6,20 +6,18 @@ let home = {
         
         if ($links.length) {
             
+            let $this, id;
+            
             $links.hover(function () {
                 
-                let $this = $(this),
-                    id = $this.closest("section").attr("id");
+                $this = $(this);
+                id = $this.closest("section").attr("id");
                 
                 $this.find("source[media*='768px']").attr("srcset", function () {
                     return "img/home/" + id + "-icon.png";
                 });
                 
             }, function () {
-                
-                let $this = $(this),
-                    id = $this.closest("section").attr("id");
-                
                 $this.find("source[media*='768px']").attr("srcset", function () {
                     return "img/home/" + id + "-icon-grey.png";
                 });
