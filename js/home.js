@@ -37,7 +37,6 @@ let home = {
     
     init: function () {
         'use strict';
-        
         //Only runs for devices where width is equal or bigger than 768px
         let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         
