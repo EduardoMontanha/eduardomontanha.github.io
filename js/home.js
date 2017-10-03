@@ -22,6 +22,8 @@ let home = {
                     return "img/home/" + id + "-icon-grey.png";
                 });
             });
+            
+            return;
         }
         
         setTimeout(function () {
