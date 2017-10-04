@@ -3,6 +3,7 @@
     - [Configuration](/install-config/configuration)
 - **Server**
     - [Scheduler](/server/scheduler)
+    - [Mailer](/server/mailer)
 - **Custom Commands Guide**
     - [Custom Assertions](/commands-guide/custom-assertions)
     - [Util Commands](/commands-guide/custom-commands-util)
