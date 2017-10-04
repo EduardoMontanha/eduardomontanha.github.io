@@ -1,6 +1,8 @@
 - **Install and Config**
     - [Installation](/install-config/installation)
     - [Configuration](/install-config/configuration)
+- **Server**
+    - [Scheduler](/server/scheduler)
 - **Custom Commands Guide**
     - [Custom Assertions](/commands-guide/custom-assertions)
     - [Util Commands](/commands-guide/custom-commands-util)
