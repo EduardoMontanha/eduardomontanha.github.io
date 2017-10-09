@@ -44,7 +44,7 @@ let home = {
      */
     preload: function () {
         'use strict';
-        let images = new Array(),
+        let images = [],
             imgSrc = [
                 "dev",
                 "ma",
