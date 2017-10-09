@@ -1,5 +1,8 @@
 let home = {
     
+    /**
+     * Change the image when user hovers one of the portfolio links.
+     */
     imageHover: function () {
         'use strict';
         let $links = $("main a");
@@ -35,6 +38,10 @@ let home = {
         }, 200);
     },
     
+    /**
+     * Load images before user interacts with the imageHover function.
+     * This will avoid the flicker the first time user hovers one of the links.
+     */
     preload: function () {
         'use strict';
         let images = new Array(),
@@ -56,9 +63,7 @@ let home = {
         let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         
         if (width >= 768) {
-            //Load images before the request function
             this.preload();
-            //Change image when mouse is hover the link
             this.imageHover();
         }
     }
