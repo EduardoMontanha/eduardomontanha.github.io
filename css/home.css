@@ -67,7 +67,7 @@ header h1 {
 /* ########################## */
 /* Main Content */
 /* ########################## */
-main {
+main nav {
     display: flex;
     flex-direction: column;
 }
@@ -131,7 +131,7 @@ main h2 {
 /* ########################## */
 /* Footer Content */
 /* ########################## */
-footer {
+footer nav {
     padding: 4vh;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ footer {
 
 /* Large Screens */
 @media all and (min-width: 768px) {
-    main {
+    main nav {
         flex-direction: row;
     }
     
@@ -197,7 +197,7 @@ footer {
     }
     
     /* Footer */
-    footer {
+    footer nav {
         height: 10vh;
         padding: 0;
         flex-direction: row;
