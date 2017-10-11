@@ -15,9 +15,16 @@
         <script src="js/jquery.js"></script>
         <script src="js/home.js"></script>
         
-        <!-- For legacy browsers include a Promise polyfill like es6-promise before including jsonld.js -->
-        <script src="js/jsonld/es6-promise.js"></script>
-        <script src="js/jsonld/jsonld.js"></script>
+        <!-- Linked Data with JSON-LD -->
+        <script type="application/ld+json">
+            {
+                “@context”: “http://schema.org”,
+                "@type": "Person",
+                “@id”: “https://www.linkedin.com/in/eduardomontanha/”,
+                “givenName”: “Eduardo”,
+                "familyName": "Montanha",
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -85,17 +92,5 @@
                 </ul>
             </nav>
         </footer>
-        
-        <!-- Linked Data with JSON-LD -->
-        <script type="application/ld+json">
-            {
-                “@context” : “https://schema.org”,
-                "@type": "Person",
-                “@id”: “https://www.linkedin.com/in/eduardomontanha/”,
-                “givenName”: “Eduardo”,
-                "familyName": "Montanha",
-                “homepage”: “https://eduardomontanha.github.io/”,
-            }
-        </script>
     </body>
 </html>
