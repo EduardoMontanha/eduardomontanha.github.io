@@ -18,15 +18,6 @@
         <!-- For legacy browsers include a Promise polyfill like es6-promise before including jsonld.js -->
         <script src="js/jsonld/es6-promise.js"></script>
         <script src="js/jsonld/jsonld.js"></script>
-        <script type="application/ld+json">
-            {
-                “@context” : “http://schema.org”,
-                "@type": "Person",
-                “@id”: “https://www.linkedin.com/in/eduardomontanha/”,
-                “name”: “Eduardo Montanha”,
-                “homepage”: “https://eduardomontanha.github.io/”
-            }
-        </script>
     </head>
     <body>
         <header>
@@ -72,5 +63,16 @@
         <footer>
             <a id="tnt" href="tnt-automation/">TnT Automation</a>
         </footer>
+        
+        <script type="application/ld+json">
+            {
+                “@context” : “https://schema.org”,
+                "@type": "Person",
+                “@id”: “https://www.linkedin.com/in/eduardomontanha/”,
+                “givenName”: “Eduardo”,
+                "familyName": "Montanha",
+                “homepage”: “https://eduardomontanha.github.io/”,
+            }
+        </script>
     </body>
 </html>
