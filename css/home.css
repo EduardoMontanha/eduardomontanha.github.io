@@ -131,11 +131,12 @@ main h2 {
 /* ########################## */
 /* Footer Content */
 /* ########################## */
-footer nav {
+footer {
     padding: 4vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 #tnt {
@@ -150,12 +151,18 @@ footer nav {
     color: #34495E;
 }
 
-.social-media li + li {
-    margin-top: 3vh;
+.social-media li {
+    display: inline-block;
 }
 
+
+.social-media li + li {
+    margin-left: 5vw;
+}
+
+
 .social-media img {
-    height: 10vh;
+    height: 6vh;
 }
 
 
@@ -197,23 +204,17 @@ footer nav {
     }
     
     /* Footer */
-    footer nav {
+    footer {
         height: 10vh;
         padding: 0;
         flex-direction: row;
-        justify-content: space-around;
     }
     
     #tnt {
         margin-bottom: 0;
     }
     
-    .social-media li {
-        display: inline-block;
-    }
-    
     .social-media li + li {
-        margin-top: 0;
         margin-left: 10px;
     }
     
