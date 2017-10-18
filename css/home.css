@@ -45,12 +45,13 @@ a {
 /* Header Content */
 /* ########################## */
 header, footer {
+    height: 10vh;
+    box-sizing: border-box;
     background: #16A085;
     color: #FFF;
 }
 
 header {
-    height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -207,7 +208,6 @@ footer {
     
     /* Footer */
     footer {
-        height: 10vh;
         padding: 0;
         flex-direction: row;
     }

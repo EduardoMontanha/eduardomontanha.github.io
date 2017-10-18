@@ -11,12 +11,13 @@ a {
 /* Header Content */
 /* ########################## */
 header, footer {
+    height: 10vh;
+    box-sizing: border-box;
     background: #2980B9;
     color: #FFF;
 }
 
 header {
-    height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -80,7 +81,6 @@ footer {
 @media all and (min-width: 768px) {
     /* Footer */
     footer {
-        height: 10vh;
         padding: 0;
         flex-direction: row;
     }
