@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header, footer {
+    height: 10vh;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+/* ########################## */
+/* Header Content */
+/* ########################## */
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 60%;
+    margin: 0 30px 0 5vw;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* ########################## */
+/* Footer Content */
+/* ########################## */
+footer {
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-media li {
+    display: inline-block;
+}
+
+
+.social-media li + li {
+    margin-left: 5vw;
+}
+
+
+.social-media img {
+    height: 6vh;
+}
+
+
+/* Large Screens */
+@media all and (min-width: 768px) {
+    /* Footer */
+    footer {
+        padding: 0;
+        flex-direction: row;
+    }
+    
+    .social-media li + li {
+        margin-left: 10px;
+    }
+    
+    .social-media img {
+        height: 4vh;
+    }
+}

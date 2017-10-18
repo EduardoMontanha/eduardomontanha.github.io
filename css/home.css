@@ -32,39 +32,15 @@
     font-style: normal;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-
 /* ########################## */
 /* Header Content */
 /* ########################## */
 header, footer {
-    height: 10vh;
-    box-sizing: border-box;
     background: #16A085;
-    color: #FFF;
-}
-
-header {
-    display: flex;
-    align-items: center;
-}
-
-header img {
-    max-height: 60%;
-    margin: 0 30px 0 5vw;
-    box-sizing: border-box;
 }
 
 header h1 {
     font-family: "Marck Script", cursive;
-    font-size: 1.8rem;
 }
 
 /* ########################## */
@@ -131,43 +107,6 @@ main h2 {
     font-size: 2rem;
 }
 
-/* ########################## */
-/* Footer Content */
-/* ########################## */
-footer {
-    padding: 4vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#tnt {
-    padding: 0.5vh 0.8vw;
-    margin-bottom: 4vh;
-    border: 1px solid #FFF;
-    border-radius: 3px;
-}
-
-#tnt:hover {
-    background-color: #FFF;
-    color: #34495E;
-}
-
-.social-media li {
-    display: inline-block;
-}
-
-
-.social-media li + li {
-    margin-left: 5vw;
-}
-
-
-.social-media img {
-    height: 6vh;
-}
-
 
 /* Large Screens */
 @media all and (min-width: 768px) {
@@ -204,23 +143,5 @@ footer {
     
     #mu:hover {
         background: #F39C12;
-    }
-    
-    /* Footer */
-    footer {
-        padding: 0;
-        flex-direction: row;
-    }
-    
-    #tnt {
-        margin-bottom: 0;
-    }
-    
-    .social-media li + li {
-        margin-left: 10px;
-    }
-    
-    .social-media img {
-        height: 4vh;
     }
 }
