@@ -2,8 +2,7 @@
 Here is the basic structure of a *test*:
 
 ```javascript
-/* 1234.js */
-
+/* globals module */
 module.exports = {
     
     '#1234 - Recipe A': function (browser) {
