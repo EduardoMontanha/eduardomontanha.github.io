@@ -10,7 +10,7 @@
     <dd>Is test running in multiple pages?</dd>
     <dd>Except for tests that have specific pages</dd>
     <dt>Other</dt>
-    <dd>s there any other outstanding reason on the test code to fail the PR?</dd>
+    <dd>Is there any other outstanding reason on the test code to fail the PR?</dd>
 </dl>
 
 ---
