@@ -21,5 +21,5 @@
     - [Tests](/usage/tests)
     - [Page Objects](/usage/page-objects)
 - **Code Review**
-    - [PR Checklist](pr/checklist)
-    - [Good Practices](pr/good-practice)
+    - [PR Checklist](/pr/checklist)
+    - [Good Practices](/pr/good-practice)
