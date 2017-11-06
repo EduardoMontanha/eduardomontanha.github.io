@@ -833,10 +833,10 @@ body {
     border-radius: 2px;
     color: #DDDDDD;
     display: block;
-    font-family: Roboto Mono, Monaco, courier, monospace;
+    font-family: monospace;
     font-size: 12.8px;
-    font-size: .8rem;
-    line-height: inherit;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
     margin: 0 2px;
     max-width: inherit;
     overflow: inherit;
