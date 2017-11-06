@@ -104,7 +104,7 @@ npm run local --tests tests\1234.js --testcase "1234 - Recipe A" //Run just one 
 npm run remote //Run all tests on BrowserStack Automate
 ```
 
-So, you can see now that there is no magic in here. You'll just have
+So, you can see now that there is no magic in here. Now you'll just have
 to explore the native commands to check what you want. And if you don't
 find a command or assertion that fits your necessities you can create
 your own custom commands and assertions.
