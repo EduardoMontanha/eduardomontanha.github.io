@@ -5,7 +5,7 @@ Here is the basic structure of a *test*:
 /* globals module */
 
 //Properties
-var urls = [
+var urls = [ //Where test will run
     "http://www.dell.com/en-us/shop/scc/sc/laptops?~ck=mn",
     "http://www.dell.com/en-us/shop/category/desktops?~ck=mn"
 ];
@@ -19,7 +19,7 @@ module.exports = {
         
         //This will run your test through all urls
         urls.map(function (url) {
-            browser.url(url + "&scrub=1234a");
+            browser.url(url + "&scrub=1234a"); //Adding recipe scrub
             
             category.checkTabs(); //Behavior
         });
@@ -33,7 +33,7 @@ module.exports = {
         
         //This will run your test through all urls
         urls.map(function (url) {
-            browser.url(url + "&scrub=1234b");
+            browser.url(url + "&scrub=1234b"); //Adding recipe scrub
             
             /* Start - Specific recipe changes tests */
             
