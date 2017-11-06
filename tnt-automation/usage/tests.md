@@ -19,7 +19,7 @@ module.exports = {
         
         //This will run your test through all urls
         urls.map(function (url) {
-            browser.url(url);
+            browser.url(url + "&scrub=1234a");
             
             category.checkTabs(); //Behavior
         });
@@ -33,7 +33,7 @@ module.exports = {
         
         //This will run your test through all urls
         urls.map(function (url) {
-            browser.url(url);
+            browser.url(url + "&scrub=1234b");
             
             /* Start - Specific recipe changes tests */
             
