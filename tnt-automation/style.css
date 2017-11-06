@@ -833,7 +833,7 @@ body {
     border-radius: 2px;
     color: #DDDDDD;
     display: block;
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 12.8px;
     font-size: 0.9rem;
     line-height: 1.2rem;
