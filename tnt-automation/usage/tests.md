@@ -55,6 +55,79 @@ section for more details.
 
 ---
 
+## Post-launch Tests
+Code template for post-launched tests.
+
+```javascript
+/* globals module */
+
+//Properties
+var urls = [ //Where test will run
+    "http://www.dell.com/en-us/shop/scc/sc/laptops?~ck=mn",
+    "http://www.dell.com/en-us/shop/category/desktops?~ck=mn"
+];
+
+//Recipes
+var recipeA = function (browser) {
+        //do stuff
+    },
+    
+    recipeB = function (browser) {
+        //do stuff
+    },
+    
+    recipeC = function (browser) {
+        //do stuff
+    };
+
+module.exports = {
+    //Each step should be a different recipe
+    '1234 - Post-Launch': function (browser) {
+        'use strict';
+        var campaign,
+            recipe,
+            category = browser.page.category(); //Reference to page object
+        
+        //This will run your test through all urls
+        urls.map(function (url) {
+            browser.url(url); //Adding recipe scrub
+            
+            if (!campaign || !recipe) {
+                var tntInfo = ".tt_info:not(#tt_info_hpr)";
+                
+                browser
+                    .waitForElementPresent(tntInfo)
+                    .getAttribute(tntInfo, "value", function (result) {
+                        var testData = /(\d{5})\s\-\s(\w)+/g.match(result.value);
+                        campaign = testData[1];
+                        recipe = testData[2].toUpperCase();
+                    });
+            }
+            
+            //This will check which recipe test is running
+            browser.perform(function () {
+                if (campaign == "12345") { //Check campaign ID
+                    if (recipe == "A") {
+                        recipeA(browser);
+                    } else if (recipe == "B") {
+                        recipeB(browser);
+                    } else if (recipe == "C") {
+                        recipeC(browser);
+                    }
+                }
+            });
+            
+            //Run behaviors after all
+            category.checkTabs();
+        });
+        
+        browser.end(); //Must be the last line of each step
+    }
+};
+```
+
+---
+
 ## Testing pages
 You may have noticed that all steps have a parameter called *browser*,
 and it's because *browser* is a reference of the client.
