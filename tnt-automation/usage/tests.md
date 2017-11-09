@@ -126,6 +126,11 @@ module.exports = {
 };
 ```
 
+!> Since we can't pass the scrub for post-launched tests, we will get
+cooked in just one assorted recipe for each time this code runs. So,
+we should run this post-launch code more frequently to assure that we
+pass through all recipes.
+
 ---
 
 ## Testing pages
