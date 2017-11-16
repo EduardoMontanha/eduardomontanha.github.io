@@ -93,6 +93,11 @@ main h2 {
     font-size: 1.4rem;
 }
 
+#dev img {
+    width: 100px;
+    height: 50.7px;
+}
+
 /* Martial Arts */
 #ma {
     background-color: #C0392B;
@@ -100,11 +105,21 @@ main h2 {
     font-size: 1.2rem;
 }
 
+#ma img {
+    width: 89.46px;
+    height: 99.99px;
+}
+
 /* Music */
 #mu {
     background-color: #F39C12;
     font-family: "handMusic", cursive;
     font-size: 2rem;
+}
+
+#mu img {
+    width: 37.3px;
+    height: 99.99px;
 }
 
 
