@@ -33,7 +33,7 @@ browser.getPrice("#selctor", function (price) {
 });
 
 browser.getPrice("#selector", function (price) {
-    //price param will contain the selector's price as String
+    //price param will contain the selector's price as Double
 }, true); // If condition is true, will retur the price as double
 ```
 
