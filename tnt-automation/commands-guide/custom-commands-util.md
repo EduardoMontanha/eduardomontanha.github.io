@@ -9,77 +9,11 @@ Parameter | Type | Description
 *val2* | String / Double | The element (CSS / Xpath) used to locate the element, or the value as string or double.
 
 ```javascript
-exports.command = function (val1, val2) {
-    'use strict';
-    var self = this,
-        message = 'Prices have the same value.',
-        pricePattern = /\$\d+(\,\d+)?(\.\d+)?/g,
-        price = 0,
-        typeOfVal1 = typeof val1,
-        typeOfVal2 = typeof val2;
-    
-    if (typeOfVal1 === 'string' && typeOfVal2 === 'string') {
-        
-        if (pricePattern.test(val1) && pricePattern.test(val2)) {
-            
-            return self.verify.ok(val1 === val2, message);
-            
-        } else if (pricePattern.test(val1)) {
-            
-            return self
-                .getPrice(val2, function (result) {
-                    return self.verify.ok(val1 === result, message);
-                }, true);
-            
-        } else {
-            
-            return self
-                .getPrice(val1, function (result) {
-                    return self.verify.ok(val2 === result, message);
-                }, true);
-            
-        }
-        
-    } else if (typeOfVal1 === 'number' && typeOfVal2 === 'number') {
-        
-        return self.verify.ok(val1 === val2, message);
-        
-    } else if (typeOfVal1 === 'string' && typeOfVal2 === 'number') {
-        
-        if (pricePattern.test(val1)) {
-            
-            price = parseFloat(val1.replace("$", ""));
-            return self.verify.ok(price === val2, message);
-            
-        } else {
-            
-            return self
-                .getPrice(val1, function (result) {
-                    return self.verify.ok(val2 === result, message);
-                });
-            
-        }
-        
-    } else if (typeOfVal1 === 'number' && typeOfVal2 === 'string') {
-        
-        if (pricePattern.test(val2)) {
-            
-            price = parseFloat(val2.replace("$", ""));
-            return self.verify.ok(price === val1, message);
-            
-        } else {
-            
-            return self
-                .getPrice(val2, function (result) {
-                    return self.verify.ok(val1 === result, message);
-                });
-            
-        }
-        
-    } else {
-        throw new Error("The params should be a string or double.");
-    }
-};
+//A few examples
+browser.comparePrices("#selector1", "#selector2");
+browser.comparePrices("#selector", 12.90);
+browser.comparePrices(15.89, "12.90");
+browser.comparePrices("209", "#selector");
 ```
 
 ---
@@ -94,22 +28,13 @@ Parameter | Type | Description
 *condition* | boolean | The condition to check if the price should be returned as String or Double.
 
 ```javascript
-exports.command = function (path, callback, condition) {
-    'use strict';
-    return this
-        .waitForElementPresent(path)
-        .getText(path, function (result) {
-            var price;
-            
-            if (condition) {
-                price = result.value.replace(/(?:[\+|\-]\s?)/g, ""); //Returns a string containnign price like '$49.50'
-            } else {
-                price = parseFloat(result.value.replace(/(?:[\+|\-]\s?)?\$/g, "")); //Returns the result as double
-            }
-            
-            callback(price);
-        });
-};
+browser.getPrice("#selctor", function (price) {
+    //price param will contain the selector's price as String
+});
+
+browser.getPrice("#selector", function (price) {
+    //price param will contain the selector's price as String
+}, true); // If condition is true, will retur the price as double
 ```
 
 ---
@@ -122,12 +47,7 @@ Parameter | Type | Description
 *path* | String | The element (CSS / Xpath) used to locate the element.
 
 ```javascript
-exports.command = function (element) {
-    'use strict';
-    return this
-        .waitForElementPresent(element)
-        .expect.element(element).text.to.match(/\w+/g);
-};
+browser.hasText("#selector");
 ```
 
 ---
@@ -142,20 +62,7 @@ Parameter | Type | Description
 *metric* | String | The metric to be checked.
 
 ```javascript
-exports.command = function(element, metric) {
-	var self = this;
-    
-	return self
-        .waitForElementVisible(element)
-        .click(element)
-        .pause(250)
-        .getLog('browser', function(result) {
-            if (result && result.length) {
-                var log = result.filter(function (item) { return /*item.level == "INFO" &&*/ item.message.indexOf('clicked=') > -1 || item.message.indexOf('Clicktrack') > -1; });
-                self.verify.ok(log.pop().message.indexOf(metric) > -1, "Clicktrack " + metric + " was triggered successfully.");
-            }
-        });
-};
+browser.checkForClicktrack("#selector", "metric_value");
 ```
 
 ---
@@ -169,15 +76,5 @@ Parameter | Type | Description
 *metric* | String | The metric to be checked.
 
 ```javascript
-exports.command = function(element, metric) {
-	var self = this;
-    
-	return self
-        .waitForElementPresent(element)
-        .elements('css selector', element, function (result) {
-            self.elementIdAttribute(result.value[0].ELEMENT, "href", function(links) {
-                self.verify.ok(links.value.indexOf(metric) > -1, "Ref " + metric + " was located successfully.");
-            });
-        });
-};
+browser.checkForRef("#selector", "metric_value");
 ```
