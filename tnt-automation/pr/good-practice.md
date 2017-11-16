@@ -1,5 +1,5 @@
 # Code Good Practices
-Here you can find the code best practices for automation tests.
+Here you can find the best practices for our automation tests.
 
 ## Indent
 Use 4 spaces for indentation
@@ -75,4 +75,57 @@ if (condition) {
 else {
     // ... 
 }
+```
+
+## No Multiple Empty Lines
+Multiple blank lines not allowed.
+```javascript
+//Ok
+var value = "hello world";
+console.log(value);
+
+//Ok
+var value = "hello world";
+
+console.log(value);
+
+//Avoid
+var value = "hello world";
+
+
+console.log(value);
+```
+
+## Operator Linebreak
+For the ternary operator in a multi-line setting, place ? and : on their own lines.
+```javascript
+//Ok
+var location = env.development ? "localhost" : "www.api.com";
+
+//Ok
+var location = env.development
+    ? "localhost"
+    : "www.api.com";
+
+//Avoid
+var location = env.development ?
+  "localhost" :
+  "www.api.com";
+```
+
+## Block Spacing
+Add spaces inside single line blocks.
+```javascript
+function foo () {return true}    // Avoid
+function foo () { return true }  // Ok
+```
+
+## Camelcase
+Use camelcase when naming variables and functions.
+```javascript
+function my_function () { } //Avoid
+function myFunction () { }  //Ok
+
+var my_var = "hello"; //Avoid
+var myVar = "hello";  //Ok
 ```
