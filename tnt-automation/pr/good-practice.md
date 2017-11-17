@@ -129,3 +129,17 @@ function myFunction () { }  //Ok
 var my_var = "hello"; //Avoid
 var myVar = "hello";  //Ok
 ```
+
+## Comma Style
+Commas must be placed at the end of the current line.
+```javascript
+var obj = {
+    foo: "foo"
+    ,bar: "bar"   // ✗ avoid 
+}
+
+var obj = {
+    foo: "foo",
+    bar: "bar"   // ✓ ok 
+}
+```
