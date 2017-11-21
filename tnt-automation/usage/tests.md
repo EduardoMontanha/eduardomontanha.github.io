@@ -68,17 +68,17 @@ var urls = [ //Where test will run
 ];
 
 //Recipes
-var recipeA = function (browser) {
+var recipes = {
+    "A": function (browser) {
         //do stuff
     },
-    
-    recipeB = function (browser) {
+    "B": function (browser) {
         //do stuff
     },
-    
-    recipeC = function (browser) {
+    "C": function (browser) {
         //do stuff
-    };
+    }
+};
 
 module.exports = {
     //Each step should be a different recipe
@@ -86,6 +86,7 @@ module.exports = {
         'use strict';
         var campaign,
             recipe,
+            recipesArr = ["A", "B", "C"],
             category = browser.page.category(); //Reference to page object
         
         //This will run your test through all urls
@@ -98,7 +99,7 @@ module.exports = {
                 browser
                     .waitForElementPresent(tntInfo)
                     .getAttribute(tntInfo, "value", function (result) {
-                        var testData = /(\d{5})\s\-\s(\w)+/g.match(result.value);
+                        var testData = /(\d{5})\s\-\s(\w)+/ig.exec(result.value);
                         campaign = testData[1];
                         recipe = testData[2].toUpperCase();
                     });
@@ -106,13 +107,11 @@ module.exports = {
             
             //This will check which recipe test is running
             browser.perform(function () {
-                if (campaign == "12345") { //Check campaign ID
-                    if (recipe == "A") {
-                        recipeA(browser);
-                    } else if (recipe == "B") {
-                        recipeB(browser);
-                    } else if (recipe == "C") {
-                        recipeC(browser);
+                //Check campaign ID
+                if (campaign == "12345") {
+                    //Check if is a valid Recipe
+                    if (recipesArr.indexOf(recipe) > -1) {
+                        recipes[recipe](browser);
                     }
                 }
             });
