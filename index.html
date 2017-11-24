@@ -13,11 +13,11 @@
         
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/home.css">
+<!--        <link rel="stylesheet" href="css/home.css">-->
         <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
         
-        <script src="js/jquery.js"></script>
-        <script src="js/home.js"></script>
+<!--        <script src="js/jquery.js"></script>-->
+<!--        <script src="js/home.js"></script>-->
         
         <!-- Linked Data with JSON-LD -->
         <script type="application/ld+json">
@@ -38,46 +38,55 @@
         <header>
             <img id="logo" src="img/logo/mountain-logo.svg" alt="Mountain Logo">
             <h1>Eduardo Montanha</h1>
+            
+            <div>
+                <a href="#!" id="burger">&#9776;</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home" title="Home">Home</a></li>
+                        <li><a href="#about" title="About">About</a></li>
+                        <li><a href="#it" title="Developer Portfolio">Developer</a></li>
+                        <li><a href="#mu" title="Music Portfolio">Music</a></li>
+                        <li><a href="#ma" title="Martial Arts Portfolio">Martial Arts</a></li>
+                        <li><a href="#contact" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <main>
-            <nav>
-                <section id="dev">
-                    <a href="developer.html" title="Developer Portfolio">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="img/home/dev-icon.png">
-                            <source media="(min-width: 768px)" srcset="img/home/dev-icon-grey.png">
-                            <img src="img/home/dev-icon.png" alt="Developer Icon">
-                        </picture>
-                        <h2>Developer<br>Portfolio</h2>
-                    </a>
-                </section>
+            <section id="home">
+                <div class="container">
+                    <h2>Hi, I'm Eduardo</h2>
+                    
+                    <h3>
+                        Looking for an experienced front-end developer, musician or
+                        even a personal defense instructor.
+                    </h3>
+                    
+                    <a href="#about">Know More</a>
+                </div>
+            </section>
+            
+            <section id="about">
                 
-                <section id="ma">
-                    <a href="martial-arts.html" title="Martial Arts Portfolio">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="img/home/ma-icon.png">
-                            <source media="(min-width: 768px)" srcset="img/home/ma-icon-grey.png">
-                            <img src="img/home/ma-icon.png" alt="Martial Arts Icon">
-                        </picture>
-                        <h2>Martial Arts<br>Portifolio</h2>
-                    </a>
-                </section>
+            </section>
+            
+            <section id="it">
                 
-                <section id="mu">
-                    <a href="music.html" title="Music Portfolio">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="img/home/mu-icon.png">
-                            <source media="(min-width: 768px)" srcset="img/home/mu-icon-grey.png">
-                            <img src="img/home/mu-icon.png" alt="Music Icon">
-                        </picture>
-                        <h2>Music<br>Portifolio</h2>
-                    </a>
-                </section>
-            </nav>
+            </section>
+            
+            <section id="mu">
+                
+            </section>
+            
+            <section id="ma">
+                
+            </section>
         </main>
         
         <footer>
+<!--
             <ul class="social-media">
                 <li class="facebook">
                     <a href="https://www.facebook.com/eduardo.montanha" title="Facebook" target="_blank">
@@ -100,6 +109,7 @@
                     </a>
                 </li>
             </ul>
+-->
         </footer>
     </body>
 </html>

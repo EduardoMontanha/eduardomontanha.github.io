@@ -1,75 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
+header, main, footer {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #FFF;
 }
 
-header, footer {
-    height: 10vh;
-    box-sizing: border-box;
-    color: #FFF;
-}
 
-/* ########################## */
-/* Header Content */
-/* ########################## */
+/*########################*/
+/* Header */
+/*########################*/
 header {
-    display: flex;
-    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    color: #FFF;
 }
 
 header img {
-    max-height: 60%;
-    margin: 0 30px 0 5vw;
-    box-sizing: border-box;
+    height: 4vh;
+    margin: 1vh 2vw;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    display: inline-block;
+    font-size: 0.9rem;
 }
 
-/* ########################## */
-/* Footer Content */
-/* ########################## */
-footer {
-    padding: 4vh;
+/* Navigation */
+header div {
+    float: right;
+}
+
+#burger {
+    margin-right: 3vw;
+    line-height: 6vh;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+nav {
+    display: none;
+}
+
+
+/*########################*/
+/* Main */
+/*########################*/
+main {
+    width: 100vw;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Home */
+#home {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    background-image: url(../img/home/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: #FFF;
 }
 
-.social-media li {
+#home .container {
+    width: 100%;
+    padding: 5vh 4vw;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+}
+
+#home h2 {
+    margin-bottom: 1vh;
+    font-size: 3rem;
+}
+
+#home h3 {
+    margin-bottom: 4vh;
+    font-size: .9rem;
+}
+
+#home a {
+    padding: 1vh 2vw;
+    border: 1px solid #FFF;
+    border-radius: 4px;
     display: inline-block;
+    font-weight: bold;
+    color: #FFFF;
 }
 
-
-.social-media li + li {
-    margin-left: 5vw;
-}
-
-
-.social-media img {
-    height: 6vh;
-}
-
-
-/* Large Screens */
-@media all and (min-width: 768px) {
-    /* Footer */
-    footer {
-        padding: 0;
-        flex-direction: row;
-    }
+/*########################*/
+/* Footer */
+/*########################*/
+footer {
     
-    .social-media li + li {
-        margin-left: 10px;
-    }
-    
-    .social-media img {
-        height: 4vh;
-    }
 }

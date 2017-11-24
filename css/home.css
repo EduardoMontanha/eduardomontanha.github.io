@@ -1,162 +1,49 @@
-@font-face {
-    font-family: "Marck Script";
-    src: url('../fonts/Marck_Script/MarckScript-Regular.eot');
-    src: url('../fonts/Marck_Script/MarckScript-Regular.woff2') format('woff2'),
-         url('../fonts/Marck_Script/MarckScript-Regular.woff') format('woff'),
-         url('../fonts/Marck_Script/MarckScript-Regular.ttf') format('truetype'),
-         url('../fonts/Marck_Script/MarckScript-Regular.svg#MarckScript-Regular') format('svg'),
-         url('../fonts/Marck_Script/MarckScript-Regular.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "displayMartial";
-    src: url('../fonts/Underdog/Underdog-Regular.eot');
-    src: url('../fonts/Underdog/Underdog-Regular.woff2') format('woff2'),
-         url('../fonts/Underdog/Underdog-Regular.woff') format('woff'),
-         url('../fonts/Underdog/Underdog-Regular.ttf') format('truetype'),
-         url('../fonts/Underdog/Underdog-Regular.svg#Underdog-Regular') format('svg'),
-         url('../fonts/Underdog/Underdog-Regular.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "handMusic";
-    src: url('../fonts/Pinyon_Script/PinyonScript-Regular.eot');
-    src: url('../fonts/Pinyon_Script/PinyonScript-Regular.woff2') format('woff2'),
-         url('../fonts/Pinyon_Script/PinyonScript.woff') format('woff'),
-         url('../fonts/Pinyon_Script/PinyonScript.ttf') format('truetype'),
-         url('../fonts/Pinyon_Script/PinyonScript.svg#PinyonScript') format('svg'),
-         url('../fonts/Pinyon_Script/PinyonScript-Regular.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+body {
+    background-image: url(../img/home/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
-/* ########################## */
-/* Header Content */
-/* ########################## */
-header, footer {
-    background: #16A085;
+header, main, footer {
+    box-sizing: border-box;
+}
+
+/*########################*/
+/* Header */
+/*########################*/
+header {
+    width: 100vw;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
 }
 
 header h1 {
-    font-family: "Marck Script", cursive;
-}
-
-/* ########################## */
-/* Main Content */
-/* ########################## */
-main nav {
-    display: flex;
-    flex-direction: column;
-}
-
-main section {
-    min-height: 220px;
-    height: 30vh;
-    flex: 1;
-}
-
-main a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main picture {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    max-width: 100px;
-    max-height: 100px;
-    margin-bottom: 2vh;
-}
-
-main img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-main h2 {
-    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
     color: #FFF;
 }
 
-/* IT */
-#dev {
-    background-color: #2980B9;
-    font-family: monospace;
-    font-size: 1.4rem;
-}
-
-#dev img {
-    width: 100px;
-    height: 50.7px;
-}
-
-/* Martial Arts */
-#ma {
-    background-color: #C0392B;
-    font-family: "displayMartial", serif;
-    font-size: 1.2rem;
-}
-
-#ma img {
-    width: 89.46px;
-    height: 99.99px;
-}
-
-/* Music */
-#mu {
-    background-color: #F39C12;
-    font-family: "handMusic", cursive;
-    font-size: 2rem;
-}
-
-#mu img {
-    width: 37.3px;
-    height: 99.99px;
+header img {
+    max-height: 5vh;
+    display: inline-block;
+    float:left;
 }
 
 
-/* Large Screens */
-@media all and (min-width: 768px) {
-    main nav {
-        flex-direction: row;
-    }
+/*########################*/
+/* Main */
+/*########################*/
+main {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 6vh;
+}
+
+
+/*########################*/
+/* Footer */
+/*########################*/
+footer {
     
-    main section {
-        height: 80vh;
-    }
-    
-    main h2 {
-        color: #999;
-    }
-    
-    /* Dev | Martial Arts | Music */
-    #dev,#ma, #mu {
-        background-color: #E8E8E8;
-    }
-    
-    #dev:hover h2,
-    #ma:hover h2,
-    #mu:hover h2 {
-        color: #FFF;
-    }
-    
-    #dev:hover {
-        background-color: #2980B9;
-    }
-    
-    #ma:hover {
-        background: #C0392B;
-    }
-    
-    #mu:hover {
-        background: #F39C12;
-    }
 }
