@@ -135,11 +135,11 @@ Commas must be placed at the end of the current line.
 ```javascript
 var obj = {
     foo: "foo"
-    ,bar: "bar"   // ✗ avoid 
+    ,bar: "bar"   //Avoid 
 }
 
 var obj = {
     foo: "foo",
-    bar: "bar"   // ✓ ok 
+    bar: "bar"   //Ok 
 }
 ```

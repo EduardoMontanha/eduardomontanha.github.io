@@ -7,8 +7,9 @@
     <dt>JSHint</dt>
     <dd>Does the code pass on JSHint?</dd>
     <dt>Multiple Pages</dt>
-    <dd>Is test running in multiple pages?</dd>
-    <dd>Except for tests that have specific pages</dd>
+    <dd>Is test running in multiple pages? (Except for tests that have specific pages)</dd>
+    <dt>Asserts</dt>
+    <dd>Test must not present <code>.assert</code></dd>
     <dt>Other</dt>
     <dd>Is there any other outstanding reason on the test code to fail the PR?</dd>
 </dl>
@@ -27,8 +28,8 @@
     <dd>Are the loops well structured, and without unecessary delays?</dd>
     <dt>Function level comments</dt>
     <dd>Is there a comment on top of each function definition, explaining what it does in a general way?</dd>
-    <dt>Var names</dt>
-    <dd>Are variables' name corresponding to its content?</dd>
     <dt>Variables</dt>
+    <dd>Are variables' name corresponding to its content?</dd>
     <dd>Are elements/selectors cached for reuse?</dd>
+    <dt>Other</dt>
 </dl>
