@@ -96,13 +96,37 @@ section {
     border: 1px solid #FFF;
     border-radius: 4px;
     display: inline-block;
-    font-weight: bold;
+/*    font-weight: bold;*/
     color: #FFFF;
 }
+
+#it,
+#mu, #ma {
+    height: 0;
+}
+/* About */
+#about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/under-construction.png);
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #CCC;
+}
+
+/* Developer */
+/* Music */
+/* Martial Arts */
 
 /*########################*/
 /* Footer */
 /*########################*/
 footer {
     
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, .6);
 }
