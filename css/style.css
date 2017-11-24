@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 header, main, footer {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
