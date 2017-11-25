@@ -38,6 +38,7 @@ header h1 {
 /* Navigation */
 header div {
     float: right;
+    position: relative;
 }
 
 #burger {
@@ -49,6 +50,9 @@ header div {
 
 #menu {
     display: none;
+    position: absolute;
+    background-color: red;
+    right: 0;
 }
 
 

@@ -1,16 +1,15 @@
 /* globals $, document, window */
 
-var behaviors = {
+var home = {
+    $menu: null,
+    
     collapsedMenu: function () {
         'use strict';
-        var $menu = $("#menu");
-        
         $("#burger").click(function () {
-            if ($menu.is(":visible")) {
-                
-                $menu.hide();
+            if (home.$menu.is(":visible")) {
+                home.$menu.hide();
             } else {
-                $menu.show();
+                home.$menu.show();
             }
         });
     },
@@ -19,7 +18,7 @@ var behaviors = {
         'use strict';
         $("a").on('click', function (event) {
             //Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
+            if (this.hash !== "" && this.hash !== "#!") {
                 
                 event.preventDefault();
                 
@@ -33,16 +32,23 @@ var behaviors = {
                     window.location.hash = hash;
                 });
             }
+            
+            //Hide menu when a menu item is clicked
+            if ($(this).hasClass("menuItem")) {
+                home.$menu.hide();
+            }
         });
     },
     
     init: function () {
         'use strict';
+        home.$menu = $("#menu");
+        
         this.collapsedMenu();
         this.smoothScroll();
     }
 };
 
 $(document).ready(function () {
-    behaviors.init();
+    home.init();
 });
