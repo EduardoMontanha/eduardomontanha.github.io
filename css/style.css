@@ -36,6 +36,10 @@ header h1 {
 }
 
 /* Navigation */
+.disableScroll {
+    overflow: hidden;
+}
+
 header div {
     float: right;
     position: relative;
@@ -49,10 +53,21 @@ header div {
 }
 
 #menu {
+    width: 100vw;
+    height: 94vh;
     display: none;
     position: absolute;
-    background-color: red;
     right: 0;
+    box-sizing: border-box;
+    background-color: #2C3E50;
+}
+
+.menuItem {
+    width: 100%;
+    padding: 15px 20px;
+    display: inline-block;
+    border-bottom: 1px solid #777;
+    color: #FFF;
 }
 
 

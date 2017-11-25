@@ -1,6 +1,7 @@
 /* globals $, document, window */
 
 var home = {
+    $body: null,
     $menu: null,
     
     collapsedMenu: function () {
@@ -8,8 +9,10 @@ var home = {
         $("#burger").click(function () {
             if (home.$menu.is(":visible")) {
                 home.$menu.hide();
+                home.$body.removeClass("disableScroll");
             } else {
                 home.$menu.show();
+                home.$body.addClass("disableScroll");
             }
         });
     },
@@ -22,7 +25,6 @@ var home = {
                 
                 event.preventDefault();
                 
-                //Store hash
                 var hash = this.hash;
                 
                 $('html, body').animate({
@@ -36,14 +38,18 @@ var home = {
             //Hide menu when a menu item is clicked
             if ($(this).hasClass("menuItem")) {
                 home.$menu.hide();
+                home.$body.removeClass("disableScroll");
             }
         });
     },
     
     init: function () {
         'use strict';
+        //Globals
+        home.$body = $("body");
         home.$menu = $("#menu");
         
+        //Methods
         this.collapsedMenu();
         this.smoothScroll();
     }
