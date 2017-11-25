@@ -1,6 +1,20 @@
 /* globals $, document, window */
 
 var behaviors = {
+    collapsedMenu: function () {
+        'use strict';
+        var $menu = $("#menu");
+        
+        $("#burger").click(function () {
+            if ($menu.is(":visible")) {
+                
+                $menu.hide();
+            } else {
+                $menu.show();
+            }
+        });
+    },
+    
     smoothScroll: function () {
         'use strict';
         $("a").on('click', function (event) {
@@ -24,6 +38,7 @@ var behaviors = {
     
     init: function () {
         'use strict';
+        this.collapsedMenu();
         this.smoothScroll();
     }
 };
