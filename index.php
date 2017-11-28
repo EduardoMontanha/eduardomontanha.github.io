@@ -24,7 +24,7 @@
                 "@context": "http://schema.org",
                 "@type": "Person",
                 "name": "Eduardo Montanha",
-                "url": "http://eduardomontanha.com/",
+                "url": "https://eduardomontanha.com/",
                 "sameAs": [
                     "https://www.linkedin.com/in/eduardomontanha/",
                     "https://www.facebook.com/eduardo.montanha",
@@ -59,8 +59,8 @@
                 <div class="container">
                     <h2>Hi, I'm Eduardo</h2>
                     <h3>
-                        Looking for an experienced front-end developer, musician or
-                        even a personal defense instructor.
+                        Are you looking for an experienced front-end developer,
+                        musician or even a personal defense instructor?
                     </h3>
                     <a href="#about">Know More</a>
                 </div>
@@ -128,9 +128,12 @@
 </html>
 
 <?php
+    /* ########################################### */
+    /* Email Setup */
+    /* ########################################### */
     if (isset($_POST['send'])) {
         
-        //Variaveis de POST, Alterar somente se necessário 
+        //POST Variables
         //====================================================
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -138,33 +141,33 @@
         $message = $_POST['message'];
         //====================================================
         
-        //REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
+        //Sender
         //==================================================== 
-        $email_remetente = "contact@eduardomontanha.com"; // deve ser uma conta de email do seu dominio 
+        $email_sender = "contact@eduardomontanha.com";
         //====================================================
         
-        //Configurações do email, ajustar conforme necessidade
+        //Email Configuration
         //==================================================== 
-        $email_destinatario = "edumontanha14@gmail.com"; // pode ser qualquer email que receberá as mensagens
+        $email_recipient = "edumontanha14@gmail.com";
         $email_reply = "$email"; 
-        $email_assunto = "$subject"; // Este será o assunto da mensagem
+        $email_subject = "$subject";
         //====================================================
         
-        //Monta o Corpo da Mensagem
+        //Build up email body
         //====================================================
-        $email_conteudo = "Nome = $name \n"; 
-        $email_conteudo .= "Email = $email \n";
-        $email_conteudo .= "Mensagem = $message \n"; 
+        $email_content = "Nome = $name \n"; 
+        $email_content .= "Email = $email \n";
+        $email_content .= "Mensagem = $message \n"; 
         //====================================================
         
-        //Seta os Headers (Alterar somente caso necessario) 
+        //Setting Headers
         //==================================================== 
-        $email_headers = implode("\n", array("From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente", "MIME-Version: 1.0", "X-Priority: 3", "Content-Type: text/html; charset=UTF-8"));
+        $email_headers = implode("\n", array("From: $email_sender", "Reply-To: $email_reply", "Return-Path: $email_sender", "MIME-Version: 1.0", "X-Priority: 3", "Content-Type: text/html; charset=UTF-8"));
         //====================================================
         
-        //Enviando o email 
+        //Sending email
         //==================================================== 
-        if (mail($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)) { 
+        if (mail($email_recipient, $email_subject, nl2br($email_content), $email_headers)) { 
             echo "</b>E-Mail enviado com sucesso!</b>"; 
         } else { 
             echo "</b>Falha no envio do E-Mail!</b>";
