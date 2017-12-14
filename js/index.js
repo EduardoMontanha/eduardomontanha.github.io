@@ -17,6 +17,29 @@ var home = {
         });
     },
     
+    emailSent: function (success) {
+        'use strict';
+        var $emailContainer = $("aside"),
+            $emailBox = $emailContainer.find("section"),
+            closeModal = function () {
+                $emailContainer.hide();
+                home.$body.removeClass("disableScroll");
+            };
+        
+        if (success) {
+            $(".errorMessage").hide();
+        } else {
+            $(".successMessage").hide();
+        }
+        
+        //Close modal
+        $emailBox.find("a").click(closeModal);
+        
+        //Show email sent message
+        $emailContainer.show();
+        home.$body.addClass("disableScroll");
+    },
+    
     smoothScroll: function () {
         'use strict';
         $("a").on('click', function (event) {
