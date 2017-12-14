@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-header, main, footer {
+header, main, aside, footer {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -78,7 +78,7 @@ main {
     width: 100vw;
 }
 
-section {
+main section {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -171,6 +171,7 @@ textarea {
 
 input {
     height: 6vh;
+    min-height: 50px;
     padding-left: 2vw;
 }
 
@@ -181,6 +182,7 @@ input[type="submit"] {
 
 textarea {
     height: 12vh;
+    min-height: 100px;
     padding: 2vw;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -194,6 +196,47 @@ textarea {
     height: 7vh;
 }
 
+/* Email Box */
+aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+aside section {
+    width: 80vw;
+    height: 20vh;
+    padding: 3vh 6vw;
+    border-radius: 4px;
+    margin: 40vh 10vw;
+    box-sizing: border-box;
+    background: #EEE;
+    
+}
+
+aside h2 {
+    height: 7vh;
+    margin-bottom: 2vh;
+    line-height: 7vh;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+aside .errorMessage {
+    color: red;
+}
+
+aside a {
+    height: 5vh;
+    border-radius: 4px;
+    line-height: 5vh;
+    display: block;
+    text-align: center;
+    background: #0066FF;
+    color: #FFF;
+}
 
 /*########################*/
 /* Footer */

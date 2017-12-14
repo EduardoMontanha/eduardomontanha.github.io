@@ -121,6 +121,14 @@
             </section>
         </main>
         
+        <aside>
+            <section>
+                <h2 class="successMessage">Email sent!</h2>
+                <h2 class="errorMessage">An error occurred!</h2>
+                <a href="#!" id="closeModal">OK</a>
+            </section>
+        </aside>
+        
         <footer>
             <h3>&copy; 2017 Eduardo Montanha, All rights reserved.</h3>
         </footer>
@@ -168,9 +176,9 @@
         //Sending email
         //==================================================== 
         if (mail($email_recipient, $email_subject, nl2br($email_content), $email_headers)) { 
-            echo "</b>E-Mail enviado com sucesso!</b>"; 
+            echo "<script>home.emailSent(true);</script>"; 
         } else { 
-            echo "</b>Falha no envio do E-Mail!</b>";
+            echo "<script>home.emailSent();</script>"; 
         } 
         //====================================================
     } 
