@@ -67,7 +67,16 @@
             </section>
             
             <section id="about">
-                
+                <h2>About</h2>
+                <img src="img/about/profile.jpg" alt="My picture">
+                <p>
+                    Hey, I'm Eduardo Montanha, a front-end developer, musician and
+                    a personal defense instructor. Yeah, you read it right.
+                    During my life, I've explored, learned and worked in very
+                    different areas, such as the ones I just said and a few more.<br>
+                    Feel free to check some of my work and accomplishments below.
+                </p>
+                <a href="#it" title="Next section">&#9013;</a>
             </section>
             
             <section id="it">
