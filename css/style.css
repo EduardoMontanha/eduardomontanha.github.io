@@ -135,7 +135,7 @@ main section:not(#home) h2 {
 }
 
 #about img {
-    width: 50vw;
+    height: 30vh;
     border: 4px solid #FFF;
     border-radius: 50%;
     margin: 8vh auto 8vh;
