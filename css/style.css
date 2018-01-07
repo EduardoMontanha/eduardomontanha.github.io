@@ -193,6 +193,7 @@ textarea {
 }
 
 input {
+    min-height: 40px;
     height: 6vh;
     padding-left: 2vw;
 }
@@ -203,9 +204,10 @@ input[type="submit"] {
 }
 
 textarea {
+    min-height: 80px;
     height: 12vh;
     padding: 2vw;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #social-media ul {
