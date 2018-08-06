@@ -17,6 +17,7 @@
         
         <script src="assets/js/jquery.js"></script>
         <script src="js/index.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         
         <!-- Linked Data with JSON-LD -->
         <script type="application/ld+json">
@@ -99,6 +100,8 @@
                     <input name="email" type="email" placeholder="Email" required>
                     <input name="subject" type="text" placeholder="Subject" required>
                     <textarea name="message" placeholder="Message" required></textarea>
+                    
+                    <div class="g-recaptcha" data-sitekey="6LcJbWgUAAAAAPEQT1evWBkzDwHVnKugOu3cau2f"></div>
                     
                     <input name="send" type="submit" value="Send">
                 </form>
