@@ -49,7 +49,7 @@ ul {
   top : 0;
   width : 51%;
   height : 100%;
-  background : #17213E;
+  background : #162C63;
   z-index : 99;
   -webkit-transform : translateX(0);
      -moz-transform : translateX(0);
@@ -120,7 +120,7 @@ svg#loader {
   height : 100%;
   width : 100%;
   z-index : 999;
-  background : #17213E;
+  background : #162C63;
 }
 svg#loader g {
   -webkit-animation : spin 15s linear infinite;
@@ -331,10 +331,10 @@ svg#loader g:last-child circle {
        -o-transition : 0.5s;
      -moz-transition : 0.5s;
           transition : 0.5s;
-  background-image : -webkit-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
-  background-image :    -moz-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
-  background-image :      -o-linear-gradient(50deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
-  background-image :         linear-gradient(40deg, #28BCFD 20%, #1D78FF 51%, #28BCFD 90%);
+  background-image : -webkit-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :    -moz-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :      -o-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :         linear-gradient(50deg, #056EB5 20%, #004761 65%);
   background-position : left center;
   -webkit-background-size : 200% auto;
           background-size : 200% auto;
@@ -347,14 +347,45 @@ svg#loader g:last-child circle {
   color : #FFFFFF;
 }
 .btn-gradient-blue:not(:disabled):not(.disabled):active {
-  background-image : -webkit-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
-  background-image :    -moz-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
-  background-image :      -o-linear-gradient(50deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
-  background-image :         linear-gradient(40deg, #28BCFD 0%, #1D78FF 51%, #28BCFD 90%);
+  background-image : -webkit-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :    -moz-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :      -o-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :         linear-gradient(50deg, #056EB5 20%, #004761 65%);
 }
 .btn-gradient-blue.btn-glow {
   -webkit-box-shadow : 0 0 12px 0 #1F87FF;
           box-shadow : 0 0 12px 0 #1F87FF;
+}
+
+.btn-gradient-green {
+  -webkit-transition : 0.5s;
+       -o-transition : 0.5s;
+     -moz-transition : 0.5s;
+          transition : 0.5s;
+  background-image : -webkit-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :    -moz-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :      -o-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :         linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-position : left center;
+  -webkit-background-size : 200% auto;
+          background-size : 200% auto;
+  border : 0;
+  color : #FFFFFF;
+}
+.btn-gradient-green:hover, .btn-gradient-green:active {
+  background-position : right center;
+  text-decoration : none;
+  color : #FFFFFF;
+}
+.btn-gradient-green:not(:disabled):not(.disabled):active {
+  background-image : -webkit-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :    -moz-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :      -o-linear-gradient(50deg, #519154 20%, #64C05C 65%);
+  background-image :         linear-gradient(50deg, #519154 20%, #64C05C 65%);
+}
+.btn-gradient-green.btn-glow {
+  -webkit-box-shadow : 0 0 12px 0 #368f3b;
+          box-shadow : 0 0 12px 0 #368f3b;
 }
 
 .btn-gradient-orange {
@@ -2100,6 +2131,7 @@ svg#loader g:last-child circle {
   font-size : 1.25rem;
 }
 .navbar .navbar-brand img {
+  height: 45px;
   margin-right : 0.65rem;
 }
 .navbar .navbar-brand .brand-text {
@@ -2220,7 +2252,7 @@ svg#loader g:last-child circle {
 }
 
 header .navbar.navbar-fixed {
-  background: #17213E;
+  background: #162C63;
   padding : 0.75rem 0;
 }
 
@@ -2269,7 +2301,7 @@ header .navbar.navbar-shadow {
   color : #FFFFFF;
   z-index : 6;
   padding-top : 5.125rem;
-  background-color: #17213E;
+  background-color: #162C63;
 }
 .head-area .head-content::after {
   content : '';
@@ -3002,7 +3034,7 @@ header .navbar.navbar-shadow {
   color : #3F3F3F;
   border : none;
   background-color : transparent;
-  border-bottom : 4px solid #7240A5;
+  border-bottom : 4px solid #162C63;
   border-radius : 0;
   margin-bottom : -2px;
 }
@@ -3054,11 +3086,11 @@ header .navbar.navbar-shadow {
      -moz-transition : all 300ms linear 0s;
           transition : all 300ms linear 0s;
   font-size : clac(0.65rem);
-  background-image : -webkit-gradient(linear, left top, right top, from(#FF4137), to(#FDC800));
-  background-image : -webkit-linear-gradient(left, #FF4137, #FDC800);
-  background-image :    -moz-linear-gradient(left, #FF4137, #FDC800);
-  background-image :      -o-linear-gradient(left, #FF4137, #FDC800);
-  background-image :         linear-gradient(90deg, #FF4137, #FDC800);
+  background-image : -webkit-gradient(linear, left top, right top, from(#056EB5), to(#004761));
+  background-image : -webkit-linear-gradient(left, #056EB5, #004761);
+  background-image :    -moz-linear-gradient(left, #056EB5, #004761);
+  background-image :      -o-linear-gradient(left, #056EB5, #004761);
+  background-image :         linear-gradient(90deg, #056EB5, #004761);
   -webkit-background-clip : text;
           background-clip : text;
   text-fill-color : transparent;
@@ -3087,17 +3119,17 @@ header .navbar.navbar-shadow {
        -o-transition : all 300ms linear 0s;
      -moz-transition : all 300ms linear 0s;
           transition : all 300ms linear 0s;
-  background-image : -webkit-linear-gradient(45deg, #FF4137, #FDC800);
-  background-image :    -moz-linear-gradient(45deg, #FF4137, #FDC800);
-  background-image :      -o-linear-gradient(45deg, #FF4137, #FDC800);
-  background-image :         linear-gradient(45deg, #FF4137, #FDC800);
+  background-image : -webkit-linear-gradient(45deg, #056EB5, #004761);
+  background-image :    -moz-linear-gradient(45deg, #056EB5, #004761);
+  background-image :      -o-linear-gradient(45deg, #056EB5, #004761);
+  background-image :         linear-gradient(45deg, #056EB5, #004761);
   background-repeat : repeat-x;
   border : 0;
   color : #FFFFFF;
   padding : 0.5rem 0.65rem;
   border-radius : 1rem;
-  -webkit-box-shadow : 0 0 12px 0 #FF4137;
-          box-shadow : 0 0 12px 0 #FF4137;
+  -webkit-box-shadow : 0 0 12px 0 #11495e;
+          box-shadow : 0 0 12px 0 #11495e;
 }
 .faq .collapse-icon a[data-toggle='collapse'] .icon:after {
   content : '\e622';
@@ -3248,7 +3280,7 @@ header .navbar.navbar-shadow {
   padding-top : 6.5rem;
   padding-bottom : 6.5rem;
   position : relative;
-  background : #17213E;
+  background : #162C63;
   z-index : 0;
 }
 .footer::after {
@@ -3320,14 +3352,13 @@ header .navbar.navbar-shadow {
   vertical-align : middle;
 }
 .footer .footer-wrapper ul.social-buttons li a:hover {
-  background-image : -webkit-gradient(linear, left top, right top, from(#FDC800), to(#FF4137));
-  background-image : -webkit-linear-gradient(left, #FDC800 0%, #FF4137 100%);
-  background-image :    -moz-linear-gradient(left, #FDC800 0%, #FF4137 100%);
-  background-image :      -o-linear-gradient(left, #FDC800 0%, #FF4137 100%);
-  background-image :         linear-gradient(to right, #FDC800 0%, #FF4137 100%);
+  background-image : -webkit-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :    -moz-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :      -o-linear-gradient(50deg, #056EB5 20%, #004761 65%);
+  background-image :         linear-gradient(50deg, #056EB5 20%, #004761 65%);
   color : #FFFFFF;
-  -webkit-box-shadow : 0 0 10px 3px rgba(255, 65, 55, 0.26);
-          box-shadow : 0 0 10px 3px rgba(255, 65, 55, 0.26);
+  -webkit-box-shadow : 0 0 12px 0 #1F87FF;
+          box-shadow : 0 0 12px 0 #1F87FF;
   border : none;
   padding : 0.472rem 0.752rem;
 }
@@ -3985,6 +4016,10 @@ p.content-desc {
 }
 .problem-solution .problems > .row {
   align-items: center;
+}
+.problem-solution .problems-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contact:before {
