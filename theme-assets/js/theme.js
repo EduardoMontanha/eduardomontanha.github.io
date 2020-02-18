@@ -214,3 +214,33 @@ function navbarSlideLine() {
         });
     }
 };
+
+(function headerSlide() {
+    let $slider = document.querySelector('#header-slider');
+
+    if (!!$slider) {
+        let imageSrc = [
+            'theme-assets/images/slider/header1.png',
+            'theme-assets/images/slider/header2.png',
+            'theme-assets/images/slider/header3.png'
+        ];
+
+        setInterval(function () {
+            let getImageSource = $slider.getAttribute("src"),
+                regEx = /\/header(\d)+/g.exec(getImageSource),
+                imageId = parseInt(regEx[1]),
+                newId = 0;
+
+            if (imageId <= imageSrc.length - 1)
+                newId = imageId++;
+            else
+                newId = 0;
+
+            $slider.setAttribute("src", imageSrc[newId]);
+        }, 5000);
+
+        return;
+    }
+
+    setTimeout(headerSlide, 500);
+})();
