@@ -476,6 +476,32 @@ svg#loader g:last-child circle {
   background : transparent;
 }
 
+/*  Gradient progress bar colors
+    -------------------------------------------------------------------------------------------*/
+    .progress .progress-blue {
+      background : -webkit-gradient(linear, left top, right top, from(#28BCFD), to(#1D78FF));
+      background : -webkit-linear-gradient(left, #28BCFD, #1D78FF);
+      background :    -moz-linear-gradient(left, #28BCFD, #1D78FF);
+      background :      -o-linear-gradient(left, #28BCFD, #1D78FF);
+      background :         linear-gradient(to right, #28BCFD, #1D78FF);
+    }
+    
+    .progress .progress-orange {
+      background : -webkit-gradient(linear, left top, right top, from(#FDC800), to(#FF4137));
+      background : -webkit-linear-gradient(left, #FDC800, #FF4137);
+      background :    -moz-linear-gradient(left, #FDC800, #FF4137);
+      background :      -o-linear-gradient(left, #FDC800, #FF4137);
+      background :         linear-gradient(to right, #FDC800, #FF4137);
+    }
+    
+    .progress .progress-purple {
+      background : -webkit-gradient(linear, left top, right top, from(#BF68E6), to(#9E48CD));
+      background : -webkit-linear-gradient(left, #BF68E6, #9E48CD);
+      background :    -moz-linear-gradient(left, #BF68E6, #9E48CD);
+      background :      -o-linear-gradient(left, #BF68E6, #9E48CD);
+      background :         linear-gradient(to right, #BF68E6, #9E48CD);
+    }
+
 /* Dropdown down arrow css
     -------------------------------------------------------------------------------------------*/
 .dropdown-toggle::after {
@@ -2339,6 +2365,128 @@ header .navbar.navbar-shadow {
   display : inline;
   padding : 0 0.6rem;
 }
+.head-area .head-content .progress {
+  background : #FFFFFF;
+  border : 4px solid #FFFFFF;
+  border-radius : 1rem;
+  height : 1.875rem;
+  overflow : initial;
+}
+.head-area .head-content .progress-bar-custom {
+  background : #FFFFFF;
+  border-radius : 1rem;
+  height : 1.36rem;
+  background : -webkit-gradient(linear, left top, right top, from(#FF4137), to(#FDC800));
+  background : -webkit-linear-gradient(left, #FF4137, #FDC800);
+  background :    -moz-linear-gradient(left, #FF4137, #FDC800);
+  background :      -o-linear-gradient(left, #FF4137, #FDC800);
+  background :         linear-gradient(to right, #FF4137, #FDC800);
+  -webkit-box-shadow : 2px 0 7px 0 rgba(0, 0, 0, 0.35);
+          box-shadow : 2px 0 7px 0 rgba(0, 0, 0, 0.35);
+}
+.head-area .head-content .progress-top {
+  position : absolute;
+  top : 0.8rem;
+  display : -webkit-box;
+  display : -webkit-flex;
+  display :    -moz-box;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-box-align : stretch;
+  -webkit-align-items : stretch;
+     -moz-box-align : stretch;
+  -ms-flex-align : stretch;
+          align-items : stretch;
+  /* Default */
+  -webkit-box-pack : justify;
+  -webkit-justify-content : space-between;
+     -moz-box-pack : justify;
+  -ms-flex-pack : justify;
+          justify-content : space-between;
+  width : 100%;
+  color : #FFFFFF;
+  padding : 0 1rem;
+}
+.head-area .head-content .progress-top li {
+  display : block;
+  -webkit-box-flex : 0;
+  -webkit-flex : 0 1 auto;
+     -moz-box-flex : 0;
+      -ms-flex : 0 1 auto;
+          flex : 0 1 auto;
+  /* Default */
+}
+.head-area .head-content .progress-top li.pre-sale {
+  position : relative;
+  left : 1rem;
+}
+.head-area .head-content .progress-top li.bonus {
+  position : relative;
+  right : 1rem;
+}
+.head-area .head-content .progress-bars {
+  position : absolute;
+  top : 1.9rem;
+  display : -webkit-box;
+  display : -webkit-flex;
+  display :    -moz-box;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-box-align : stretch;
+  -webkit-align-items : stretch;
+     -moz-box-align : stretch;
+  -ms-flex-align : stretch;
+          align-items : stretch;
+  /* Default */
+  -webkit-box-pack : justify;
+  -webkit-justify-content : space-between;
+     -moz-box-pack : justify;
+  -ms-flex-pack : justify;
+          justify-content : space-between;
+  width : 100%;
+  color : #FFFFFF;
+  padding : 0 1rem;
+}
+.head-area .head-content .progress-bars li {
+  display : block;
+  -webkit-box-flex : 0;
+  -webkit-flex : 0 1 auto;
+     -moz-box-flex : 0;
+      -ms-flex : 0 1 auto;
+          flex : 0 1 auto;
+  /* Default */
+}
+.head-area .head-content .progress-bottom {
+  position : absolute;
+  bottom : 0.8rem;
+  display : -webkit-box;
+  display : -webkit-flex;
+  display :    -moz-box;
+  display : -ms-flexbox;
+  display :         flex;
+  color : #FFFFFF;
+  -webkit-box-align : stretch;
+  -webkit-align-items : stretch;
+     -moz-box-align : stretch;
+  -ms-flex-align : stretch;
+          align-items : stretch;
+  /* Default */
+  -webkit-box-pack : justify;
+  -webkit-justify-content : space-between;
+     -moz-box-pack : justify;
+  -ms-flex-pack : justify;
+          justify-content : space-between;
+  width : 100%;
+  padding : 0 1rem;
+}
+.head-area .head-content .progress-bottom .progress-info {
+  display : block;
+  -webkit-box-flex : 0;
+  -webkit-flex : 0 1 auto;
+     -moz-box-flex : 0;
+      -ms-flex : 0 1 auto;
+          flex : 0 1 auto;
+}
 .head-area .logo-wrapper {
   overflow : hidden;
   width : 25.35rem;
@@ -4163,6 +4311,30 @@ p.content-desc {
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;
   }
+  .head-area .head-content .progress {
+    height : 1.5rem;
+  }
+  .head-area .head-content .progress .progress-bar-custom {
+    height : 1rem;
+  }
+  .head-area .head-content .progress-bottom {
+    bottom : 0.3rem;
+  }
+  .head-area .head-content .progress-bottom .progress-info {
+    font-size : 1rem;
+  }
+  .head-area .head-content .progress {
+    height : 1.5rem;
+  }
+  .head-area .head-content .progress .progress-bar-custom {
+    height : 1rem;
+  }
+  .head-area .head-content .progress-bottom {
+    bottom : 0.3rem;
+  }
+  .head-area .head-content .progress-bottom .progress-info {
+    font-size : 1rem;
+  }
   .about .content-area .what-is-crypto-img {
     text-align : center;
   }
@@ -4224,6 +4396,18 @@ p.content-desc {
   }
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;
+  }
+  .head-area .head-content .progress {
+    height : 1.5rem;
+  }
+  .head-area .head-content .progress .progress-bar-custom {
+    height : 1rem;
+  }
+  .head-area .head-content .progress-bottom {
+    bottom : 0.3rem;
+  }
+  .head-area .head-content .progress-bottom .progress-info {
+    font-size : 1rem;
   }
   .head-area .head-content .purchase-token-btn {
     text-align : center;
@@ -4300,6 +4484,9 @@ p.content-desc {
   .head-area .head-content .banner-content h1, .head-area .head-content .banner-content h3 {
     font-size : 1.1rem;
   }
+  .head-area .head-content .banner-content h1 span {
+    font-size: 2rem;
+  }
   .head-area .head-content .banner-content h3 {
     padding-top : 0.5rem !important;
   }
@@ -4322,6 +4509,18 @@ p.content-desc {
   }
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;
+  }
+  .head-area .head-content .progress {
+    height : 1.3rem;
+  }
+  .head-area .head-content .progress .progress-bar-custom {
+    height : 0.8rem;
+  }
+  .head-area .head-content .progress-bottom {
+    bottom : 0.3rem;
+  }
+  .head-area .head-content .progress-bottom .progress-info {
+    font-size : 0.8rem;
   }
   .head-area .head-content .purchase-token-btn {
     text-align : center;
