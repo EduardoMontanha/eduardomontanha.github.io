@@ -4423,7 +4423,9 @@ p.content-desc {
   }
   .head-area .head-content .purchase-token-btn img {
     max-height: 50px;
-    margin-left: 40px;
+    margin-left: 0;
+    margin: 20px auto;
+    display: block;
   }
   .head-area .head-content .crypto-links {
     display : none;
@@ -4537,6 +4539,12 @@ p.content-desc {
   .head-area .head-content .purchase-token-btn {
     text-align : center;
     margin-top : 1rem;
+  }
+  .head-area .head-content .purchase-token-btn img {
+    max-height: 50px;
+    margin-left: 0;
+    margin: 20px auto;
+    display: block;
   }
   .head-area .head-content .crypto-links {
     display : none;
