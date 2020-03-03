@@ -2327,7 +2327,7 @@ header .navbar.navbar-shadow {
   position : relative;
 }
 .head-area .head-content {
-  height : 100vh;
+  /* height : 100vh; */
   color : #FFFFFF;
   z-index : 6;
   padding-top : 5.125rem;
@@ -4487,7 +4487,7 @@ p.content-desc {
 
 @media (max-width: 575.98px) {
   .head-area .head-content {
-    height : 105vh !important;
+    /* height : 105vh !important; */
   }
   .head-area .head-content:after {
     content : none !important;
