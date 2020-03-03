@@ -2491,6 +2491,10 @@ header .navbar.navbar-shadow {
       -ms-flex : 0 1 auto;
           flex : 0 1 auto;
 }
+.head-area .head-content .purchase-token-btn img {
+  max-height: 50px;
+  margin-left: 40px;
+}
 .head-area .logo-wrapper {
   overflow : hidden;
   width : 25.35rem;
@@ -4416,6 +4420,10 @@ p.content-desc {
   .head-area .head-content .purchase-token-btn {
     text-align : center;
     margin-top : 1rem;
+  }
+  .head-area .head-content .purchase-token-btn img {
+    max-height: 50px;
+    margin-left: 40px;
   }
   .head-area .head-content .crypto-links {
     display : none;
