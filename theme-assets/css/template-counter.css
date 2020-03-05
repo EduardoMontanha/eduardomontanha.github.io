@@ -4156,9 +4156,9 @@ p.content-desc {
 }
 
 @media (min-width: 1600px) {
-  .head-content {
-    background-size: 1050px;
-    background-position-y: 30px;
+  .head-area .head-content {
+    background-size: 1050px, auto;
+    background-position-y: 30px, 0px;
   }
 }
 
