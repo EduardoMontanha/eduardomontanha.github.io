@@ -4147,7 +4147,7 @@ p.content-desc {
     background-image: url('../../theme-assets/images/home2.png');
     background-repeat: no-repeat;
     background-size: 800px;
-    background-position-x: calc(100% + 400px);
+    background-position-x: calc(100% + 300px);
     background-position-y: 120px;
   }
 }
