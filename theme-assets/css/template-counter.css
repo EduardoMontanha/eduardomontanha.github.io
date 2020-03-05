@@ -2267,7 +2267,10 @@ header .navbar.navbar-shadow {
   z-index : 6;
   padding-top : 5.125rem;
   /* background-color: #162C63; */
-  background-color: #FFF;
+  background-color: #FDFDFD;
+  background-image: url('../../theme-assets/images/background/circle.png');
+  background-repeat: repeat;
+  background-size: auto;
 }
 /* .head-area .head-content::after {
   content : '';
@@ -4143,12 +4146,12 @@ p.content-desc {
 }
 
 @media (min-width: 992px) {
-  .head-content {
-    background-image: url('../../theme-assets/images/home2.png');
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position-x: calc(100% + 300px);
-    background-position-y: 120px;
+  .head-area .head-content {
+    background-image: url('../../theme-assets/images/home2.png'), url('../../theme-assets/images/background/circle.png');
+    background-repeat: no-repeat, repeat;
+    background-size: 800px, auto;
+    background-position-x: calc(100% + 300px), 0px;
+    background-position-y: 120px, 0px;
   }
 }
 
