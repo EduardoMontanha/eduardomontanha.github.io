@@ -215,7 +215,7 @@ function navbarSlideLine() {
     }
 };
 
-(function headerSlide() {
+/*(function headerSlide() {
     let $slider = document.querySelector('#header-slider');
 
     if (!!$slider) {
@@ -243,4 +243,4 @@ function navbarSlideLine() {
     }
 
     setTimeout(headerSlide, 500);
-})();
+})();*/
