@@ -1,0 +1,45 @@
+#financing .content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#financing .content-data h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#financing .content-data li {
+    font-size: 0.95rem;
+}
+
+#financing .content-data li span {
+    margin-right: 0.4rem;
+}
+
+#financing .content-data h3,
+#financing .content-data li {
+    line-height: 1.5;
+}
+
+#financing .content-data p {
+    margin-top: 1.5rem;
+}
+
+#financing .content-data p strong {
+    font-weight: 700;
+}
+
+#financing .content-image {
+    margin-bottom: 2rem;
+}
+
+#financing .content-image img {
+    max-width: 450px;
+}
+
+@media (min-width: 992px) {
+    #financing .content {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,86 @@
+footer {
+    padding: 6.5rem 0;
+    background-color: #162C63;
+    text-align: center;
+    color: #FFF;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer form {
+    min-width: 300px;
+    max-width: 620px;
+    margin: 0 auto 1rem;
+    position: relative;
+    display: none;
+}
+
+footer form input,
+footer form button {
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+footer form input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 6rem;
+    font-weight: 600;
+}
+
+footer form button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: 0.60rem;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #056EB5, #004761);
+    cursor: pointer;
+    color: #FFF;
+}
+
+footer form button:hover {
+    box-shadow: 0 0 10px 0 #1F87FF;
+}
+
+footer p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    display: none;
+}
+
+footer .social-media {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-media a {
+    width: 42px;
+    height: 42px;
+}
+
+footer .social-media a:hover {
+    background-image: linear-gradient(45deg, #056EB5, #004761);
+    border-radius: 50%;
+}
+
+footer .social-media a + a {
+    margin-left: 1.5rem;
+}
+
+footer .social-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer span {
+    font-size: 0.75rem;
+}

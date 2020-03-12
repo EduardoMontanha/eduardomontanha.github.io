@@ -1,0 +1,54 @@
+#whitepaper .content-data h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#whitepaper .content-data p {
+    font-size: 0.95rem;
+}
+
+#whitepaper .content-data h3,
+#whitepaper .content-data p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#whitepaper .whitepaper-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#whitepaper .whitepaper-files div {
+    width: 40%;
+    padding: 1rem 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#whitepaper .whitepaper-files div a {
+    color: #7D7D7D;
+}
+
+#whitepaper .whitepaper-files i {
+    display: block;
+    width: 100%;
+    height: 90px;
+}
+
+#whitepaper .content-image img {
+    max-width: 450px;
+}
+
+
+@media (min-width: 768px) {
+    #whitepaper .whitepaper-files {
+        flex-wrap: nowrap;
+    }
+
+    #whitepaper .whitepaper-files div {
+        width: auto;
+    }
+}

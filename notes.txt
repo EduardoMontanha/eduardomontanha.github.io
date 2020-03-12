@@ -1,0 +1,22 @@
+SOBRE ICO
+- Pegar link de video em outros idiomas com Baceli
+
+WHITEPAPER
+- Conseguir arquivos do whitepaper para Español
+    * Pegar arquivos com o Edu
+
+FAQ
+* Revisar se perguntas estão nas categorias certas
+
+FOOTER
+- Achar um meio de enviar emails pelo React
+    * Ver se o Maicon vai querer utilizar emails pra newsletters
+
+OUTROS
+- Trocar o favicon
+- Terminar metodos da modal de videos
+- Colocar mais "estrelas" de fundo
+- colocar animacoes ao passar pela primeira vez em areas do site. Fadein pros elementos
+
+LANGUAGES
+* Revisar idiomas

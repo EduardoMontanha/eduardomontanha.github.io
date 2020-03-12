@@ -1,0 +1,137 @@
+/* =============================================== */
+/* Common Classes */
+/* =============================================== */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+
+/* =============================================== */
+/* Shared Styles */
+/* =============================================== */
+header, nav, main, aside, footer {
+    box-sizing: border-box;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    color: #7D7D7D;
+    line-height: 1.5;
+}
+
+
+/* =============================================== */
+/* Page Common Style */
+/* =============================================== */
+body {
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: calc(4rem + 90px) 0 3rem;
+}
+
+section:nth-child(even) {
+    background-color: rgba(204, 204, 204, 0.4);
+}
+
+section .content-title {
+    width: 100%;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section .content-title h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section .content-title p {
+    margin: 1.5rem 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Separator */
+section .content-title .separator {
+    text-align: center;
+}
+
+section .content-title .separator > div {
+    display: inline-block;
+    height: 7px;
+    border-radius: 1rem;
+    background-color: #DCDCDC;
+}
+
+section .content-title .separator > div + div {
+    margin-left: 0.4rem;
+}
+
+section .content-title .separator .large {
+    width: 70px;
+}
+section .content-title .separator .medium {
+    width: 30px;
+}
+section .content-title .separator .small {
+    width: 7px;
+}
+
+/* Content */
+section .content {
+    display: flex;
+    flex-direction: column;
+}
+
+section .content-image {
+    text-align: center;
+}
+
+section .content-image img {
+    width: 100%;
+}
+
+
+/* =============================================== */
+/* MEDIA QUERIES - Medium Size Screens */
+/* =============================================== */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 4rem;
+    }
+
+    section .content-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: calc(6.5rem + 90px) 0 10rem;
+    }
+
+    section .content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section .content > div {
+        width: 50%;
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,275 @@
+{
+    "navbar": {
+        "about": "About ICO",
+        "wallet": "Wallet DMX",
+        "products": "Products",
+        "whitepaper": "Whitepaper",
+        "roadmap": "Roadmap",
+        "faq": "FAQ",
+        "langSelection": {
+            "active": {
+                "flag": "flag-icon flag-icon-us",
+                "text": "EN"
+            },
+            "hidden": [
+                {"flag": "flag-icon flag-icon-es", "href": "#es", "text": "ES"},
+                {"flag": "flag-icon flag-icon-it", "href": "#it", "text": "IT"},
+                {"flag": "flag-icon flag-icon-br", "href": "#pt", "text": "PT"}
+            ]
+        }
+    },
+    "header": {
+        "slogan": "Digital, but real.",
+        "description": "A smart and viable way to create a globally used payment network.",
+        "buyCta": "Buy DMX",
+        "imageDescription": "Image of the card, bracelet and DMX machine"
+    },
+    "exchange": {
+        "label1": {
+            "title": "",
+            "text": "Listed on the European Exchange Latoken"
+        },
+        "label2": {
+            "title": "50K+",
+            "text": "users"
+        },
+        "label3": {
+            "title": "+ de 22M",
+            "text": "DMX sold"
+        },
+        "label4": {
+            "title": "50",
+            "text": "pilot machines in establishments"
+        }
+    },
+    "about": {
+        "title": "About ICO",
+        "text1": "Watch our institutional video and understand more about this initiative.",
+        "text2": "To encourage people to adhere to the idea, we have created a 5-star reward plan that will spread Digital Money to the four corners of the world.",
+        "infoList": {
+            "item1": "Simplified identification.",
+            "item2": "100% of the fees paid to users.",
+            "item3": "The best affiliate program on the ICO market.",
+            "item4": "DM Pay (payment processing terminal).",
+            "item5": "First cryptocurrency in the world with a guarantee reserve fund."
+        },
+        "imageDescription": "What is DMX?"
+    },
+    "wallet": {
+        "title": "Wallet DMX",
+        "text1": "In the Wallet the user can store his DMX, carry out send/receive transactions and also register a name to receive coins from other users.",
+        "text2": "With the name registration it is possible for John to send 100 DMX to Susan, instead of using complicated addresses like 3ksjdsdhsdfbsdbd23.",
+        "text3": "Validations on the DMX blockchain occur every minute and up to 100 transactions per second can be processed.",
+        "imageDescription": "DMX Wallet Application"
+    },
+    "machine": {
+        "title": "Machine",
+        "textTitle": "How about your business being cutting edge and accepting Bitcoin?",
+        "text1": "Meet the Digital Money machine. Your customer pays in Bitcoin and you choose whether to receive in Bitcoin or Real (without volatility).",
+        "text2": "With the Digital Money machine your establishment will attract new customers using Bitcoin, the currency of the future.",
+        "imageDescription": "DMX Machine"
+    },
+    "card": {
+        "title": "Card, Bracelet and QR Code",
+        "textTitle": "Card, Bracelet and QR Code to use real Bitcoin!",
+        "text1": "With Digital Money, you can have a card, bracelet and QR Code, to actually process Bitcoins without having to make conversions or complicated flows.",
+        "text2": "Swipe the card and / or bracelet in places accredited by Digital Money and that's it, in a few seconds your Bitcoin has been processed by the place.",
+        "text3": "This is the idea of Digital Money: to bring the most varied tools for the easy and safe use of cryptocurrencies.",
+        "imageDescription": "Card, Bracelet and QR Code"
+    },
+    "whitepaper": {
+        "title": "Documents, Terms & Conditions",
+        "description": "Terms of service are rules by which you must agree to comply in order to use a service.",
+        "text": "According to Hubspot, the Whitepaper is a document that deepens a given problem, bringing its causes, concepts and, mainly, its solution. It is indicated for more advanced content marketing strategies, that is, it must be applied to customers who have already spent time with theirs company (in other words, it usually brings more value in funnel fund content), receiving valuable content , but without being so focused.",
+        "imageDescription": "Whitepaper"
+    },
+    "roadmap": {
+        "title": "Roadmap",
+        "slides": [
+            {
+                "classes": "completed",
+                "date": "2019",
+                "title": "",
+                "description": "Beginning of January 2019"
+            },
+            {
+                "classes": "completed",
+                "date": "January 2019",
+                "title": "Phase 1",
+                "description": "Initial phase of the project. The objective is to publicize the technological advances developed by Digital Money."
+            },
+            {
+                "classes": "completed",
+                "date": "March 2019",
+                "title": "Wallet Testnet",
+                "description": "Prototype Wallet DMX for users to test the technology."
+            },
+            {
+                "classes": "completed",
+                "date": "May 2019",
+                "title": "DM-Pay",
+                "description": "Implementation of the pilot project for the DM-Pay payment network. Distribution of POS-blockchain terminals to strategic partners."
+            },
+            {
+                "classes": "completed",
+                "date": "May 2019",
+                "title": "Phase 2",
+                "description": "Delivery of coins purchased in Phase 1."
+            },
+            {
+                "classes": "completed",
+                "date": "November 2019",
+                "title": "DMX Wallet",
+                "description": "Delivery of the DMX Wallet for currency transactions."
+            },
+            {
+                "classes": "current",
+                "date": "November 2019",
+                "title": "DMEX",
+                "description": "Launch of Exchange with BTC-DMX pair operation."
+            },
+            {
+                "classes": "",
+                "date": "December 2020",
+                "title": "ICO Phase 3/4/5/6/7",
+                "description": "Delivery of coins purchased at each stage."
+            },
+            {
+                "classes": "",
+                "date": "January 2021",
+                "title": "Reserve Fund",
+                "description": "Implementation phase of the legal aspects, management and operation of the fund."
+            },
+            {
+                "classes": "",
+                "date": "April 2021",
+                "title": "Private Investment Round",
+                "description": "Digital Money seeks partnerships with companies focused on technological and financial market development, offering the acquisition of the final part of ICO."
+            },
+            {
+                "classes": "",
+                "date": "July 2021",
+                "title": "DM-Bank",
+                "description": "Creation of the digital bank to operate DMX technology in traditional markets and offer users more daily tools using encryption."
+            }
+        ]
+    },
+    "financing": {
+        "title": "Financial",
+        "description": "In this session we will understand how the amounts collected by the ICO will be distributed.",
+        "textTitle": "Details",
+        "infoList": {
+            "item1": "20% Technological development",
+            "item2": "20% Business development",
+            "item3": "20% User acquisition operation cost",
+            "item4": "10% Marketing",
+            "item5": "10% Infrastructure",
+            "item6": "5% Operational stuff",
+            "item7": "5% Payment machines",
+            "item8": "5% Licenses and compliance",
+            "item9": "5% Other costs"
+        },
+        "simbol": "Symbol",
+        "value": "Initial value"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "categories": {
+            "general": {
+                "id": "general",
+                "title": "General",
+                "questions": [
+                    {
+                        "question": "What is Digital Money?",
+                        "answer": "Digital Money is a cryptocurrency created to offer the best performance in financial transactions. The Digital Money blockchain is optimized to perform instant transactions at low cost through an easy to use interface. Our goal is to simplify the use of cryptographic currencies, facilitating and providing access to all people."
+                    },
+                    {
+                        "question": "How does Digital Money work?",
+                        "answer": "Transactions are made between users using the balance of the wallets. Each transaction is recorded in a data store called blockchain. This register is public and the network is fully decentralized."
+                    },
+                    {
+                        "question": "What are the advantages of Digital Money over other means of payment?",
+                        "answer": [
+                            "- Instant transactions;",
+                            "- 100% of the fees distributed to DM-Pay machine owners;",
+                            "- Public and auditable registration;",
+                            "- Friendly wallet interface with customizable public key;",
+                            "- First self-winding cryptocurrency."
+                        ]
+                    },
+                    {
+                        "question": "What is the transaction fee?",
+                        "answer": "0.01 DMX."
+                    },
+                    {
+                        "question": "How does the expansion plan work?",
+                        "answer": "Digital Money's expansion plan has two stages. ICO Phase - 90% of the total collected during this stage will be distributed to users through a variable binary bonus with a daily win limit of US $ 1,000. Mainnet phase - After the launch of this phase, 100% of the transaction fees will be distributed to the owners of the DM-Pay machines. This feature aims to increase the use of digital money as a means of payment."
+                    }
+                ]
+            },
+            "tokens": {
+                "id": "tokens",
+                "title": "Tokens",
+                "questions": [
+                    {
+                        "question": "Can Digital Money be mined?",
+                        "answer": "No. All coins will be pre-extracted and the total amount issued will be defined in the first block registered on the blockchain, also known as Genesis, and no other currency will be created or extracted after the project is launched."
+                    },
+                    {
+                        "question": "Where do I buy Digital Money?",
+                        "answer": "After registration, DMX can be purchased with Bitcoins through the official website during the ICO period."
+                    },
+                    {
+                        "question": "Where is the price of each coin?",
+                        "answer": "The price varies according to the phases of private sale, pre-sale, public sale and main sale. The price of the coins during each phase will be US $ 0.25, US $ 0.45, US $ 0.65 and US $ 0.85 respectively."
+                    },
+                    {
+                        "question": "What is the minimum amount of coins I can buy?",
+                        "answer": "A minimum of 125 coins to purchase."
+                    },
+                    {
+                        "question": "When will my coins be available?",
+                        "answer": "During the ICO period, your coins are frozen for movement. After the end of this period, the Betanet phase begins, releasing the currency balance."
+                    }
+                ]
+            },
+            "client": {
+                "id": "client",
+                "title": "Client",
+                "questions": [
+                    {
+                        "question": "How can I trade Digital Money?",
+                        "answer": "Currencies can be used for transactions between users or traded in our decentralized exchange. Subsequently, Digital Money will also be included in other brokerages."
+                    },
+                    {
+                        "question": "How do I download the Digital Money wallet?",
+                        "answer": "The wallet can be downloaded from the official website of Digital Money, in the downloads area."
+                    },
+                    {
+                        "question": "Is it possible to have more than one account?",
+                        "answer": "No. During the ICO period, only one account per person will be allowed."
+                    }
+                ]
+            },
+            "legal": {
+                "id": "legal",
+                "title": "Legal",
+                "questions": [
+                    {
+                        "question": "How is the Digital Money network consensus reached?",
+                        "answer": "The Digital Money blockchain has the PoS consensus system. In this type of validation that validates a block there is a user who needs to rent DM-Pay terminals. The DMPAY wallet is a node. The node that meets the minimum requirements can participate in the validation draw. For more information, see the Whitepaper in the downloads section of the website."
+                    },
+                    {
+                        "question": "How does the Digital Money reward work?",
+                        "answer": "At Digital Money, the amount of fees charged for currency transactions is redistributed to DMPAY Portfolios."
+                    }
+                ]
+            }
+        }
+    },
+    "footer": {
+        "title": "Keep conected",
+        "placeholder": "Enter your email address",
+        "text": "Sign up now and be the first to know our news!"
+    }
+}

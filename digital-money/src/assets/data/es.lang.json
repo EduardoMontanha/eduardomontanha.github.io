@@ -1,0 +1,275 @@
+{
+    "navbar": {
+        "about": "Sobre ICO",
+        "wallet": "Wallet DMX",
+        "products": "Productos",
+        "whitepaper": "Whitepaper",
+        "roadmap": "Roadmap",
+        "faq": "FAQ",
+        "langSelection": {
+            "active": {
+                "flag": "flag-icon flag-icon-es",
+                "text": "ES"
+            },
+            "hidden": [
+                {"flag": "flag-icon flag-icon-us", "href": "#en", "text": "EN"},
+                {"flag": "flag-icon flag-icon-it", "href": "#it", "text": "IT"},
+                {"flag": "flag-icon flag-icon-br", "href": "#pt", "text": "PT"}
+            ]
+        }
+    },
+    "header": {
+        "slogan": "Digital, pero de verdad.",
+        "description": "Una forma inteligente y viable de crear una red de pago utilizada globalmente.",
+        "buyCta": "Comprar DMX",
+        "imageDescription": "Imagen de la tarjeta, brazalete y máquina DMX"
+    },
+    "exchange": {
+        "label1": {
+            "title": "",
+            "text": "Listado en el European Exchange Latoken"
+        },
+        "label2": {
+            "title": "50K+",
+            "text": "usuarios"
+        },
+        "label3": {
+            "title": "+ de 22M",
+            "text": "DMX vendidas"
+        },
+        "label4": {
+            "title": "50",
+            "text": "máquinas piloto en establecimientos"
+        }
+    },
+    "about": {
+        "title": "Sobre ICO",
+        "text1": "Mire nuestro video institucional y entienda más sobre esta iniciativa.",
+        "text2": "Para alentar a las personas a adherirse a la idea, hemos creado un plan de recompensas de 5 estrellas que distribuirá el dinero digital a los cuatro rincones del mundo.",
+        "infoList": {
+            "item1": "Identificación simplificada",
+            "item2": "100% de las tarifas pagadas a los usuarios.",
+            "item3": "El mejor programa de afiliados en el mercado ICO.",
+            "item4": "DM Pay (terminal de procesamiento de pagos).",
+            "item5": "Primera criptomoneda del mundo con un fondo de reserva de garantía."
+        },
+        "imageDescription": "¿Qué es el DMX?"
+    },
+    "wallet": {
+        "title": "Wallet DMX",
+        "text1": "En la Wallet, el usuario puede almacenar su DMX, realizar transacciones de envío/recepción y también registrar un nombre para recibir monedas de otros usuarios.",
+        "text2": "Con el registro del nombre, Juan puede enviar 100 DMX a Maria, en lugar de utilizar direcciones complicadas como 3ksjdsdhsdfbsdbd23.",
+        "text3": "Las validaciones en la blockchain DMX se producen cada minuto y se pueden procesar hasta 100 transacciones por segundo.",
+        "imageDescription": "Aplicación de Wallet DMX"
+    },
+    "machine": {
+        "title": "Maquinita",
+        "textTitle": "¿Qué tal si su negocio es vanguardista y acepta Bitcoin?",
+        "text1": "Conoce la máquina de dinero digital. Su cliente paga en Bitcoin y usted elige si desea recibirlo en Bitcoin o Real (sin volatilidad).",
+        "text2": "Con la máquina de dinero digital, su establecimiento atraerá nuevos clientes que usan Bitcoin, la moneda del futuro.",
+        "imageDescription": "Maquinita"
+    },
+    "card": {
+        "title": "Tarjeta, Pulsera y Código QR",
+        "textTitle": "¡Tarjeta, pulsera y código QR para usar Bitcoin real!",
+        "text1": "Con Digital Money, puede tener una tarjeta, un brazalete y un código QR para procesar Bitcoins sin tener que realizar conversiones o flujos complicados.",
+        "text2": "Deslice la tarjeta o el brazalete en lugares acreditados por Digital Money y listo, en pocos segundos su Bitcoin ha sido procesado por el lugar.",
+        "text3": "Esta es la idea del dinero digital: traer las herramientas más variadas para el uso fácil y seguro de las criptomonedas.",
+        "imageDescription": "Tarjeta, Pulsera y Código QR"
+    },
+    "whitepaper": {
+        "title": "Documentos, Términos y Condiciones",
+        "description": "Los términos de servicio son reglas por las cuales debe aceptar cumplir para utilizar un servicio.",
+        "text": "Según Hubspot, el Whitepaper es un documento que profundiza un problema dado, que trae sus causas, conceptos y, principalmente, su solución. Está indicado para estrategias de marketing de contenido más avanzadas, es decir, debe aplicarse a clientes que ya han pasado tiempo con su empresa (en otras palabras, generalmente aporta más valor en el contenido de fondos de embudo), recibiendo contenido valioso , pero sin estar tan concentrado.",
+        "imageDescription": "Whitepaper"
+    },
+    "roadmap": {
+        "title": "Roadmap",
+        "slides": [
+            {
+                "classes": "completed",
+                "date": "2019",
+                "title": "",
+                "description": "A partir de enero de 2019"
+            },
+            {
+                "classes": "completed",
+                "date": "Enero 2019",
+                "title": "Fase 1",
+                "description": "Fase inicial del proyecto. El objetivo es dar a conocer los avances tecnológicos desarrollados por Digital Money."
+            },
+            {
+                "classes": "completed",
+                "date": "Marzo 2019",
+                "title": "Wallet Testnet",
+                "description": "Prototipo de billetera DMX para que los usuarios prueben la tecnología."
+            },
+            {
+                "classes": "completed",
+                "date": "Mayo 2019",
+                "title": "DM-Pay",
+                "description": "Implementación del proyecto piloto para la red de pago DM-Pay. Distribución de terminales POS-blockchain a socios estratégicos."
+            },
+            {
+                "classes": "completed",
+                "date": "Mayo 2019",
+                "title": "Fase 2",
+                "description": "Entrega de monedas compradas en la Fase 1."
+            },
+            {
+                "classes": "completed",
+                "date": "Noviembre 2019",
+                "title": "DMX Wallet",
+                "description": "Entrega de la Wallet DMX para transacciones de divisas."
+            },
+            {
+                "classes": "current",
+                "date": "Noviembre 2019",
+                "title": "DMEX",
+                "description": "Lanzamiento de Exchange con operación de par BTC-DMX."
+            },
+            {
+                "classes": "",
+                "date": "Diciembre 2020",
+                "title": "ICO Fase 3/4/5/6/7",
+                "description": "Entrega de monedas compradas en cada etapa."
+            },
+            {
+                "classes": "",
+                "date": "Enero 2021",
+                "title": "Fondo de reserva",
+                "description": "Fase de implementación de los aspectos legales, gestión y operación del fondo."
+            },
+            {
+                "classes": "",
+                "date": "Abril 2021",
+                "title": "Ronda de Inversión Privada",
+                "description": "Digital Money busca asociaciones con empresas enfocadas en el desarrollo tecnológico y financiero del mercado, ofreciendo la adquisición de la parte final de ICO."
+            },
+            {
+                "classes": "",
+                "date": "Julio 2021",
+                "title": "DM-Bank",
+                "description": "Creación del banco digital para operar la tecnología DMX en los mercados tradicionales y ofrecer a los usuarios más herramientas diarias utilizando encriptación."
+            }
+        ]
+    },
+    "financing": {
+        "title": "Finanzas",
+        "description": "En esta sesión entenderemos cómo se distribuirán los montos recaudados por el ICO.",
+        "textTitle": "Detalles",
+        "infoList": {
+            "item1": "20% Desarrollo tecnológico",
+            "item2": "20% Desarrollo de negocios",
+            "item3": "20% Costo de operación de adquisición del usuario",
+            "item4": "10% Marketing",
+            "item5": "10% Infraestructura",
+            "item6": "5% Cosas operativas",
+            "item7": "5% Máquinas de pago",
+            "item8": "5% Licencias y cumplimiento",
+            "item9": "5% Otros costos"
+        },
+        "simbol": "Símbolo",
+        "value": "Valor Inicial"
+    },
+    "faq": {
+        "title": "Preguntas Frecuentes",
+        "categories": {
+            "general": {
+                "id": "general",
+                "title": "General",
+                "questions": [
+                    {
+                        "question": "¿Qué es Digital Money?",
+                        "answer": "El dinero digital es una criptomoneda creada para ofrecer el mejor rendimiento en transacciones financieras. El blockchain de Digital Money está optimizada para realizar transacciones instantáneas a bajo costo a través de una interfaz fácil de usar. Nuestro objetivo es simplificar el uso de monedas criptográficas, facilitando y brindando acceso a todas las personas."
+                    },
+                    {
+                        "question": "¿Cómo Digital Money funciona?",
+                        "answer": "Las transacciones se realizan entre usuarios utilizando el saldo de las billeteras. Cada transacción se registra en un almacén de datos llamado blockchain. Este registro es público y la red está totalmente descentralizada."
+                    },
+                    {
+                        "question": "¿Cuáles son las ventajas de Digital Money sobre otros medios de pago?",
+                        "answer": [
+                            "- Transacciones instantáneas;",
+                            "- 100% de las tarifas distribuidas a los propietarios de máquinas DM-Pay;",
+                            "- Registro público y auditable;",
+                            "- Interfaz de billetera amigable con clave pública personalizable;",
+                            "- Primera criptomoneda automática."
+                        ]
+                    },
+                    {
+                        "question": "¿Cuál es la tarifa de transacción?",
+                        "answer": "0.01 DMX."
+                    },
+                    {
+                        "question": "¿Cómo funciona el plan de expansión?",
+                        "answer": "El plan de expansión de Digital Money tiene dos etapas. Fase ICO - El 90% del total recaudado durante esta etapa se distribuirá a los usuarios a través de una bonificación binaria variable con un límite diario de ganancias de U$ 1,000. Fase de Mainnet - Después del lanzamiento de esta fase, el 100% de las tarifas de transacción se distribuirán a los propietarios de las máquinas DM-Pay. Esta característica tiene como objetivo aumentar el uso del dinero digital como medio de pago."
+                    }
+                ]
+            },
+            "tokens": {
+                "id": "tokens",
+                "title": "Tokens",
+                "questions": [
+                    {
+                        "question": "¿Se puede extraer Digital Money?",
+                        "answer": "No. Todas las monedas se extraerán previamente y el monto total emitido se definirá en el primer bloque registrado en la blockchain, también conocido como Genesis, y no se creará ni extraerá ninguna otra moneda después del lanzamiento del proyecto."
+                    },
+                    {
+                        "question": "¿Dónde compro Digital Money?",
+                        "answer": "Después del registro, se puede comprar DMX con Bitcoins a través del sitio web oficial durante el período ICO."
+                    },
+                    {
+                        "question": "¿Dónde está el precio de cada moneda?",
+                        "answer": "El precio varía según las fases de venta privada, preventa, venta pública y venta principal. El precio de las monedas durante cada fase será de US $ 0.25, US $ 0.45, US $ 0.65 y US $ 0.85 respectivamente."
+                    },
+                    {
+                        "question": "¿Cuál es la cantidad mínima de monedas que puedo comprar?",
+                        "answer": "Un mínimo de 125 monedas para comprar."
+                    },
+                    {
+                        "question": "¿Cuándo estarán disponibles mis monedas?",
+                        "answer": "Durante el período ICO, sus monedas se congelan para su movimiento. Después del final de este período, comienza la fase Betanet, liberando el saldo de la moneda."
+                    }
+                ]
+            },
+            "client": {
+                "id": "client",
+                "title": "Cliente",
+                "questions": [
+                    {
+                        "question": "¿Cómo puedo intercambiar Digital Money?",
+                        "answer": "Las monedas pueden usarse para transacciones entre usuarios o negociarse en nuestro intercambio descentralizado. Posteriormente, el dinero digital también se incluirá en otras casas de bolsa."
+                    },
+                    {
+                        "question": "¿Cómo descargo la billetera Digital Money?",
+                        "answer": "La billetera se puede descargar en el sitio web oficial de Digital Money, en el área de descargas."
+                    },
+                    {
+                        "question": "¿Es posible tener más de una cuenta?",
+                        "answer": "No. Durante el período ICO, solo se permitirá una cuenta por persona."
+                    }
+                ]
+            },
+            "legal": {
+                "id": "legal",
+                "title": "Legal",
+                "questions": [
+                    {
+                        "question": "¿Cómo se alcanza el consenso de la red de dinero digital?",
+                        "answer": "La blockchain de Digital Money tiene el sistema de consenso PoS. En este tipo de validación que valida un bloque hay un usuario que necesita alquilar terminales DM-Pay. La billetera DMPAY es un nudo. El nodo que cumple los requisitos mínimos puede participar en el sorteo de validación. Para obtener más información, consulte el Whitepaper en la sección de descargas del sitio web."
+                    },
+                    {
+                        "question": "¿Cómo funciona la recompensa de dinero digital?",
+                        "answer": "En Digital Money, el monto de las tarifas cobradas por las transacciones de divisas se redistribuye a las Carteras DMPAY."
+                    }
+                ]
+            }
+        }
+    },
+    "footer": {
+        "title": "Mantener conectado",
+        "placeholder": "Ingrese su dirección de correo electrónico",
+        "text": "¡Regístrese ahora y sea el primero en conocer nuestras novedades!"
+    }
+}

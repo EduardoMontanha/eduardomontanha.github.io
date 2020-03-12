@@ -1,0 +1,137 @@
+header {
+    min-height: 100vh;
+    padding: calc(3rem + 90px) 0 2rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Text */
+header .content-data h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .content-data h1 span {
+    font-size: 1.5rem;
+}
+
+header .content-data p {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+header .purchase-token-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .purchase-token-btn a {
+    display: inline-block;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 12px 0 #368f3b;
+    background-image: linear-gradient(50deg, #519154 20%, #64C05C 65%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+header .purchase-token-btn img {
+    width: 160px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Image */
+header .content-image {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+header .content-image img {
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* =============================================== */
+/* MEDIA QUERIES - Medium Size Screens */
+/* =============================================== */
+@media (min-width: 768px) {
+    header .content-image img {
+        height: 500px;
+    }
+
+    header .purchase-token-btn {
+        flex-direction: row;
+        align-content: center;
+        align-items: initial;
+    }
+
+    header .purchase-token-btn a {
+        padding: 0.8rem 3rem;
+        font-size: 1.15rem;
+    }
+
+    header .purchase-token-btn img {
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width:992px) {
+    header::before {
+        content: "";
+        background-image: url("./images/background.png");
+        background-position-x: calc(100vw - 700px);
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 1000px;
+        position: absolute;
+        top: calc(90px + 6.5rem);
+        width: 100%;
+        height: 1000px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    header {
+        padding: calc(90px + 5rem) 0 10rem;
+        display: flex;
+    }
+
+    header .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .container > div {
+        width: 50%;
+    }
+
+    header .content-image {
+        margin-bottom: 0;
+    }
+
+    header .content-image img {
+        height: auto;
+    }
+
+    header .content-data h1 {
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+
+    header .content-data p {
+        font-size: 2rem;
+    }
+}
