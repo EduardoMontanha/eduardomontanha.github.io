@@ -1,442 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<meta name="robots" content="index, follow" />
-	<meta name="title" content="" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="">
-	<meta name="viewport"
-		content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta name="msapplication-TileColor" content="#070d21">
-	<meta name="theme-color" content="#070d21">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eduardo Montanha">
+    <meta name="description" content="Teste para vaga de Developer Junior.">
 
-	<title>Property Arbitrage</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 
-	<!-- Bootstrap 4 -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="libs/animate.min.css">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/swiper/swiper.min.js" defer></script>
+    <script src="js/main.min.js"></script>
 
-	<!-- owl carousel styles -->
-	<link href='libs/owl/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
-	<link href='libs/owl/owl.carousel.min.css' rel='stylesheet' type='text/css'>
 
-	<!-- Main CSS -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="libs/spacing.min.css">
+    <title>Teste VNDA</title>
 </head>
 
 <body>
-	<header class="site_header">
-		<!-- Header Navigation -->
-		<nav>
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<!-- Header Logo -->
-						<a href="#" class="logotype">
-							<img src="img/logo-arb.png" alt="logotype">
-						</a>
-						<span class="menu-button">
-							<span></span>
-							<span></span>
-							<span></span>
-						</span>
-						<a href="https://web.propertyarbitrage.com/signup" class="btn btn_small gradient_button">Sign Up</a>
-						<a href="https://web.propertyarbitrage.com/signin" class="btn btn_small light_button mr-3">Login</a>
-						<!-- Header Navigation -->
-						<ul>
-							<li><a href="#Home-Exchange">Home</a></li>
-							<li><a href="#Stats">About</a></li>
-							<li><a href="#Features">Start Now</a></li>
-							<li><a href="#Platform">Platform</a></li>
-							<li><a href="#Solution">Solution</a></li>
-							<li><a href="#Faq">Faq</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<!-- Mobile Navigation -->
-		<div class="mobile-menu">
-			<span class="close-menu-button">
-				<span></span>
-				<span></span>
-			</span>
-			<!-- Mobile Logo -->
-			<a href="#" class="logotype">
-				<img src="img/logo-arb.png" alt="logotype">
-			</a>
-			<!-- Mobile Nav Links -->
-			<ul>
-				<li><a href="#Home-Exchange">Home</a></li>
-				<li><a href="#Stats">About</a></li>
-				<li><a href="#Features">Start Now</a></li>
-				<li><a href="#Platform">Platform</a></li>
-				<li><a href="#Solution">Solution</a></li>
-				<li><a href="#Faq">Faq</a></li>
-			</ul>
-			<a href="https://web.propertyarbitrage.com/signup" class="btn btn_small btn-block gradient_button">Sign Up</a>
-			<a href="https://web.propertyarbitrage.com/signin" class="btn btn_small btn-block outline_button">Login</a>
-		</div>
-	</header>
-	<section id="Home-Exchange" class="home_exchange align-center valign-top">
-		<div class="container">
-			<div class="row text-banner pt-md">
-				<div class="col-xl-12 col-md-12">
-					<div class="title title-center wow fadeInUp" data-wow-delay="0.2s">
-						<span>Exchange</span>
-						<h1>Cryptocurrency</h1>
-					</div>
-					<h2 class="wow fadeInUp" data-wow-delay="0.4s">TRADING PLATFORM</h2>
-					<h3 class="wow fadeInUp" data-wow-delay="0.6s">Next generation trade for traders</h3>
-					<span class="col-xl-6 offset-xl-3 col-md-8 offset-md-2 description-content wow fadeInUp"
-						data-wow-delay="0.6s">State-of-the-art technology for high frequency traders.</span>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="./img/logo.png" alt="Logo" class="logo">
 
-				</div>
-			</div>
-			<div class="bg-exchange">
-				<img src="img/exchange/header-tablet.png" alt="">
-			</div>
-		</div>
-	</section>
-	<!-- Section About -->
-	<section id="Stats" class="stats">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-5 col-md-5 mr-auto d-md-block">
-					<!-- <div class="big-image image-left wow zoomIn" data-wow-delay="0.4s">
-						<img src="img/solution-image.png" alt="">
-					</div> -->
-				</div>
-				<div class="col-xl-6 col-md-6 valign-center ">
-					<div class="title title-right">
-						<span>About</span>
-						<h2>TRADING BITCOIN TO OTHER CRYPTOCURRENCIES HAS NEVER BEEN EASIER.</h2>
-					</div>
-					<span class="description-content">
-						Our Exchange is ready to perform thousands of transactions per second. The
-						API is ready to communicate with other platforms, making business faster
-						without wasting time!
-					</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section Start Now -->
-	<section id="Features" class="about darkBlue-bg">
-		<div class="container">
-			<div class="row start-now gap-y align-items-center">
-				<div class="col-xl-5 col-md-5">
-					<div class="title title-left">
-						<span>Start Now</span>
-					</div>
+                <button id="nav-bar-toggler">
+                    <div id="burger-icon">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </div>
+                </button>
 
-					<div class="start-now-content">
-						<div class="start-now-number">1</div>
-						<div class="start-now-text">
-							<h4>Create your account</h4>
-							<p>
-								Switching from Bitcoin to other Cryptocurrencies has never
-								been easier.<br>
-								Make your registration. Deposit the amount of Bitcoin you
-								wish to trade.
-							</p>
-						</div>
-					</div>
+                <div class="collapsible-menu">
+                    <ul class="navigation-menu">
+                        <li><a href="#categories">Categorias</a></li>
+                        <li><a href="#highlights">Destaques</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#photos">Fotos</a></li>
+                    </ul>
 
-					<div class="start-now-content">
-						<div class="start-now-number">2</div>
-						<div class="start-now-text">
-							<h4>Squeeze trigger on operations</h4>
-							<p>
-								Trade your cryptocurrencies through market or limit orders.<br>
-								Don’t miss the opportunities created by the high volatility of
-								the cryptocurrencies with market orders.<br>
-								However if you're a technical analyst looking for an entry or
-								exit point from your position, make limit orders and don't miss
-								your targets.
-							</p>
-						</div>
-					</div>
+                    <hr>
 
-					<div class="start-now-content">
-						<div class="start-now-number">3</div>
-						<div class="start-now-text">
-							<h4>Take the profits</h4>
-							<p>
-								Finish your operations. Use transaction history to check open
-								transactions or check your earnings on completed transactions.<br>
-								See the balance of your portfolio. Be a fast trader using our
-								ultra fast platform.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Owl Carousel Slides -->
-				<div class="start-now-image col-xl-7 col-md-7 wow fadeInUp" data-wow-delay="0.4s">
-					<img src="img/start-image.png" alt="Start now">
-					<a href="https://web.propertyarbitrage.com/signup" class="btn btn_small gradient_button">Register</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section Platform -->
-	<section id="Platform" class="banner blue-banner">
-		<div class="container">
-			<div class="row gap-y align-items-center">
-				<div class="col-xl-6 col-md-6">
-					<div class="title title-left">
-						<span>Platform</span>
-						<h2>A fully functional trading platform in your hand: buy, sell, trade, and manage orders and
-							funds as you go.</h2>
-					</div>
-					<span class="description-content">Stay connected to the market. Featuring advanced order types and
-						analytical tools for experienced traders, as well as a simple interface for those who are
-						starting.</span>
-				</div>
-				<!-- Owl Carousel Slides -->
-				<div class="col-xl-6 col-md-6 hidden-sm-down wow fadeInUp" data-wow-delay="0.4s">
-					<div class="owl-carousel phone-owl owl-theme">
-						<div class="item"><img src="img/mobile/phone-item-1.png" alt="" /></div>
-						<!-- <div class="item"><img src="img/mobile/phone-item-2.png" alt="" /></div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                    <ul class="action-menu">
+                        <li>
+                            <a href="#!">
+                                <img src="img/navigation/search-icon.png" alt="Buscar">
+                            </a>
+                        </li>
 
-	<!-- Section Info -->
-	<section id="Solution" class="info">
-		<div class="container">
-			<div class="row solution">
-				<div class="col-xl-4 col-md-4 mr-auto d-md-block">
-					<div class="big-image image-left wow zoomIn" data-wow-delay="0.4s">
-						<img src="img/solution-image.png" alt="">
-					</div>
-				</div>
-				<div class="col-xl-7 col-md-7 valign-center ">
-					<div class="title title-right">
-						<span>Solution</span>
-						<h2>HIGH LEVEL PLATFORM</h2>
-					</div>
-					<span class="description-content">
-						Property Arbitrage is a multi-functional platform for people who want
-						to work with cryptocurrencies. It provides an advanced order matching
-						algorithm, a high-liquidity order book, and a rich variety of trading
-						tools. Combining an intuitive interface and advanced trading
-						possibilities, it will empower your trading and help you grow your
-						portfolio.
-					</span>
-				</div>
-			</div>
-			
-			<div class="row comission pt-md pt-lg-xl">
-				<div class="col-xl-6 col-md-6">
-					<div class="title title-left">
-						<!-- <span>Comission</span> -->
-						<h2>A trusted and secure bitcoin exchange</h2>
-					</div>
-					<span class="description-content">
-						Your way to an open financial system. Get started with the easiest and
-						most secure platform to buy and trade cryptocurrencies.
-					</span>
-				</div>
-				<div class="col-xl-5 col-md-5 ml-auto d-md-block">
-					<div class="big-image image-left wow zoomIn" data-wow-delay="0.4s">
-						<img src="img/commission-image.png" alt="">
-					</div>
-				</div>
-			</div>
+                        <li>
+                            <a href="#!">
+                                <img src="img/navigation/user-icon.png" alt="Minha conta">
+                            </a>
+                        </li>
 
-			<div class="row start-btn pt-md pt-lg-xl">
-				<div class="col-xl-12 col-md-12">
-					<a href="https://web.propertyarbitrage.com/signup" class="btn light_button">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section FAQ -->
-	<section id="Faq" class="faq">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12" style="margin-bottom: 3rem;">
-					<div class="title title-center">
-						<span>FAQ</span>
-						<h2>Frequently Asked Quesions</h2>
-					</div>
-				</div>
+                        <li>
+                            <a href="#!">
+                                <img src="img/navigation/basket-icon.png" alt="Carrinho">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-				<!-- <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2">
-					<span class="description-content">Onward and upward, productize the deliverables and focus on the
-						bottom line drop-dead date translating our vision of having a market leading platfrom drop-dead
-						date.</span>
-				</div> -->
+        <section id="banner">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#!">
+                            <img src="./img/banner/slide-1.jpg" alt="Montanha 1">
 
-				<div class="col-xl-6 col-md-6">
-					<div class="dropdown-list">
-						<div class="drop-title">What is PropertyArbitrage?</div>
-						<div class="drop-content">
-							PropertyArbitrage is a cryptocurrency exchange that provides the best
-							way to invest in cryptocurrencies by aggregating all leading exchanges
-							and comparing cryptocurrency prices in real time.
-						</div>
-					</div>
+                            <div class="slide-content">
+                                <div class="container">
+                                    <h3>Slide 1</h3>
+                                    <p>
+                                        Percebemos, cada vez mais, que a revolução dos costumes
+                                        acarreta um processo... <b>Leia mais.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-					<div class="dropdown-list">
-						<div class="drop-title">What is cryptocurrency?</div>
-						<div class="drop-content">
-							Cryptocurrency is a decentralized digital currency. No state can
-							influence the cryptocurrency exchange rate, and no state can control
-							the transactions.<br>
-							Due to encrypted data protection mechanisms it is impossible to obtain
-							information from parties involved in transactions.
-						</div>
-					</div>
+                    <div class="swiper-slide">
+                        <a href="#!">
+                            <img src="./img/banner/slide-2.jpg" alt="Montanha 2">
 
-					<div class="dropdown-list">
-						<div class="drop-title">What is bitcoin?</div>
-						<div class="drop-content">
-							Bitcoin is a consensus network that enables a new payment system using
-							digital money. It is the first decentralized peer-to-peer payment
-							network that is powered by its users with no central authority. From a
-							user perspective, bitcoin is pretty much like cash for the Internet.
-						</div>
-					</div>
-				</div>
+                            <div class="slide-content">
+                                <div class="container">
+                                    <h3>Slide 2</h3>
+                                    <p>
+                                        Todavia, o fenômeno da Internet ainda não demonstrou
+                                        convincentemente que vai participar... <b>Leia mais.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-				<div class="col-xl-6 col-md-6">
-					<div class="dropdown-list">
-						<div class="drop-title">What is a Cryptocurrency Exchange?</div>
-						<div class="drop-content">
-							A cryptocurrency exchange is a service to exchange digital currencies, such
-							as Bitcoin, Ethereum, and more, to fiat (paper) currencies or to other
-							digital currencies. You can exchange your fiat currency, such as dollars or
-							Euro, for several other cryptocurrencies. You can also exchange your Bitcoin
-							to fiat.
-						</div>
-					</div>
+                    <div class="swiper-slide">
+                        <a href="#!">
+                            <img src="./img/banner/slide-3.jpg" alt="Montanha 3">
 
-					<div class="dropdown-list">
-						<div class="drop-title">Where can I get a Bitcoin wallet?</div>
-						<div class="drop-content">
-							We simply send your coins to the wallet of your choice. Learn more about
-							cryptocurrency wallets and how to create a free wallet.
-						</div>
-					</div>
+                            <div class="slide-content">
+                                <div class="container">
+                                    <h3>Slide 3</h3>
+                                    <p>
+                                        No mundo atual, a adoção de políticas descentralizadoras
+                                        possibilita uma melhor visão... <b>Leia mais.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-					<div class="dropdown-list">
-						<div class="drop-title">HOW TO SIGN UP</div>
-						<div class="drop-content">
-							After clicking on the ‘sign up’ tab, please fill up the empty spaces with a
-							valid email address. Make sure to read the terms and conditions before
-							accepting them, then click ‘sign up’.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Footer -->
-	<footer class="big-footer darkBlue-bg pt-md pt-lg-xl">
-		<!-- Subscribe -->
-		<div class="subscribe pb-md pb-lg-xl">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="title title-center">
-							<span>Register</span>
-							<h2><b>Start</b> right now</h2>
-						</div>
-					</div>
-					<div class="col-xl-12 mt-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
-						<form>
-							<input type="text" placeholder="Enter your email">
-							<input type="submit" value="Register" class="btn gradient_button">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-md-3 col-sm-6 pb-2">
-					<!-- Footer Logo -->
-					<a href="#" class="logotype">
-						<img src="img/logo-arb.png" alt="logotype">
-					</a>
-					<p>
-						Exchange focused on cryptocurrency trading with ultra fast data processing technology.
-					</p>
-					<p>
-						Proprietary technologies for agility in negotiations and communication with other businesses.
-					</p>
-				</div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
 
-				<!-- <div class="col-xl-3 col-md-3 col-sm-6 pb-2">
-					<h6 class="footer-title">Navigation</h6>
-					<ul>
-						<li><a href="index.html">Main Demo</a></li>
-						<li><a href="dark.html">Dark Skin</a></li>
-						<li><a href="light.html">Light Skin</a></li>
-						<li><a href="exchange.html">Exchange</a></li>
-					</ul>
-				</div> -->
+        <section id="categories">
+            <div class="container">
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-1.png" alt="category 1">
+                    </a>
+                </div>
 
-				<div class="col-xl-3 col-md-3 col-sm-6">
-					<h6 class="footer-title">Account</h6>
-					<ul>
-						<li><a href="https://web.propertyarbitrage.com/signin">Login</a></li>
-						<li><a href="https://web.propertyarbitrage.com/signup">Registration</a></li>
-					</ul>
-				</div>
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-2.png" alt="category 2">
+                    </a>
+                </div>
 
-				<!-- <div class="col-xl-3 col-md-3 col-sm-6">
-					<h6 class="footer-title">Contacts</h6>
-					<ul>
-						<li>
-							<span>25 W 27rd St. New York, NY 10015</span>
-						</li>
-						<li>
-							<span>+1 (222) 555 47 100</span>
-						</li>
-						<li>
-							<a href="#" class="social-button"><i class="fab fa-facebook-f"></i></a>
-							<a href="#" class="social-button"><i class="fas fa-paper-plane"></i></a>
-							<a href="#" class="social-button"><i class="fab fa-twitter"></i></a>
-						</li>
-					</ul>
-				</div> -->
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-3.png" alt="category 3">
+                    </a>
+                </div>
 
-				<!-- Copyright -->
-				<div class="col-12 copyright">
-					<span>&#169; 2020</span>
-					<span>Property Arbitrage</span>
-				</div>
-				<!-- Back to top button -->
-				<a href="#Home-Exchange" id="back-to-top" title="Back to top"><i class="fas fa-angle-up"></i></a>
-			</div>
-		</div>
-	</footer>
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-4.png" alt="category 4">
+                    </a>
+                </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="libs/wow.min.js"></script>
-	<script src="libs/owl/owl.carousel.min.js"></script>
-	<script src="libs/parallax.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/main.js"></script>
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-5.png" alt="category 5">
+                    </a>
+                </div>
 
+                <div class="category">
+                    <a href="#!">
+                        <img src="img/categories/ct-6.png" alt="category 6">
+                    </a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </header>
+
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="content">
+                    <h3>Quem manda na minha terra sou euzis!</h3>
+
+                    <h2>Mussum Ipsum</h2>
+
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola
+                        pa arma uma pindureta. Quem manda na minha terra sou euzis!
+                        Praesent malesuada urna nisi, quis volutpat erat hendrerit
+                        non. Nam vulputate dapibus. Interessantiss quisso pudia ce
+                        receita de bolis, mais bolis eu num gostis.
+                    </p>
+                </div>
+
+                <div class="pic-cards">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/highlights/hl-1.jpg" alt="Highlight 1">
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Samuel L. Ipsum</h3>
+                            <p>
+                                Normally, both your asses would be dead as fucking
+                                fried chicken, but you happen...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/highlights/hl-2.jpg" alt="Highlight 2">
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Bacon Ipsum</h3>
+                            <p>
+                                Spicy jalapeno strip steak andouille biltong rump.
+                                Sunt chislic pastrami...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/highlights/hl-3.jpg" alt="Highlight 3">
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Gangsta Ipsum</h3>
+                            <p>
+                                Boom shackalack bling bling dolor ass amet, fo shizzle
+                                mah nizzle fo rizzle, mah home g-dizzle...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <div class="content">
+                    <div class="prod-image">
+                        <img src="img/products/pd-image.jpg" alt="Product">
+                    </div>
+
+                    <div class="prod-description">
+                        <h3>Air plant ullamco anim non.</h3>
+
+                        <h2>Hipster Ipsum</h2>
+
+                        <p>
+                            I'm baby godard ex sriracha forage cardigan sed banjo helvetica
+                            vexillologist post-ironic beard normcore excepteur elit. Roof
+                            party minim sunt, schlitz quinoa meggings freegan hashtag art
+                            party velit activated charcoal lomo. Franzen pug raw denim
+                            selfies literally.
+                        </p>
+
+                        <button>Ir para loja</button>
+                    </div>
+                </div>
+
+                <div class="photo-carousel">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="img/products/pdc-1.png" alt="Prod 1">
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="img/products/pdc-2.png" alt="Prod 2">
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="img/products/pdc-3.png" alt="Prod 3">
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="#!">
+                                    <img src="img/products/pdc-4.png" alt="Prod 4">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <div class="container">
+                <h2>@edward_mountain</h2>
+
+                <div class="photo-cards">
+                    <div class="card">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BmR7ZLujhx9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BmR7ZLujhx9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmR7ZLujhx9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Eduardo Montanha (@edward_mountain)</a> em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-08-10T01:35:18+00:00">9 de Ago, 2018 às 6:35 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js" defer></script>
+                    </div>
+
+                    <div class="card">
+                        <p>
+                            Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam
+                            rick mend grimes malum cerveau cerebro. De carne cerebro lumbering
+                            animata cervello corpora quaeritis. Summus thalamus brains sit​​,
+                            morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger
+                            omero prefrontal cortex undead survivor fornix dictum mauris.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BlJ9SHCjdoI/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BlJ9SHCjdoI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BlJ9SHCjdoI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Eduardo Montanha (@edward_mountain)</a> em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-07-13T02:46:29+00:00">12 de Jul, 2018 às 7:46 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js" defer></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo" src="img/logo-black.png" alt="Logo">
+        
+        <div class="content">
+            <div class="container">
+                <div class="navigation">
+                    <h3>Menu</h3>
+
+                    <a href="#categories">Categorias</a>
+                    <a href="#highlights">Destaques</a>
+                    <a href="#products">Produtos</a>
+                    <a href="#photos">Fotos</a>
+                </div>
+
+                <div class="subscribe">
+                    <h3>Inscreva-se</h3>
+                    
+                    <form>
+                        <input id="email" name="email" type="email" placeholder="E-mail" required>
+                        <input type="submit" value="Enviar >">
+                    </form>
+                </div>
+
+                <div class="social-media">
+                    <h3>Nossas redes</h3>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/edward_mountain/" target="_blank">
+                                <img src="img/footer/instagram-icon.png" alt="Instagram">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/eduardomontanha/" target="_blank">
+                                <img  src="img/footer/linkedin-icon.png" alt="LinkedIn">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+        </div>
+    </footer>
 </body>
 
 </html>
