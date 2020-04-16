@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tradio </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./vendor/waves/waves.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <div class="header dashboard">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav class="navbar navbar-expand-lg navbar-light px-0 justify-content-between">
+                            <a class="navbar-brand" href="dashboard.html"><img src="./images/logo.png" alt=""></a>
+
+                            <div class="header-right d-flex my-2 align-items-center">
+                                <div class="language">
+                                    <div class="dropdown">
+                                        <div class="icon" data-toggle="dropdown">
+                                            <i class="flag-icon flag-icon-us"></i>
+                                            <span>English</span>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#" class="dropdown-item">
+                                                <i class="flag-icon flag-icon-bd"></i> Bengali
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="flag-icon flag-icon-fr"></i> French
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="flag-icon flag-icon-cn"></i> China
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_log">
+                                    <div class="profile_log dropdown">
+                                        <div class="user" data-toggle="dropdown">
+                                            <span class="thumb"><i class="mdi mdi-account"></i></span>
+                                            <span class="arrow"><i class="la la-angle-down"></i></span>
+                                        </div>
+
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <div class="user-email">
+                                                <div class="user">
+                                                    <i class="thumb"><i class="mdi mdi-account"></i></i>
+                                                    <div class="user-info">
+                                                        <h6>Saiful Islam</h6>
+                                                        <span>quixlab.com@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="user-balance">
+                                                <div class="available">
+                                                    <p>Available</p>
+                                                    <span>0.00 USD</span>
+                                                </div>
+                                                <div class="total">
+                                                    <p>Total</p>
+                                                    <span>0.00 USD</span>
+                                                </div>
+                                            </div>
+                                            <a href="accounts.html" class="dropdown-item">
+                                                <i class="mdi mdi-account"></i> Account
+                                            </a>
+                                            <a href="data-tbi.html" class="dropdown-item">
+                                                <i class="mdi mdi-history"></i> History
+                                            </a>
+                                            <a href="settings.html" class="dropdown-item">
+                                                <i class="mdi mdi-settings"></i> Setting
+                                            </a>
+                                            <a href="lock.html" class="dropdown-item">
+                                                <i class="mdi mdi-lock"></i> Lock
+                                            </a>
+                                            <a href="signin.html" class="dropdown-item logout">
+                                                <i class="mdi mdi-logout"></i> Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html" data-toggle="tooltip" data-placement="right" title="Trade">
+                            <span><i class="mdi mdi-view-dashboard"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exchange.html" data-toggle="tooltip" data-placement="right" title="Exchange">
+                            <span><i class="mdi mdi-tumblr-reblog"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-overview.html" data-toggle="tooltip" data-placement="right" title="Accounts">
+                            <span><i class="mdi mdi-face-profile"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-tbi.html" data-toggle="tooltip" data-placement="right" title="Data">
+                            <span><i class="mdi mdi-database"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" data-toggle="tooltip" data-placement="right" title="Setting">
+                            <span><i class="mdi mdi-settings"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="verification section-padding">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100 align-items-center">
+                    <div class="col-xl-5 col-md-6">
+                        <div class="auth-form card">
+                            <!-- <div class="card-header">
+                                <h4 class="card-title">Link a Debit card</h4>
+                            </div> -->
+                            <div class="card-body">
+                                <form action="verify-step-2.html" class="identity-upload">
+                                    <div class="identity-content">
+                                        <span class="icon"><i class="fa fa-shield"></i></span>
+                                        <h4>Please verify your identity before adding your card</h4>
+                                        <p>Uploading your ID helps as ensure the safety and security of your founds</p>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-success pl-5 pr-5">Upload ID</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer dashboard">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 col-12">
+                        <div class="copyright">
+                            <p>© Copyright 2020 <a href="https://themeforest.net/user/quixlab/portfolio">Quixlab</a> I All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/global.js"></script>
+    
+    <script src="./vendor/waves/waves.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
