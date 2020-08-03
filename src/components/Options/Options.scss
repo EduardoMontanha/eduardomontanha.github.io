@@ -1,0 +1,131 @@
+$grey_color: rgb(127, 129, 132);
+$hover_color: rgb(189, 189, 189);
+$back_color: rgb(37, 38, 42);
+$border_color: rgb(72, 73, 76);
+$dark_grey_color: rgb(55, 56, 59);
+$ligh_grey_color: rgb(221, 221, 221);
+$red_color: rgb(255, 90, 100);
+$green_color: rgb(0, 190, 110);
+
+.Options {
+    width: 170px;
+    flex-direction: column;
+    border-left: 1px solid $border_color;
+    background-color: $back_color;
+    height: calc(100vh - 105px);
+    padding: 20px;
+    .option__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: $dark_grey_color;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        .option__block {
+            display: flex;
+            flex-direction: column;
+            .type {
+                font-size: 12px;
+                color: $grey_color;
+            }
+            .value {
+                margin-top: 3px;
+                font-size: 15px;
+                color: $hover_color;
+            }
+        }
+        .option__ctrl {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            i {
+                color: $grey_color;
+                &:hover {
+                    color: $hover_color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .benefit__text {
+        color: $ligh_grey_color;
+        font-size: 13px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .benefit__value {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .majority__opinion {
+        font-size: 13px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .red__bar {
+        background-color: $red_color;
+        width: 100%;
+        height: 6px;
+        border-radius: 3px;
+        .green__bar {
+            background-color: $green_color;
+            height: 6px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+    }
+    .progress {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+        font-size: 12px;
+        .green__text {
+            color: $green_color;
+        }
+        .red__text {
+            color: $red_color;
+        }
+    }
+    .call__button {
+        background-color: $green_color;
+        margin-top: 30px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            color: white;
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: rgb(108, 221, 178);
+        }
+    }
+    .put__button {
+        background-color: $red_color;
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            color: white;
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: rgb(255, 164, 171);
+        }
+    }
+}
