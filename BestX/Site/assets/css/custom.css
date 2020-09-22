@@ -1,0 +1,31 @@
+/* ====================== */
+/* Navigation Bar */
+/* ====================== */
+#header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header .navbar-brand img {
+    max-width: 124px;
+    max-height: 40px;
+}
+
+
+/* ====================== */
+/* Pricing */
+/* ====================== */
+#pricing-area .plans {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ====================== */
+/* Footer */
+/* ====================== */
+#footer .logo img {
+    max-width: 124px;
+    max-height: 40px;
+}

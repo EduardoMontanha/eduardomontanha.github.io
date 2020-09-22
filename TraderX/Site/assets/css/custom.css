@@ -1,0 +1,30 @@
+/* ====================== */
+/* Navigation Bar */
+/* ====================== */
+#navigation .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navigation .navbar-brand img {
+    max-width: 124px;
+    max-height: 40px;
+}
+
+
+/* ====================== */
+/* Hero */
+/* ====================== */
+#hero .banner-btn .default-btn {
+    padding: 18px 55px;
+}
+
+
+/* ====================== */
+/* Footer */
+/* ====================== */
+#footer .logo img {
+    max-width: 124px;
+    max-height: 40px;
+}
