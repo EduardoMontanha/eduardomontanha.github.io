@@ -28,3 +28,9 @@
     max-width: 124px;
     max-height: 40px;
 }
+
+#footer a {
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 1rem;
+}
