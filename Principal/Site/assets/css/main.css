@@ -1245,7 +1245,7 @@ header {
 
 header .navbar-sticky {
     top: 0;
-    background-color: var(--header-bg-color);
+    background-color: var(--nav-item-color);
     -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
     -webkit-transition: all .15s ease-out 0s!important;
@@ -1313,7 +1313,8 @@ header .navbar-expand .navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 0;
-    color: var(--nav-item-color);
+    /* color: var(--nav-item-color); */
+    color: #FFF;
 }
 
 header .navbar-expand .navbar-brand i {
@@ -1346,7 +1347,8 @@ header .navbar-expand .navbar-brand img {
 .navbar-expand .navbar-nav .nav-link:not(.btn) {
     padding-right: 1rem;
     padding-left: 1rem;
-    color: var(--nav-item-color);
+    color: #FFF;
+    /* color: var(--nav-item-color); */
 }
 
 .navbar-expand .navbar-nav .nav-link:not(.btn):not(.title):hover {

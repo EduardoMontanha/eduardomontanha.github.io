@@ -11,15 +11,15 @@
     border-radius: 5px;
 }
 
-.navbar-nav.items.buttons .primary-button,
-.navbar-nav.items.buttons .secondary-button {
+.navbar-nav.items.buttons .primary-button {
     border: 1px solid;
     border-color: var(--primary-color);
 }
 
 .navbar-nav.items.buttons .secondary-button {
-    color: var(--primary-color);
+    color: #FFF;
     background-color: transparent;
+    border: 1px solid #FFF;
 }
 
 /* Header buttons mobile */
@@ -67,7 +67,7 @@
 }
 
 #slider .swiper-slide h2 {
-    color: var(--primary-color);
+    color: #FFF;
 }
 
 #slider .swiper-slide .btn {
