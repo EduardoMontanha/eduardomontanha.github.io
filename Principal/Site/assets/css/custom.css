@@ -41,6 +41,10 @@
 /* =================================== */
 /* Slider */
 /* =================================== */
+#slider {
+    background-color: #1A1A1A;
+}
+
 #slider .swiper-container {
     width: 100%;
     height: 100vh;
@@ -70,11 +74,19 @@
     text-transform: uppercase;
 }
 
-#slide-1 {
-    background-image: url(../images/slide-1.png);
+#slide-1,
+#slide-2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+#slide-1 {
+    background-image: url(../images/slide-1.png);
+}
+
+#slide-2 {
+    background-image: url(../images/slide-2.png);
 }
 
 
