@@ -9,7 +9,7 @@ var procedimentosData = [
         "id": 2,
         "name": "restaurações dentais e/ou próteses sobre implantes",
         "description": "",
-        "image": "restauracao.jpg"
+        "image": "restauracao.png"
     },
     {
         "id": 7,
